@@ -1,0 +1,26 @@
+<?php
+
+class Product {
+	
+	private $price;
+	private $name;
+	
+	function __construct($price, $name){
+		$this->price = $price;
+		$this->name = $name;
+	}
+	
+	function getPrice(){
+		return $this->price;
+	}
+	
+	
+	
+}
+
+
+$product = new Product(4.44, "Book");
+echo "{$product->getPrice()}"
+
+
+?>
