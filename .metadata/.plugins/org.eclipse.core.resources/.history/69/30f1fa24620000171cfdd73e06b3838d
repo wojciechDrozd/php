@@ -1,0 +1,49 @@
+<?php
+
+class ShopProduct {
+	
+	public $title;
+	public $producerMainName;
+	public $producerFirstName;
+	public $price;
+	
+	function __construct($title,$producerMainName,$producerFirstName,$price){
+		$this->title = $title;
+		$this->producerMainName = prodcerMainName;
+		$this->producerFirstName = producerFirstName;
+		$this->price = price;
+		
+	}
+	
+	function getTitle(){
+		return $this->title;
+	}
+	
+	function getPrice(){
+		return $this->price;
+	}
+	
+	function getProdcer(){
+		
+		return "{$this->producerFirstName} ".
+				"{$this->producerMainName}";
+	}
+}
+
+$product1 = new ShopProduct();
+$product2 = new ShopProduct();
+
+$product1->title = "Productivity 101";
+$product2->title = "Intermittent Fasting: Improving Cognitive Functions";
+
+var_dump($product1);
+
+print '<br><br>';
+var_dump($product2);
+
+print "<br><br>";
+
+print "Autor: ".$product1->getProdcer();
+
+
+?>

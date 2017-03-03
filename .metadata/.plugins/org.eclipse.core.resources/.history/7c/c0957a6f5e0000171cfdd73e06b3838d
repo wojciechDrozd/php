@@ -1,0 +1,55 @@
+<?php
+
+/*
+ * __debugInfo() 
+this method is called by var_dump()
+when dumping an object to get the properties that should be shown. 
+If the method isn't defined on an object, then all public, protected 
+and private properties will be shown. 
+ */
+
+//class without function __debugInt() 
+class Doggy {
+
+	private $name;
+	private $weight;
+	
+	public function __construct($name, $weight){
+		$this->name = $name;
+		$this->weight = $weight;
+	}
+}
+
+//class with function __debugInfo()
+class Kitty {
+	
+
+	private $name;
+	private $weight;
+	
+	public function __construct($name, $weight){
+		$this->name = $name;
+		$this->weight = $weight;
+	}
+	
+	public function __debugInfo(){
+		return $this->name;
+	}
+	
+	
+}
+
+$mini = new Doggy("Mini", 55);
+var_dump($mini);
+
+print'<br><br>';
+
+$kimo = new Doggy("Kimo",33);
+var_dump($kimo);
+
+print'<br><br>';
+
+$malina = new Kitty("Malina",4);
+var_dump($mailna);
+
+?>
