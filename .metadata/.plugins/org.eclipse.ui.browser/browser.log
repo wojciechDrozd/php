@@ -1,0 +1,6 @@
+
+Mar 04, 2017 07:44:22.68 NEW SESSION
+Mar 04, 2017 07:44:22.68 console.error: 
+Mar 04, 2017 07:44:22.68   Could not write session state file 
+Mar 04, 2017 07:44:22.68   Message: Unix error 13 during operation open on file /home/kasia/.mozilla/firefox/itsas6h3.default/sessionstore-backups/upgrade.js-20170201180315 (Permission denied)
+Mar 04, 2017 07:44:22.68   

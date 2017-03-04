@@ -20,3 +20,16 @@ java.lang.ArrayIndexOutOfBoundsException: 15
 	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
 	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
 	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SESSION 2017-03-04 07:39:14.699 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-03-04 07:39:34.511
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.browser 2 0 2017-03-04 07:40:19.881
+!MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]
