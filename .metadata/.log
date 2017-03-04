@@ -33,3 +33,142 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.ui.browser 2 0 2017-03-04 07:40:19.881
 !MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]
+
+!ENTRY org.eclipse.php.core 4 10001 2017-03-04 08:27:36.659
+!MESSAGE PHPCore plugin internal error
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 15
+	at org.eclipse.php.internal.core.util.text.TextSequenceUtilities$AbstractTextSequence.charAt(TextSequenceUtilities.java:101)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassKeywordsStrategy.filterKeyword(ClassKeywordsStrategy.java:52)
+	at org.eclipse.php.internal.core.codeassist.strategies.KeywordsStrategy.apply(KeywordsStrategy.java:51)
+	at org.eclipse.php.internal.core.codeassist.strategies.ClassKeywordsStrategy.apply(ClassKeywordsStrategy.java:42)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:01.941
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1072, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:01.958
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1072, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:03.049
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1073, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:03.055
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1073, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:05.255
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1075, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:05.262
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1075, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:09.419
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1084, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:09.425
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1084, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:11.216
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1014, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:11.219
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1014, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:11.881
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1014, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:11.882
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1014, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:11.976
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1089, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:11.987
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1089, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:15.122
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1100, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:15.129
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1100, length=9>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:52.740
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=233, length=5>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:52.741
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=258, length=5>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:52.741
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=307, length=5>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:52.741
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=354, length=5>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:54.302
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=231, length=5>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:54.303
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=256, length=5>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:54.303
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=305, length=5>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:34:54.303
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=352, length=5>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:04.375
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1480, length=12>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:04.375
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1593, length=10>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:04.382
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1480, length=12>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:04.384
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1593, length=10>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:10.158
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1424, length=11>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:10.159
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1424, length=11>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:10.690
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1424, length=11>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:10.691
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1424, length=11>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:14.582
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1424, length=11>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:14.583
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1424, length=11>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:14.972
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1507, length=12>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:14.972
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1620, length=10>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:14.978
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1507, length=12>
+
+!ENTRY org.eclipse.php.core 4 4 2017-03-04 08:46:14.979
+!MESSAGE org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=1620, length=10>
+!SESSION 2017-03-04 14:02:35.643 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-03-04 14:02:43.876
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.browser 2 0 2017-03-04 14:02:57.464
+!MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]

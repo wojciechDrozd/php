@@ -1,0 +1,100 @@
+<?php
+
+class ShopProduct{
+	
+	private $title;
+	private $producerFirstName;
+	private $producerLastName;
+	protected $price;
+	private $discount;
+	
+	public function __construct($title, $producerFirstName, $producerLastName,$price){
+		$this->title = $title;
+		$this->producerFirstName = $producerFirstName;
+		$this->producerLastName = $producerLastName;
+		$this->price = $price;
+		$this->discount = 0;
+		
+	}
+	
+	public function getTitle(){
+		return $this->title;
+	}
+	
+	public function getPrice(){
+		return $this->price;
+	}
+	
+	public function getProducerFirstName(){
+		return $this->producerFirstName;
+	}
+	
+	public function getProducerLastName(){
+		return $this->producerLastName;
+	}
+	
+	public function getDiscount(){
+		return $this->discount;
+	}
+	
+	public function getProducer(){
+		return "{$this->getProducerFirstName()} ".
+		"{$this->getProducerLastName()}";
+	}
+	
+	public function getSummaryLine(){
+		return "{$this->getTitle()}: ".
+		"{$this->getProducer()} ".
+		"{$this->getPrice()}";
+	}
+	
+}
+
+$product1 = new ShopProduct("Brain", "Steven", "Kalper", 9.99);
+print $product1->getSummaryLine();
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+<?php
+
+class ShopProduct{
+	
+	private $title;
+	private $producerMainName;
+	private $producerFirstName;
+	protected $price;
+	private $discount;
+	
+	public function __construct($title, $producerMainName, $producerFirstName,$price){
+		$this->title = $title;
+		$this->producerMainName = $producerMainName;
+		$this->producerFirstName = $producerFirstName;
+		$this->price = $price;
+		$this->discount = 0;
+		
+	}
+	
+	public function getTitle(){
+		return $this->title;
+	}
+	
+	public function getPrice(){
+		return $this->price;
+	}
+	
+	public function getProducerFirstName(){
+		return $this->producerMainName;
+	}
+	
+	public function getProducerMainName(){
+		return $this->producerMainName;
+	}
+	
+	public function getDiscount(){
+		return $this->discount;
+	}
+	
+}
+?>
