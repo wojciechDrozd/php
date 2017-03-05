@@ -1,0 +1,26 @@
+<?php
+
+class StaticExample{
+	
+	static public $nextID = 1;
+	static public $greeting = "Siema";
+	
+	static public function sayHello(){
+		print StaticExample::$greeting;
+	}
+	
+	static public function showLastObjectID(){
+		
+		if(StaticExample::$nextID == 1){
+			print "There are no objects";
+		}
+		elseif (StaticExample::$nextID > 1){
+			print "Last object ID: ".StaticExample::$nextID;
+		}
+		
+	}
+}
+
+StaticExample::sayHello();
+StaticExam
+?>

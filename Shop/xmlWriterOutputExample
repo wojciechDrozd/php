@@ -1,0 +1,61 @@
+1<br>Tytuł: Brain,  autor: Steven Kalper, cena: 9.99<br>Tytuł: Radio M,  autor: Sir Małpa, cena: 100, czas nagrania: 56 minut<br>Tytuł: Lolita,  autor: Anna Smith, cena: 2.99, liczba stron: 300<br>PRODUCTS:<br>Tytuł: Brain,  autor: Steven Kalper, cena: 9.99<br>Tytuł: Radio M,  autor: Sir Małpa, cena: 100, czas nagrania: 56 minut<br>Tytuł: Lolita,  autor: Anna Smith, cena: 2.99, liczba stron: 300<br><?xml version="1.0" encoding="UTF-8"?>
+
+
+<products>
+	<product title="Brain">
+		<summary>Tytuł: Brain,  autor: Steven Kalper, cena: 9.99
+		</summary>
+	</product>
+	<product title="Radio M">
+		<summary>Tytuł: Radio M,  autor: Sir Małpa, cena: 100, czas nagrania: 56 minut
+		</summary>
+	</product>
+	<product title="Lolita">
+		<summary>Tytuł: Lolita,  autor: Anna Smith, cena: 2.99, liczba stron: 300
+		</summary>
+	</product>
+</products>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

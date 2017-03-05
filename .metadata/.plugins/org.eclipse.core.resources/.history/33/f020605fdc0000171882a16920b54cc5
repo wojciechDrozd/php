@@ -1,0 +1,14 @@
+<?php
+
+class StaticExample{
+	
+	static public $nextID = 0;
+	static public $greeting = "Siema";
+	
+	static public function sayHello(){
+		print StaticExample::$greeting;
+	}
+}
+
+StaticExample::sayHello();
+?>
