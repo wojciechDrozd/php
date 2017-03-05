@@ -1,0 +1,236 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.smartEnter",1488635922580
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.smartEnter",1488635925013
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2406, length=12>",1488635945911
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2519, length=10>",1488635945912
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2633, length=12>",1488635945912
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2406, length=12>",1488635945921
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2519, length=10>",1488635945921
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2633, length=12>",1488635945922
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2412, length=12>",1488635948645
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2525, length=10>",1488635948645
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2639, length=12>",1488635948645
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2412, length=12>",1488635948651
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2525, length=10>",1488635948652
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2639, length=12>",1488635948652
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2411, length=12>",1488635949744
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2524, length=10>",1488635949744
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2638, length=12>",1488635949745
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2411, length=12>",1488635949759
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2524, length=10>",1488635949760
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2638, length=12>",1488635949762
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2419, length=12>",1488635953011
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2532, length=10>",1488635953011
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2646, length=12>",1488635953011
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2419, length=12>",1488635953019
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2532, length=10>",1488635953019
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2646, length=12>",1488635953019
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2432, length=12>",1488635956153
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2545, length=10>",1488635956153
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2659, length=12>",1488635956153
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2432, length=12>",1488635956158
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2545, length=10>",1488635956159
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=2659, length=12>",1488635956159
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488635964911
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488635966469
+opened,view,org.eclipse.php.debug.ui,2.2.0.v20101001-2300,"org.eclipse.debug.ui.PHPDebugOutput",1488635966563
+activated,view,org.eclipse.php.debug.ui,2.2.0.v20101001-2300,"org.eclipse.debug.ui.PHPDebugOutput",1488635966647
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488635967049
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488636325689
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488636325837
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488636329969
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488636333227
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488636354331
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488636355775
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488636358258
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.window.openEditorDropDown",1488636466129
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488636466137
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488636468465
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488636495279
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488636495487
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488636495694
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488636495896
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488636496112
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488636496334
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488636496576
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.smartEnter",1488636771211
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488636894008
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488636894528
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3015, length=12>",1488636905777
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3128, length=10>",1488636905778
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3242, length=12>",1488636905778
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3015, length=12>",1488636905793
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3128, length=10>",1488636905793
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3242, length=12>",1488636905794
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3016, length=12>",1488636906892
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3129, length=10>",1488636906892
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3243, length=12>",1488636906892
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3016, length=12>",1488636906898
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3129, length=10>",1488636906898
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3243, length=12>",1488636906898
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3029, length=12>",1488636910665
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3142, length=10>",1488636910665
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3256, length=12>",1488636910665
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3029, length=12>",1488636910672
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3142, length=10>",1488636910672
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3256, length=12>",1488636910672
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3038, length=12>",1488636913806
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3151, length=10>",1488636913806
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3265, length=12>",1488636913806
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3038, length=12>",1488636913814
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3151, length=10>",1488636913815
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3265, length=12>",1488636913815
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3044, length=12>",1488636916968
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3157, length=10>",1488636916969
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3271, length=12>",1488636916969
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3044, length=12>",1488636916976
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3157, length=10>",1488636916977
+error,log,,,"org.eclipse.dltk.core.ModelException: AST node can not be found for the given source range: <offset=3271, length=12>",1488636916977
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637026983
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637027456
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637027775
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637028040
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637112338
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637137762
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488637238354
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637247273
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637248811
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637253223
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488637257648
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637259221
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637276806
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488637296249
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637302870
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637312244
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488637317008
+activated,view,org.eclipse.php.debug.ui,2.2.0.v20101001-2300,"org.eclipse.debug.ui.PHPDebugOutput",1488637318973
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637319320
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637320958
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488637321206
+closed,view,org.eclipse.php.debug.ui,2.2.0.v20101001-2300,"org.eclipse.debug.ui.PHPDebugOutput",1488637321207
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637322222
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637329770
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488637353420
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637355221
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637358433
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488637364040
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637364889
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637397119
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637399018
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1488637430068
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637439751
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637440300
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488637442070
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1488637444939
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1488637446435
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1488637447787
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1488637451363
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1488637452893
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488637461028
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637466046
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637471716
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488637487095
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637489010
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637611920
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637624387
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637781377
+activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1488637781484
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637787819
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488637892967
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488637893048
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488640652693
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488640657269
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488640828410
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488640829073
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488640839547
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488640840880
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488640842191
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488640852047
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488640853566
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488640947634
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488641089123
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488641095333
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488641512375
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488641659588
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488641711218
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488641810036
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1488641825017
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488641870899
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642042271
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488642043368
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642140333
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642182334
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1488642202897
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1488642205760
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1488642219289
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1488642219879
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1488642220334
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642275571
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642391414
+activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1488642393269
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488642395527
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642397968
+opened,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488642402050
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488642402081
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642402323
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488642430634
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642435244
+executed,command,org.eclipse.php.server.ui,2.2.0.v20101001-2300,"org.eclipse.php.server.ui.phpServerShortcut.run",1488642436624
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642436687
+opened,view,org.eclipse.php.debug.ui,2.2.0.v20101001-2300,"org.eclipse.debug.ui.PHPDebugOutput",1488642436760
+activated,view,org.eclipse.php.debug.ui,2.2.0.v20101001-2300,"org.eclipse.debug.ui.PHPDebugOutput",1488642436864
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642437222
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642438785
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642440721
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642489563
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488642489658
+executed,command,,,"AUTOGEN:::org.eclipse.php.editor.ruler.actions/org.eclipse.php.internal.ui.editor.PhpSelectRulerAction",1488642519870
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488642522618
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.delete.line",1488642522906
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642530149
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642595078
+opened,view,org.eclipse.dltk.ui,2.0.0.v20100909-1720,"org.eclipse.dltk.ui.TypeHierarchy",1488642598701
+activated,view,org.eclipse.dltk.ui,2.0.0.v20100909-1720,"org.eclipse.dltk.ui.TypeHierarchy",1488642598743
+activated,view,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui.explorer",1488642599764
+activated,editor,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.editor",1488642600542
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642610224
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642613341
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1488642614405
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642640112
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642691158
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642708789
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642758081
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1488642765243
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642765965
+closed,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1488642769049
+stopped,bundle,org.eclipse.dltk.testing,1.0.0.v20090914-1703,"org.eclipse.dltk.testing",1488642770033
+stopped,bundle,org.eclipse.php.server.ui,2.2.0.v20101001-2300,"org.eclipse.php.server.ui",1488642770034
+stopped,bundle,org.eclipse.php.debug.ui,2.2.0.v20101001-2300,"org.eclipse.php.debug.ui",1488642770034
+stopped,bundle,org.eclipse.dltk.debug.ui,2.0.0.v20100115-2213,"org.eclipse.dltk.debug.ui",1488642770163
+stopped,bundle,org.eclipse.dltk.formatter,2.0.0.v20100304-1959,"org.eclipse.dltk.formatter",1488642770277
+stopped,bundle,org.eclipse.dltk.rse.ui,2.0.0.v20100115-2213,"org.eclipse.dltk.rse.ui",1488642770277
+stopped,bundle,org.eclipse.dltk.validators.externalchecker,1.0.0.v20090803-1754,"org.eclipse.dltk.validators.externalchecker",1488642770277
+stopped,bundle,org.eclipse.dltk.validators.ui,2.0.0.v20091214-1712,"org.eclipse.dltk.validators.ui",1488642770277
+stopped,bundle,org.eclipse.php.debug.core,2.2.0.v20101001-2300,"org.eclipse.php.debug.core",1488642770277
+stopped,bundle,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui",1488642770283
+stopped,bundle,org.eclipse.dltk.ui,2.0.0.v20100909-1720,"org.eclipse.dltk.ui",1488642770283
+stopped,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20100513,"org.eclipse.equinox.p2.ui.sdk",1488642770396
+stopped,bundle,org.eclipse.wst.xsl.jaxp.debug.ui,1.0.100.v201004290328,"org.eclipse.wst.xsl.jaxp.debug.ui",1488642770500
+stopped,bundle,org.eclipse.jdt.debug.ui,3.5.2.v20100928a_r362,"org.eclipse.jdt.debug.ui",1488642770500
+stopped,bundle,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui",1488642770500
+stopped,bundle,org.eclipse.rse.importexport,1.2.101.v201008191400,"org.eclipse.rse.importexport",1488642770517
+stopped,bundle,org.eclipse.rse.subsystems.shells.telnet,1.2.0.v200905272300,"org.eclipse.rse.subsystems.shells.telnet",1488642770568
+stopped,bundle,org.eclipse.rse.shells.ui,3.0.200.v201006041352,"org.eclipse.rse.shells.ui",1488642770695
+stopped,bundle,org.eclipse.rse.files.ui,3.1.102.R32x_v201102011435,"org.eclipse.rse.files.ui",1488642770696
+stopped,bundle,org.eclipse.rse.processes.ui,3.0.200.v201003010830,"org.eclipse.rse.processes.ui",1488642770710
+stopped,bundle,org.eclipse.wst.dtd.ui,1.0.500.v201004290328,"org.eclipse.wst.dtd.ui",1488642770710
+stopped,bundle,org.eclipse.wst.jsdt.web.ui,1.0.304.v201012160349,"org.eclipse.wst.jsdt.web.ui",1488642770710
+stopped,bundle,org.eclipse.wst.web.ui,1.1.400.v201004141630,"org.eclipse.wst.web.ui",1488642770711
+stopped,bundle,org.eclipse.wst.html.ui,1.0.504.v201101122108,"org.eclipse.wst.html.ui",1488642770711
+stopped,bundle,org.eclipse.wst.css.ui,1.0.502.v201101122002,"org.eclipse.wst.css.ui",1488642770711
+stopped,bundle,org.eclipse.wst.xsl.exslt.ui,1.0.0.v201006012005,"org.eclipse.wst.xsl.exslt.ui",1488642770977
+stopped,bundle,org.eclipse.wst.xsl.ui,1.1.1.v201009091745,"org.eclipse.wst.xsl.ui",1488642770983
+stopped,bundle,org.eclipse.wst.xml.xpath.ui,1.1.2.v201101212242,"org.eclipse.wst.xml.xpath.ui",1488642770985
+stopped,bundle,org.eclipse.wst.xsd.ui,1.2.304.v201101251958,"org.eclipse.wst.xsd.ui",1488642771024
+stopped,bundle,org.eclipse.wst.xsl.debug.ui,1.0.101.v201102111830,"org.eclipse.wst.xsl.debug.ui",1488642771024
+stopped,bundle,org.eclipse.wst.xml.ui,1.1.103.v201101122108,"org.eclipse.wst.xml.ui",1488642771024
