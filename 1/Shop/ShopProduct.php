@@ -1,13 +1,15 @@
 <?php
 
-class ShopProduct implements Chargeable{
+class ShopProduct implements Chargeable, IdentityObject{
 
+	use PriceUtilities,IdentityTrait;
+	
 	private $title;
 	private $producerFirstName;
 	private $producerLastName;
 	protected $price;
 	private $discount = 0;
-	const AVAILABLE = 1;
+	const AVAILABLE = 1; //stałe zawsze wielkimi literami
 	const OUT_OF_STOCK = 0;
 
 	public function __construct($title, $producerFirstName, $producerLastName,$price){
@@ -15,6 +17,11 @@ class ShopProduct implements Chargeable{
 		$this->producerFirstName = $producerFirstName;
 		$this->producerLastName = $producerLastName;
 		$this->price = $price;
+	}
+	
+	//implementacja abstrakcyjnej funkcji z cechy typowej PriceUtilities
+	public function getTaxRate(){
+		return 17;
 	}
 
 	public function getTitle(){
@@ -136,7 +143,61 @@ interface Chargeable{
 	public function getPrice();
 }
 
+interface IdentityObject{
+	public function generateId();
+}
 
+trait PriceUtilities {
+	public function calculateTax($price) {
+		return (($this->getTaxRate())* $price);
+	}
+	
+	abstract function getTaxRate();
+}
+
+trait IdentityTrait{
+	public function generateId(){
+		return uniqid();
+	}
+}
+
+trait TaxTools{
+	public function calculateTax($price){
+		return 222;
+	}
+}
+
+class TraitTest{
+	use PriceUtilities,IdentityTrait,TaxTools {
+		TaxTools::calculateTax insteadof PriceUtilities;
+		PriceUtilities::calculateTax as basicTax; //alias nazwy, wymaga użycia najpierw insteadof
+	}
+	
+	public function getTaxRate(){
+		return 17;
+	}
+	
+}
+
+class UtilityService {
+	use PriceUtilities {
+		PriceUtilities::calculateTax as private;
+	}
+	
+	private $price;
+	
+	public function __construct($price){
+		$this->price = $price;
+	}
+	
+	public function getTaxRate(){
+		return 17;
+	}
+	
+	public function getFinalPrice(){
+		return ($this->price + $this->calculateTax($this->price));
+	}
+}
 
 
 
@@ -145,11 +206,32 @@ interface Chargeable{
 
 //================================================================================================//
 
-print ShopProduct::AVAILABLE;
+print "AVAILABLE code: ".ShopProduct::AVAILABLE;
+print "<br>";
+
+$us = new UtilityService(30);
+print "US final price: ".$us->getFinalPrice();
+print "<br>";
+
+
+$tt = new TraitTest();
+print "Calculate TAX: ".$tt->calculateTax(100);
+print "<br>";
+print "Basic tax: ".$tt->basicTax(100);
+print "<br>";
+
+print "Generate ID: ".$tt->generateId();
 print "<br>";
 
 $shopProduct = new ShopProduct("Brain", "Steven", "Kalper", 9.99);
-print "{$shopProduct->getSummaryLine()}"."<br>";
+print $shopProduct->getSummaryLine()."<br>";
+print "Calculate Tax: "."{$shopProduct->calculateTax($shopProduct->getPrice())}";
+print "<br>";
+print "Generate ID for shop product: ".$shopProduct->generateId();												
+print "<br>";
+
+print $shopProduct->getPrice();
+print "<br>";
 
 $cdProduct = new CdProduct("Radio M", "Sir", "Małpa", 100, 56);
 print $cdProduct->getSummaryLine()."<br>";

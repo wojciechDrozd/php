@@ -1,0 +1,14 @@
+<?php
+
+echo 'Current PHP version: '.phpversion();
+
+trait MyTrait {
+ 
+  public function share($item)
+  {
+    return 'share this item';
+  }
+ 
+}
+
+?>
