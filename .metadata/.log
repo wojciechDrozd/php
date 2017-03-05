@@ -1813,3 +1813,38 @@ Caused by: java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.applica
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 53 more
+
+!ENTRY org.h2 4 0 2017-03-05 10:18:14.843
+!MESSAGE 
+!STACK 0
+java.io.IOException: Exception in opening zip file: /home/kasia/Desktop/eclipse/plugins/org.h2_1.1.117.v20091003-1000.jar
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:268)
+	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.basicOpen(ZipBundleFile.java:88)
+	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.getZipFile(ZipBundleFile.java:101)
+	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.checkedOpen(ZipBundleFile.java:74)
+	at org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.getEntry(ZipBundleFile.java:246)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:531)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:481)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass_LockClassName(ClasspathManager.java:460)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:447)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.h2.table.Table.getTemplateSimpleRow(Table.java:480)
+	at org.h2.engine.Database.removeMeta(Database.java:835)
+	at org.h2.engine.Database.update(Database.java:1461)
+	at org.h2.schema.Sequence.flush(Sequence.java:120)
+	at org.h2.schema.Sequence.close(Sequence.java:137)
+	at org.h2.engine.Database.close(Database.java:1156)
+	at org.h2.engine.DatabaseCloser.run(DatabaseCloser.java:80)
+Caused by: java.io.FileNotFoundException: /home/kasia/Desktop/eclipse/plugins/org.h2_1.1.117.v20091003-1000.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:219)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:149)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:163)
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:251)
+	... 22 more
