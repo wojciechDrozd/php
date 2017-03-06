@@ -51,3 +51,41 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.wst.sse.ui 4 4 2017-03-05 22:51:54.149
 !MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+!SESSION 2017-03-06 05:35:19.185 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170222-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -data /opt/lampp/htdocs/1 -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.jface.text 4 0 2017-03-06 05:42:50.563
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jface.resource.JFaceResources.getResources(JFaceResources.java:209)
+	at org.eclipse.jface.resource.ImageRegistry.<init>(ImageRegistry.java:148)
+	at org.eclipse.jface.resource.ImageRegistry.<init>(ImageRegistry.java:120)
+	at org.eclipse.php.internal.ui.util.PHPPluginImages.getImageRegistry(PHPPluginImages.java:182)
+	at org.eclipse.php.internal.ui.util.PHPPluginImages.get(PHPPluginImages.java:148)
+	at org.eclipse.php.internal.ui.util.PHPScriptElementLabelProvider.getImage(PHPScriptElementLabelProvider.java:30)
+	at org.eclipse.dltk.ui.ScriptElementImageProvider.getBaseImageDescriptor(ScriptElementImageProvider.java:216)
+	at org.eclipse.php.internal.ui.util.PHPModelLabelProvider.getBaseImageDescriptor(PHPModelLabelProvider.java:97)
+	at org.eclipse.php.internal.ui.util.PHPModelLabelProvider.getImageDescriptor(PHPModelLabelProvider.java:85)
+	at org.eclipse.php.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:81)
+	at org.eclipse.php.internal.ui.editor.hover.PHPDocumentationHover.getInfoText(PHPDocumentationHover.java:561)
+	at org.eclipse.php.internal.ui.editor.hover.PHPDocumentationHover.getHoverInfo(PHPDocumentationHover.java:514)
+	at org.eclipse.php.internal.ui.editor.hover.PHPDocumentationHover.internalGetHoverInfo(PHPDocumentationHover.java:487)
+	at org.eclipse.php.internal.ui.editor.hover.PHPDocumentationHover.getHoverInfo2(PHPDocumentationHover.java:442)
+	at org.eclipse.php.internal.ui.editor.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:126)
+	at org.eclipse.php.internal.ui.editor.hover.PHPTextHoverProxy.getHoverInfo2(PHPTextHoverProxy.java:76)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:165)
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-03-06 05:52:10.498
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-03-06 05:54:09.496
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-03-06 05:54:10.193
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
