@@ -1,0 +1,47 @@
+<?php
+
+$str = 'siemanson';
+
+//Single quoted
+
+echo 'this is a simple string'.'<br>';
+
+echo 'you can also have embedded newlines in
+		strings this way as it is
+		okay to do
+		so <br>';
+
+echo 'Arnold once said "I\'ll be back" <br>';
+
+echo 'You deleted C:\\*.*? <br>';
+
+echo 'You deleted C:\*.*? <br>';
+
+echo '$str <br>';
+
+echo 'This will not expand: \n a newline'.'<br>';
+
+echo 'Variables do not $expand $either'.'<br><br>';
+
+
+
+//double quoted
+
+echo "this is simple string <br>";
+
+echo "you can
+as well
+have multiline string, how
+		cool
+		is that?<br>";
+
+echo "Arnold once saind \"I'll be back\" <br>";
+
+echo "You deleted C:\\*.*? <br>";
+
+echo "You deleted C:\*.*? <br>";
+
+echo "Variables expand as here: '$str' instead of \$str 
+as above in single quoted <br>";
+
+?>
