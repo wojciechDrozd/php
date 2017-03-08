@@ -2,7 +2,7 @@
 
 $str = 'siemanson';
 
-//----------single quoted
+//Single quoted
 
 echo 'this is a simple string'.'<br>';
 
@@ -25,7 +25,7 @@ echo 'Variables do not $expand $either'.'<br><br>';
 
 
 
-//---------double quoted
+//double quoted
 
 echo "this is simple string <br>";
 
@@ -45,7 +45,7 @@ echo "Variables expand as here: '$str' instead of \$str
 as above in single quoted <br>";
 
 
-//-----------Here doc
+//Here doc
 
 echo <<<EOT
 <br>
@@ -117,47 +117,10 @@ EOT;
 
 echo "<br>";
 
-//heredoc in arguments
-
 var_dump(array(<<<EOD
 foobar!
 EOD
 ));
-
-echo "<br>";
-
-//heredoc to initialize static values
-
-function tfuu(){
-	
-	static $bar = <<<LABEL
-bar: static variable initialized in heredoc
-LABEL;
-	
-	return $bar;
-}
-	
-class fuu {
-	
-	const BAR = <<<FOOBAR
-BAR: constant variable initialized in heredoc
-FOOBAR;
-	
-	public $baz = <<<FOOBAR
-baz: class property initialized in heredoc
-FOOBAR;
-}
-	
-
-echo tfuu();
-
-echo "<br>";
-
-echo fuu::BAR;
-echo "<br>";
-
-echo (new fuu())->baz;
-echo "<br>";
 
 
 

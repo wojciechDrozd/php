@@ -144,7 +144,7 @@ BAR: constant variable initialized in heredoc
 FOOBAR;
 	
 	public $baz = <<<FOOBAR
-baz: class property initialized in heredoc
+BAZ: class property initialized in heredoc
 FOOBAR;
 }
 	

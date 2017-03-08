@@ -131,7 +131,7 @@ echo "<br>";
 function tfuu(){
 	
 	static $bar = <<<LABEL
-bar: static variable initialized in heredoc
+static variable initialized in heredoc
 LABEL;
 	
 	return $bar;
@@ -140,11 +140,11 @@ LABEL;
 class fuu {
 	
 	const BAR = <<<FOOBAR
-BAR: constant variable initialized in heredoc
+constant variable initialized in heredoc
 FOOBAR;
 	
 	public $baz = <<<FOOBAR
-baz: class property initialized in heredoc
+Property example
 FOOBAR;
 }
 	
