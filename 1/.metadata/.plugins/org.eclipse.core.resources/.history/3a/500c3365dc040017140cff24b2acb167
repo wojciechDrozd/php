@@ -1,0 +1,14 @@
+<?php
+
+$str = "Kasieńka 'queen' of darkness";
+echo "Original string: $str";
+echo "<br>";
+
+$array = explode(" ",$str);
+
+var_dump($array);
+
+
+
+
+?>

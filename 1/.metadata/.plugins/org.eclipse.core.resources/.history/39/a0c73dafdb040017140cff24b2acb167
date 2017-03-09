@@ -1,0 +1,10 @@
+<?php
+
+$str = "Kasieńka queen of darkness";
+echo "Original string: $str";
+echo "<br>";
+
+echo addslashes($str);
+
+
+?>

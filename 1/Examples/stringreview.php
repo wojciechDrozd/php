@@ -1,5 +1,46 @@
 <?php
 
+//string operators
+	//concatenation operator
+$a = "Hello ";
+$b = $a."World";
+echo $b;
+echo "<br>";
+
+	//concatenating assignment
+$a = "Yo";
+$a .= " Man!";
+echo $a;
+echo "<br>";
+
+echo "<br>";
+$str = 'abc';
+var_dump($str['1']);
+echo "<br>";
+var_dump(isset($str['1']));
+echo "<br>";
+
+var_dump($str['1.0']);
+echo "<br>";
+var_dump(isset($str['1.0']));
+echo "<br>";
+
+var_dump($str['x']);
+echo "<br>";
+var_dump(isset($str['x']));
+echo "<br>";
+
+var_dump($str['1x']);
+echo "<br>";
+var_dump(isset($str['1x']));
+echo "<br>";
+
+
+
+
+
+
+echo "<br>";
 $str = 'siemanson';
 
 //----------single quoted
@@ -334,9 +375,65 @@ $name = 'name';
 echo "The value of the var named $name is {${$name}}";
 echo "<br>";
 
+class Car {
+	public $year = '2017';
+}
+
+$car = new Car();
+$year = 'year';
+$baz = array('car','year','baz','quux');
+echo "{$car->$year}\n";
+
+echo "{$car->{$baz[1]}}\n";
+echo "<br>";
+
+//show all errors
+error_reporting(E_ALL);
+
+class Beers {
+	const softdrink = 'rootbeer';
+	public static $ale = 'ipa';
+}
+
+$rootbeer = 'A & W';
+$ipa = 'Alexander Keith\'s';
+
+echo "I'd like an {${Beers::softdrink}}\n";
+echo "<br>";
+
+echo "I'd like an {${Beers::$ale}}";
+echo "<br>";
 
 
+//string access and modification by characters
 
+
+$str = 'Very long string that is in fact a senctence.Wow.';
+echo $str;
+echo "<br>";
+
+//get the first character of a string
+echo $str{0};
+echo "<br>";
+
+//get the fourth character of as string
+echo $str[3];
+echo "<br>";
+
+//get the last character of a string
+echo $str[strlen($str)-1];
+echo "<br>";
+
+//modify the last character of a string
+$str[strlen($str)-1] = '!';
+echo $str;
+echo "<br>";
+
+echo phpversion();
+echo "<br>";
+echo PHP_VERSION;
+echo "<br>";
+echo PHP_VERSION_ID;
 
 
 

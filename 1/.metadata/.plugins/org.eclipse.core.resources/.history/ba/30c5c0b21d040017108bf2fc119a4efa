@@ -1,0 +1,6 @@
+<?php
+
+$str = "Kasieńka queen of darkness";
+
+echo addcslashes($str, 'A..z');
+?>

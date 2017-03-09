@@ -1,0 +1,13 @@
+<?php
+
+
+$input1 = "hello";
+$input2 = "hello,there";
+$input3 = ",";
+
+var_dump(explode(',',$input1));
+print "<br>";
+var_dump(explode(',', $input2));
+
+
+?>

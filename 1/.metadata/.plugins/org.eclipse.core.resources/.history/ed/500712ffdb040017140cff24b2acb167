@@ -1,0 +1,12 @@
+<?php
+
+$str = "Kasieńka 'queen' of darkness";
+echo "Original string: $str";
+echo "<br>";
+
+//Returns a string with backslashes 
+//before characters that need to be escaped. 
+echo addslashes($str);
+
+
+?>
