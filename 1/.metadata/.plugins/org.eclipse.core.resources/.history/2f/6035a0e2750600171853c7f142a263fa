@@ -1,0 +1,6 @@
+<?php
+
+$arr = array();
+
+var_dump($arr);
+?>
