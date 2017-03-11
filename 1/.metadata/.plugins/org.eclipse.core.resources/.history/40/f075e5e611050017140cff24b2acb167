@@ -1,0 +1,11 @@
+<?php
+
+
+
+var_dump(substr('abc', -1,1));
+
+
+
+
+
+?>
