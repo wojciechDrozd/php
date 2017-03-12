@@ -1,0 +1,58 @@
+<?php
+
+
+//a simple array example
+$array = array(
+		
+		"foo" => "bar",
+		"bar" => "foo",
+);
+
+/* var_dump($array);
+print '<br>'; */
+
+//as of PHP 5.4
+
+$array = [
+		
+	"foo" => "bar",
+	"bar" => "foo",
+];
+
+/* var_dump($array);
+print '<br>'; */
+
+$array = [
+		
+		'bro' => 'tip',
+		'golden' => 1,
+		"funny" => true,
+		false => 0,
+		
+];
+
+echo "<pre>" , var_dump($array) , "</pre>";
+
+$array[] = 9;
+$array[12] = 'protein';
+$array[] = false;
+
+echo "<pre>" , var_dump($array) , "</pre>";
+
+
+
+print '<br>';
+
+
+//simple array, var_dump vs print_r
+
+$arr = array(1,2,3,4,5);
+
+
+echo '<br><br><b>var_dump($arr):</b><br>';
+echo "<pre>" , var_dump($arr) , "</pre>";
+
+echo '<b>print_r($arr):</b><br>';
+echo "<pre>" , print_r($arr) , "</pre>";
+
+?>
