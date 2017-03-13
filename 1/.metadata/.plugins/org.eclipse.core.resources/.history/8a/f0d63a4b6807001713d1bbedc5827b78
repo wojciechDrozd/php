@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Day of the week!</title>
+</head>
+<body>
+
+<?php
+
+$dayofweek = date("w");
+
+echo $dayofweek;
+
+switch($dayofweek){
+	case 0:
+		echo "it's Sunday!";
+		break;
+	case 1:
+		echo "it's Monday!";
+		break;
+	case 2:
+		break;
+	case 3:
+		break;
+	case 4:
+		break;
+	case 5:
+		case 6:
+		break;
+	
+
+}
+
+?>
+</body>
+</html>
