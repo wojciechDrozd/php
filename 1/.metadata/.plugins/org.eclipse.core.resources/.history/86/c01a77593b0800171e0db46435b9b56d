@@ -1,0 +1,22 @@
+<?php
+
+$null = NULL;
+
+var_dump($null);
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

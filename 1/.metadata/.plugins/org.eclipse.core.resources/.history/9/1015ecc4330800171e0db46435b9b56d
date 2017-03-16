@@ -1,0 +1,49 @@
+<?php
+
+
+//evaluation
+
+echo $foo=1;
+print '<br>';
+var_dump($foo);
+print '<br>';
+
+echo $foo = '1';
+print '<br>';
+var_dump($foo);
+print '<br>';
+
+echo $foo *= 2;
+print '<br>';
+var_dump($foo);
+print '<br>';
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

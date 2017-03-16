@@ -1,0 +1,56 @@
+<?php
+
+
+//evaluation
+
+echo $foo=1;
+print '<br>';
+var_dump($foo);
+print '<br>';
+
+echo $foo = '1';
+print '<br>';
+var_dump($foo);
+print '<br>';
+
+echo $foo *= 2;
+print '<br>';
+var_dump($foo);
+print '<br>';
+
+echo $foo=$foo*1.3;
+print '<br>';
+var_dump($foo);
+print '<br>';
+
+//echo $foo = 5 * "10 little piggies"
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+<?php
+
+/*
+ * for the most part all PHP variables only have
+ * a single scope, this single scope spans included and
+ * requred files as well
+ */
+
+//global scope
+$a = 1;
+
+function test(){
+	echo $a; //reference to local scope variable
+}
+
+test();
+
+?>

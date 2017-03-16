@@ -1,0 +1,11 @@
+<?php
+
+/*
+ * for the most part all PHP variables only have
+ * a single scope, this single scope spans included and
+ * requred files as well
+ */
+
+$a = 1;
+include 'b.inc';
+?>

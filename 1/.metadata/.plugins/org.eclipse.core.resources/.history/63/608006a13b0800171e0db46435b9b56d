@@ -1,0 +1,27 @@
+<?php
+
+$null = NULL;
+$var;
+$var =8;
+unset($var);
+
+var_dump($null);
+print '<br>';
+var_dump($var);
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

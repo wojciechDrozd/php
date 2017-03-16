@@ -1,0 +1,25 @@
+<?php
+
+$null = NULL;
+$var;
+
+var_dump($null);
+print '<br>';
+var_dump($var);
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

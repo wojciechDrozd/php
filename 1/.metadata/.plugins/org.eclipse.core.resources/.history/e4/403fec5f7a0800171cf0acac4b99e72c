@@ -1,0 +1,70 @@
+<?php
+
+/*
+ * for the most part all PHP variables only have
+ * a single scope, this single scope spans included and
+ * requred files as well
+ */
+
+//global scope
+$a = 1;
+
+function test(){
+	echo $a; //reference to local scope variable
+}
+
+test();
+
+//using global
+$a = 1;
+$b = 2;
+
+function sum(){
+	
+	global $a,$b;
+	$b = $a + $b;
+}
+
+sum();
+echo $b;
+echo "<br>";
+
+//using $GLOBALS instead of global
+$a = 1;
+$b = 2;
+
+function sum(){
+	$GLOBALS['b'] = $GLOBALS['a'] + $GLOBALS['b'];
+}
+
+sum2();
+echo $GLOBALS['b'];
+echo "<br>";
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
