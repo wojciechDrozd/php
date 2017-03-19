@@ -1,0 +1,19 @@
+<?php
+
+
+
+function kot1(){
+	
+	$id = 0;
+	echo "kot1: ",$id,"</br>";
+	$id++;	
+}
+
+function kot2(){
+	
+}
+
+kot1();
+kot1();
+
+?>

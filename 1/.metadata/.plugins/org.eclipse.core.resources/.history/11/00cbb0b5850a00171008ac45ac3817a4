@@ -1,0 +1,16 @@
+<?php
+
+$a = 32;
+$b = 3;
+
+
+function sum(){
+	
+	$GLOBALS['b'] += $GLOBALS['a'];
+}
+
+sum                 ();
+echo " ",$b;
+
+
+?>

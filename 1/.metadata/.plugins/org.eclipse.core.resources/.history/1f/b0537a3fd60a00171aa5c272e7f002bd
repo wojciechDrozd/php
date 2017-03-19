@@ -1,0 +1,12 @@
+<?php 
+
+
+var_dump((int) "b");
+
+switch("b"){
+	case 0: echo "1";
+
+}
+
+
+?>

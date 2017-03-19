@@ -1,0 +1,18 @@
+<?php 
+
+function foo(){
+	
+	static $int = 4+4
+	
+	
+	;
+	echo gettype($int);
+	
+}
+
+
+foo();
+
+echo "<br>something ","something else";
+
+?>

@@ -1,0 +1,13 @@
+<?php 
+
+$glob = "globus";
+$golb = "golbus";
+
+
+function world(){
+	
+	echo $glob;
+}
+
+world();
+?>

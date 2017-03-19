@@ -1,0 +1,9 @@
+<?php 
+
+$string =  ($str = 'joł') . " mofo";
+
+echo $string;
+
+
+
+?>

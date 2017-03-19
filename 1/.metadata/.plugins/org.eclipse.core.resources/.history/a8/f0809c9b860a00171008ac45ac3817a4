@@ -1,0 +1,26 @@
+<?php
+
+
+
+function kot(){
+	
+	$id = 0;
+	echo "kot: ",$id,"</br>";
+	$id++;	
+}
+
+function pies(){
+	static $id = 0;
+	echo "pies: ",$id,"</br>";
+	$id++;
+}
+
+
+
+kot();
+kot();
+pies();
+pies();
+pies();
+
+?>

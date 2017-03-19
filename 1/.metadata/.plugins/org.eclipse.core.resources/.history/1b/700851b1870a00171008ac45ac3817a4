@@ -1,0 +1,14 @@
+<?php 
+
+$glob = "globus";
+$golb = "golbus";
+
+
+function world(){
+	
+	echo $GLOBALS['glob']," ",$GLOBALS['golb'];
+}
+
+world();
+
+?>

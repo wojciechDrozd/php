@@ -1,0 +1,16 @@
+<?php 
+
+
+switch("a"){
+	case 1: echo "0";
+	break;
+	
+	case "a": echo "a";
+	break;
+	
+	case 2: echo "2";
+	break;
+}
+
+
+?>

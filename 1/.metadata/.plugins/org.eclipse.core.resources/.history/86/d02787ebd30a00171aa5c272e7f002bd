@@ -1,0 +1,8 @@
+<?php 
+
+$string =  '12 rise and shine mofo';
+var_dump(+$string);
+
+
+
+?>

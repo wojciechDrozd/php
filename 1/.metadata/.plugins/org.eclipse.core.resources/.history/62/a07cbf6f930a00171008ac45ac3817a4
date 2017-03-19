@@ -1,0 +1,27 @@
+<?php 
+
+$toCrawl = "https://www.prisjakt.nu/";
+
+function getLinks($url){
+	
+	$matches = array();
+	$input = @file_get_contents($url);
+	$regex = '<a[\s\t]*href=".*?">';
+	preg_match_all("/$regex/siU",$input,$matches);
+	
+
+	$links = $matches[0];
+	var_dump($links);
+}
+
+getLinks($toCrawl);
+
+/* 
+$filename = 'abc.txt';
+$file = fopen($filename, 'r');
+$output = fread($file, filesize($filename));
+fclose($file);
+echo (nl2br("stirng1\n awesome word \n heheh \n last"));
+
+ */
+?>

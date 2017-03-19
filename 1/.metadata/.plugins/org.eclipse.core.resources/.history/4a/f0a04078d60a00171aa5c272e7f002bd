@@ -1,0 +1,14 @@
+<?php 
+
+
+var_dump((int) "b");
+
+switch(0){
+	case 0: echo "<br>0"; break;
+	
+	case 3: echo "<br>3";
+
+}
+
+
+?>

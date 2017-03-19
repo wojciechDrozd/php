@@ -1,0 +1,16 @@
+<?php 
+
+function foo(){
+	
+	static $int = sqrt(121)
+	
+;	echo gettype($int);
+	
+}
+
+
+foo();
+
+echo "<br>something ","something else";
+
+?>

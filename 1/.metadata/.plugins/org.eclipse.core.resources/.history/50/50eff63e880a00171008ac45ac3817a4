@@ -1,0 +1,7 @@
+<?php 
+
+
+$bolek = true && false;
+var_dump($bolek);
+
+?>

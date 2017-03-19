@@ -1,0 +1,14 @@
+<?php 
+
+$string =  ($str = 'joł') . " mofo";
+
+$x = ($y = 13) + 5;
+
+
+$num = 3;
+$num += 4;
+
+var_dump($num);
+
+
+?>

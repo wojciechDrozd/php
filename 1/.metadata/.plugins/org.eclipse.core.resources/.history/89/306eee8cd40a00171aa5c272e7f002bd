@@ -1,0 +1,23 @@
+<?php 
+
+$string =  ($str = 'joł') . " mofo";
+
+$x = ($y = 13) + 5;
+
+
+$num = 3;
+$num += 4;
+
+$word = 'word';
+$word .= ' hello!';
+var_dump($word);
+
+//by reference
+
+$a = 3;
+$b = &$a;
+
+print $a.' '. " $b";
+
+
+?>

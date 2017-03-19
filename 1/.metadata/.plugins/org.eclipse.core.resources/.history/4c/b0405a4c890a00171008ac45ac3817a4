@@ -1,0 +1,10 @@
+<?php 
+
+
+$a = "12344";
+
+$a = +$a;
+
+echo gettype($a);
+echo $a;
+?>

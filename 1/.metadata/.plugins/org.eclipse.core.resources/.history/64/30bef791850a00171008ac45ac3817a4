@@ -1,0 +1,18 @@
+<?php
+
+$a = 32;
+$b = 3;
+
+
+function sum(){
+	
+	$a = $b = 6;
+	$b +=$a;
+	return $b;
+	
+}
+
+echo $b;
+
+
+?>

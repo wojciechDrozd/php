@@ -1,0 +1,22 @@
+<?php 
+
+$toCrawl = "http://onet.pl";
+
+function getLinks($url){
+	
+	$input = @file_get_contents($url);
+	echo $input;
+	
+}
+
+getLinks($toCrawl);
+
+/* 
+$filename = 'abc.txt';
+$file = fopen($filename, 'r');
+$output = fread($file, filesize($filename));
+fclose($file);
+echo (nl2br("stirng1\n awesome word \n heheh \n last"));
+
+ */
+?>

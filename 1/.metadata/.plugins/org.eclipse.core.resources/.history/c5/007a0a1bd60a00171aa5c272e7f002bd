@@ -1,0 +1,18 @@
+<?php 
+
+
+var_dump((int) "a");
+
+switch("b"){
+	case 1: echo "1";
+	break;
+	
+	case "a": echo "a";
+	break;
+	
+	case 2: echo "2";
+	break;
+}
+
+
+?>

@@ -1,0 +1,12 @@
+<?php 
+
+
+
+$filename = 'abc.txt';
+$file = fopen($filename, 'r');
+$output = fread($file, filesize($filename));
+fclose($file);
+echo (nl2br($output));
+
+
+?>

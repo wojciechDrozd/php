@@ -1,0 +1,9 @@
+<?php 
+
+$string =  ($str = 'joł') . " mofo";
+
+var_dump($str);
+
+
+
+?>

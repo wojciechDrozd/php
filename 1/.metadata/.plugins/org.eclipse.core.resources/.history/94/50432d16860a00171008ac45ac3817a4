@@ -1,0 +1,13 @@
+<?php
+
+
+
+function kot1(){
+	
+	$id = 0;
+	echo "kot1: ",$id;
+	$id++;	
+}
+
+
+?>

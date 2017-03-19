@@ -1,0 +1,15 @@
+<?php 
+
+
+$output = `ls -al`;
+
+echo $output;
+
+
+
+
+
+
+
+
+?>

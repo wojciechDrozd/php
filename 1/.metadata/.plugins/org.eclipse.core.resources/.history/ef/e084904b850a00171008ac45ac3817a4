@@ -1,0 +1,20 @@
+<?php
+
+$a = 32;
+$b = 3;
+
+
+function sum(){
+	
+	global $a, $b;
+	
+	$b +=$a;
+	
+	return $b;
+	
+}
+
+echo sum();
+
+
+?>

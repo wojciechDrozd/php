@@ -1,0 +1,15 @@
+<?php 
+
+function foo(){
+	
+	static $int = 0;
+	static $string = "0";
+	
+	echo gettype($int), gettype($string);
+	
+}
+
+
+foo();
+
+?>

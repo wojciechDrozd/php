@@ -1,0 +1,17 @@
+<?php 
+
+
+$a = (object) "fuu"; $b = [2];
+
+
+var_dump($a);
+echo $a <=> $b;
+
+
+
+
+
+
+
+
+?>

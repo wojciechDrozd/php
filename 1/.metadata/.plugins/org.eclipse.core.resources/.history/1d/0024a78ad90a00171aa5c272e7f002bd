@@ -1,0 +1,17 @@
+<?php 
+
+
+$output = `ls `;
+
+echo "<pre>",$output,"</pre>";
+
+echo "<pre>",shell_exec("ls -a"),"</pre>"
+
+
+
+
+
+
+
+
+?>

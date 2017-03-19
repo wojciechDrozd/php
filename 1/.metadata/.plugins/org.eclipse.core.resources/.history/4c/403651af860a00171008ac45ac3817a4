@@ -1,0 +1,10 @@
+<?php 
+
+function foo(){
+	
+	echo {static $int = 0};
+	static $string = "0";
+	
+}
+
+?>
