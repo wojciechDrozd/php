@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Piekarnia Online</title>
+</head>
+<body>
+	<h1>Oferta</h1>
+	<h2>Zamów online</h2>
+	<form action="order.php" method="post">
+		<table>
+			<tr>
+				<td>Ilość pączków</td>
+				<td><input type="text" name="donuts" /></td>
+			</tr>
+			<tr>
+				<td>Ilość bułek</td>
+				<td><input type="text" name="buns" /></td>
+			</tr>
+			<tr>
+				<td>Ilość chleba</td>
+				<td><input type="text" name="bread" /></td>
+			</tr>
+			
+		</table>
+	</form>
+
+</body>
+</html>
+
+<?php
+?>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Podsumowanie</title>
+</head>
+<body>
+
+<h2>Podsumowanie zamówienia</h2>
+
+<?php
+
+echo "{$_POST['donuts']} pączków,{$_POST['buns']} bułek,{$_POST['bread']} chlebów";
+?>
+
+</body>
+</html>
+

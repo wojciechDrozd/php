@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Podsumowanie</title>
+</head>
+<body>
+
+<h2>Podsumowanie zamówienia</h2>
+
+<?php
+
+$items = [
+		'donuts'=>$_POST['donuts'],
+		'buns'=>$_POST['buns'],
+		'bread'=>$_POST['bread'],
+];
+$prices = array(
+		'donuts'=>0.99,
+		'buns'=>0.29,
+		'bread'=>2.09,
+);
+
+$names = array(
+		'donuts'=>'pączki',
+		'buns'=>'bułki',
+		'bread'=>'chleb',
+		
+);
+
+
+$sum=0;
+foreach ($items as $key =>$value){
+	$sum+=$value*$prices[$key];
+	echo "Kwota za $names[$key]: ",$value*$prices[$key],"<br/>";
+}
+echo "<br/>".$sum." zł";
+?>
+
+</body>
+</html>
+
