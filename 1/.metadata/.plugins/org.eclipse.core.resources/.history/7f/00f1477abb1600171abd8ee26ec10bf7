@@ -1,0 +1,38 @@
+<?php 
+
+session_start();
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="IE=edge,chrome=1"/>
+	<title>Osadnicy - graj online!</title>
+</head>
+<body>
+
+<?php 
+
+echo<<<EOD
+
+<p>Witaj {$_SESSION['user']} !</p>
+		Masz na koncie <b>{$_SESSION['drewno']}</b> drewna, 
+			<i>{$_SESSION['kamien']}</i> kamienia oraz
+			<u>{$_SESSION['zboze']}</u> zboża.<br/>
+			
+		Pozostało ci <strong>{$_SESSION['dnipremium']}</strong> dni premium.<br/>
+		
+		Twój email to <b>{$_SESSION['email']}</b>
+
+EOD;
+
+?>
+</body>
+</html>
+
+
+
+

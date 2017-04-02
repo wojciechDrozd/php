@@ -1,0 +1,121 @@
+<?php
+
+session_start();
+
+if((!isset($_POST['login'])) || (!isset($_POST['password']))){
+	header('Location: index.php');
+	exit();
+}
+
+require_once "connect.php";
+
+//@ wyciszanie błędów, w przypadku błędów php nie będzie wyrzucać/
+//na ekran żadnych informacji
+//aktualnie zamiast @ używa się konstrukcji try/catch
+$connection = @new mysqli($host, $db_user,$db_password,$db_name);
+
+//połaczenie nieudane
+if($connection->connect_errno!=0){
+	
+	//błąd tylko z @ i kodem błędu żeby użytkownik nie znał szczegółów
+	echo "Error".$connection->connect_errno; //."Opis:".$connection->connect_error;
+}
+//połączenie udane, cały dalszy skrypt w ramach błędu
+else{
+	
+	$login = $_POST['login'];
+	$password = $_POST['password'];
+	
+	$login = htmlentities($login, ENT_QUOTES,"UTF-8");
+	
+	//nie potrzebne bo hasło jest hashowane
+	//$password = htmlentities($password,ENT_QUOTES,"UTF-8");
+	
+	
+	
+	//w zapytaniu sql zmienne w ' ',a całość zapytania w " " inaczej niż w konstrukcji echo
+	//$sql = "SELECT * FROM uzytkownicy WHERE user='$login' AND pass='$password'";
+	//qwerenda narażona na ataki
+	
+	
+	//jeżeli zapytanie nie będzie udane (tj. zapytanie błędnie sformułowane, a sql 
+	//nie był w stanie go wykonać, np. przez literówkę)
+	//to zmianna $result przyjmie wartość false
+	//nie tyczy się to pustego rezultatu, pusty rezultat to też true
+	
+	//kwerenda odporna na wstrzykiwanie sql
+	if($result = $connection->query(
+		sprintf("SELECT * FROM uzytkownicy WHERE user='%s'",
+				
+		//mysqli-... to funkcja specjalnie stworzona do wykrywania
+		//prób manertowania zapytaniem poprzez myślniki i apostrofy
+		//zabezpiecza przed wstrzykiwaniem sql
+		mysqli_real_escape_string($connection, $login)))){
+		
+		$userNum = $result->num_rows;
+		if($userNum > 0){
+			
+			//utworzenie tablicy asocjacyjnej gdzie klucz to nazwa kolumny a wartość
+			//to wartość komórki
+			$row = $result->fetch_assoc();
+			
+			
+			if(password_verify($password,$row['pass'])){
+			
+			
+				//zmiena flaga z info że user jest zalogowany
+				$_SESSION['signed'] = true;
+				$_SESSION['user']= $row['user'];
+				$_SESSION['email'] = $row['email'];
+				$_SESSION['drewno']=$row['drewno'];
+				$_SESSION['kamien']=$row['kamien'];
+				$_SESSION['zboze']=$row['zboze'];
+				$_SESSION['dnipremium']=$row['dnipremium'];
+				
+				//unset() całkowite usunięcie z sesji zmiennej error nie jest potrzebna,
+				//bo udało się zalogować
+				unset($_SESSION['error']);
+				//wyczyszczenie resultatu
+				$result->free_result();
+				
+				//przekierowanie do gry
+				header('Location: game.php');
+			}else{
+				$_SESSION['error'] = '<span style="color:red"> Nieprawidłowy login lub hasło </span>';
+				header('Location: index.php');
+				
+			}
+			
+		}
+		
+		//nieprawidłowe credentials:
+		else{
+			$_SESSION['error'] = '<span style="color:red"> Nieprawidłowy login lub hasło </span>';
+			//przenieś do strony logowania
+			header('Location: index.php');
+		}
+		
+	}
+	
+	// w tym pliku nie ma exit po header('Location:... 
+	//bo wtedy połączenie nie zostałoby zamknięte
+	
+	$connection->close();
+}
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<?php 
+
+session_start();
+if(!isset($_SESSION['successfulSignUp'])){
+	header('Location: index.php');
+	exit();
+}else{
+	unset($_SESSION['successfulSignUp']);
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>Witaj w grze</title>
+</head>
+<body>
+
+Udana rejestracja!
+<br />
+<br />
+
+<form action="index.php">
+<input type="submit" value="Zaloguj się" />
+</form>
+</body>
+</html>
+
