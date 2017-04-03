@@ -1,0 +1,50 @@
+<?php 
+
+session_start();
+
+//jeśli user nie jest zalogowany
+if(!isset($_SESSION['signed'])){
+	header('Location: index.php');
+	exit();
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Osadnicy - graj online!</title>
+</head>
+<body>
+
+<?php 
+
+echo<<<EOD
+		<p>Witaj {$_SESSION['user']} !</p>
+		<form action="logout.php">
+		<input type="submit" value="Wyloguj" />
+		</form>
+		<br />
+		<br />
+		Masz na koncie <b>{$_SESSION['drewno']}</b> drewna, 
+			<b>{$_SESSION['kamien']}</b> kamienia oraz
+			<b>{$_SESSION['zboze']}</b> zboża.<br/>
+		Pozostało ci <strong>{$_SESSION['dnipremium']}</strong> dni premium.<br/>
+		Twój email to <b>{$_SESSION['email']}</b>
+		<br />
+EOD;
+		
+echo time()," ";
+
+echo date('Y-m-d');
+
+?>
+</body>
+</html>
+
+
+
+

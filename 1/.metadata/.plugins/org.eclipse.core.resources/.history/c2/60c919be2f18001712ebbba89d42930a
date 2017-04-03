@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Wirtualna Uczelnia</title> 
+</head>
+<body>
+
+<form action="addstudent.php">
+<input type="submit" value="Dodaj studenta"/>
+</form>
+<?php 
+
+$login = $_POST['login'];
+$password = $_POST['password'];
+
+echo $login," ",$password;
+?>
+</body>
+</html>

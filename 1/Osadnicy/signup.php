@@ -119,9 +119,11 @@ if (isset ( $_POST ['email'] )) {
 				if ($everythingOk == true) {
 					// wszystkie testy zaliczone. dodajemy gracza do bazy
 					
+					
+					//now() funkcja mysql wywołująca date i czas
 					if($connection->query(
 							"INSERT INTO uzytkownicy 
-							VALUES (NULL,'$nick','$passHashed','$email',100,100,100,14)")){
+							VALUES (NULL,'$nick','$passHashed','$email',100,100,100,now()+INTERVAL 14 DAY)")){
 							
 							$_SESSION['successfulSignUp']=true;
 							header('Location: welcome.php');
@@ -234,7 +236,7 @@ Powtórz hasło: <br />
 		?>" name="pass2" /><br />
 		<br />
 
-<!-- komunikat o błędzie hasła 2 -->
+<!-- komunikat o błędzie hasła2 -->
 <?php
 if (isset ( $_SESSION ['e_pass'] )) {
 	echo '<div class="error">' . $_SESSION ['e_pass'] . '</div>';
