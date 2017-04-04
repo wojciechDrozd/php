@@ -1,0 +1,83 @@
+<?php 
+
+session_start();
+if(isset($_POST['sName'])){
+	
+	//udana walidacja
+	$successfulValidation = true;
+	echo $_POST['sName'];
+	var_dump($_POST['sPesel']);
+	
+	$sPesel = $_POST['sPesel'];
+	
+	require_once "connect.php";
+	try{
+		//nawiązanie połączzenia z bazą
+		$connection = new mysqli($host,$db_user,$db_password,$db_name);
+		echo "connection established";
+		
+		//nieudane połączenie
+		if($connection->connect_errno!=0){
+			throw new Exception(mysqlii_connect_errno());
+		}
+		
+		//sukces połączenia
+		else{
+			//czy istenieje taki pesel?
+			$result = $connection->query("SELECT pesel FROM studenci WHERE pesel='$sPesel'");
+			
+			if(!$result) throw new Exceotion($connection->error);
+			$sPeselNum = $result->num_rows;
+			if($sPeselNum > 0){
+				$successfulValidation = false;
+				$_SESSION['e_pesel'] = "Istnieje już student o takim numerze pesel";
+			}
+			
+			//końcowa walidacja
+			if($successfulValidation){
+				//wszystkie testy zaliczone, student dodany do bazy
+				
+				if($connection->query("INSERT INTO studenci VALUES (NULL,'Jan','Kowalski','$sPesel','email','telefon')")){
+					$_SESSION['studentAdded']=true;
+					header('Location: addstudent.php');
+				}
+			}
+			
+		}
+	}catch(Exception $e){
+			echo "something wrong with the connection";
+	}
+}
+
+
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>Rejestracja studenta</title>
+</head>
+<body>
+
+<h2>Dodaj studenta</h2><br />
+<form method="post">
+Imię
+<br /><input type="text" name="sName"/><br />
+Nazwisko
+<br /><input type="text" name="sLastName"/><br />
+Pesel
+<br /><input type="text" name="sPesel"/><br />
+Email
+<br /><input type="text" name="sEmail" /><br />
+Telefon
+<br /><input type="text" name="sPhoneNum" /><br />
+
+<input type="submit" value="Zarejestruj" /><br />
+
+</form>
+</body>
+</html>

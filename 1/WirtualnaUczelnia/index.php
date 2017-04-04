@@ -8,10 +8,6 @@
 <body>
 
 <form action="login.php" method="post">
-
-
-
-	
 	
 	Typ użytkownika:
 	<br />
@@ -34,8 +30,11 @@
 	<input type="password" name="password" /> <br /><br />
 	
 	<input type="submit" value="Zaloguj"/><br />
-	
 
+</form>
+
+<form action="addstudent.php" >
+	<input type="submit" value="Zarejestruj">
 </form>
 
 </body>

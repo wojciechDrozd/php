@@ -1,0 +1,9 @@
+<?php
+
+echo "done";
+require_once "student.php";
+require_once "connect.php";
+
+$student = new Student("kasia", "jurek","8906040564","katjurek@gmail.com", "655565458");
+
+?>

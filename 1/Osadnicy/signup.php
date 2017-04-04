@@ -3,7 +3,7 @@ session_start ();
 
 if (isset ( $_POST ['email'] )) {
 	
-	// udana waliwacha
+	// udana walidacjaa
 	$everythingOk = true;
 	
 	// sprawdzenie poprawności nickname
@@ -116,7 +116,7 @@ if (isset ( $_POST ['email'] )) {
 			}
 			
 			// końcowe sprawdzenie flagi
-				if ($everythingOk == true) {
+				if ($everythingOk) {
 					// wszystkie testy zaliczone. dodajemy gracza do bazy
 					
 					
@@ -153,17 +153,17 @@ if (isset ( $_POST ['email'] )) {
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>Rejestracja</title>
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<style>
-.error {
-	color: red;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-</style>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Rejestracja</title>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<style>
+	.error {
+		color: red;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	</style>
 </head>
 <body>
 

@@ -1,0 +1,11 @@
+<?php
+require_once "student.php";
+require_once "connect.php";
+
+$student = new Student("kasia", "jurel","8906040564","katjurek@gmail.com", "655565458");
+
+?>
+
+<form action="test.php">
+<input type="submit" value="dodaj studenta"/>
+</form>
