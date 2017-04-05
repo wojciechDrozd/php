@@ -33,9 +33,7 @@
 
 </form>
 
-<form action="addstudent.php" >
-	<input type="submit" value="Zarejestruj">
-</form>
+
 
 </body>
 </html>

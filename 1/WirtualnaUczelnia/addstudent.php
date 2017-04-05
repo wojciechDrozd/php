@@ -2,7 +2,7 @@
 
 session_start();
 
-if(isset($_SESSION['studentAdded']) && isset($_SESSION['confirmation']) && $_SESSION['studentAdded']==true){
+if(isset($_SESSION['studentAdded']) && isset($_SESSION['confirmation']) && $_SESSION['studentAdded']){
 	echo $_SESSION['confirmation'];
 	unset($_SESSION['studentAdded']);
 	unset($_SESSION['confirmation']);
@@ -11,20 +11,17 @@ if(isset($_POST['name'])){
 	
 	//udana walidacja
 	$successfulValidation = true;
-	echo $_POST['name'];
-	var_dump($_POST['pesel']);
 	
 	$pesel = $_POST['pesel'];
 	$name = $_POST['name'];
 	$surname = $_POST['surname'];
 	$email = $_POST['email'];
 	$mobile = $_POST['mobile'];
-	$num = 1;
 	
 	
 	require_once "connect.php";
 	try{
-		//nawiązanie połączzenia z bazą
+		//nawiązanie połączenia z bazą
 		$connection = new mysqli($host,$db_user,$db_password,$db_name);
 	
 		
@@ -36,7 +33,6 @@ if(isset($_POST['name'])){
 		//sukces połączenia
 		else{
 			
-			echo "connection established";
 			//czy istenieje taki pesel?
 			$result = $connection->query("SELECT pesel FROM students WHERE pesel='$pesel'");
 			
