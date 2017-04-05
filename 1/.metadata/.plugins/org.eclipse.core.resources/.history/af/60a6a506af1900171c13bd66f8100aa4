@@ -1,0 +1,108 @@
+<?php 
+
+session_start();
+
+if(isset($_SESSION['studentAdded']) && isset($_SESSION['confirmation']) && $_SESSION['studentAdded']){
+	echo $_SESSION['confirmation'];
+	unset($_SESSION['studentAdded']);
+	unset($_SESSION['confirmation']);
+}
+if(isset($_POST['name'])){
+	
+	//udana walidacja
+	$successfulValidation = true;
+	
+	$name = $_POST['name'];
+	$surname = $_POST['surname'];
+	$email = $_POST['email'];
+	$mobile = $_POST['mobile'];
+	
+	
+	require_once "connect.php";
+	try{
+		//nawiązanie połączenia z bazą
+		$connection = new mysqli($host,$db_user,$db_password,$db_name);
+	
+		
+		//nieudane połączenie
+		if($connection->connect_errno!=0){
+			throw new Exception(mysqlii_connect_errno());
+		}
+		
+		//sukces połączenia
+		else{
+			
+			//czy istenieje taki email?
+			$result = $connection->query("SELECT email FROM students WHERE email='$email'");
+			
+			if(!$result) throw new Exception($connection->error);
+			$emailNum = $result->num_rows;
+			if($emailNum > 0){
+				$successfulValidation = false;
+				$_SESSION['e_email'] = "Istnieje już student o takim emailu";
+			}
+			
+			//końcowa walidacja
+			if($successfulValidation){
+				
+				//wszystkie testy zaliczone, student dodany do bazy
+				if($connection->query("INSERT INTO students VALUES ('$num','$name','$surname','$email','$mobile')")){
+					$_SESSION['studentAdded'] = true;
+					$_SESSION['confirmation'] = '<span style="color:green">Dodano studenta:<br/>'.$name. " ".$surname.'</span>';
+					header('Location: addstudent.php');
+				} else{
+					echo " inserting fault";
+				}
+			}
+			
+		}
+	}catch(Exception $e){
+		echo '<div class="error">Błąd serwera!Zarejestruj się w innym terminie</div>';
+		echo '<br/>Info for devs:'.$e;
+	}
+} 
+
+
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>Rejestracja studenta</title>
+	<style>
+	.error {
+	color:red;
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+	</style>
+</head>
+<body>
+
+Dodaj studenta<br />
+<form method="post">
+Imię
+<br /><input type="text" name="name"/><br />
+Nazwisko
+<br /><input type="text" name="surname"/><br />
+Email
+<br /><input type="text" name="email" /><br />
+<?php 
+if(isset($_SESSION['e_email'])){
+	echo "<br/>Jest już student o takim adresie email<br /><br />";
+	unset($_SESSION['e_email']);
+}
+
+?>
+Telefon
+<br /><input type="text" name="mobile" /><br />
+
+<input type="submit" value="Zarejestruj" /><br />
+
+</form>
+</body>
+</html>

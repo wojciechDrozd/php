@@ -12,11 +12,17 @@ if(isset($_POST['name'])){
 	//udana walidacja
 	$successfulValidation = true;
 	
-	$pesel = $_POST['pesel'];
 	$name = $_POST['name'];
 	$surname = $_POST['surname'];
 	$email = $_POST['email'];
 	$mobile = $_POST['mobile'];
+	
+	if((strlen($name) == 0) || !ctype_alpha($name)){
+		$successfulValidation = false;
+		echo"name error";
+		$_SESSION['e_name'] = "podaj imie";
+		
+	}
 	
 	
 	require_once "connect.php";
@@ -33,21 +39,24 @@ if(isset($_POST['name'])){
 		//sukces połączenia
 		else{
 			
-			//czy istenieje taki pesel?
-			$result = $connection->query("SELECT pesel FROM students WHERE pesel='$pesel'");
+			//czy istenieje taki email?
+			$result = $connection->query("SELECT email FROM students WHERE email='$email'");
 			
 			if(!$result) throw new Exception($connection->error);
-			$sPeselNum = $result->num_rows;
-			if($sPeselNum > 0){
+			$emailNum = $result->num_rows;
+			if($emailNum > 0){
 				$successfulValidation = false;
-				$_SESSION['e_pesel'] = "Istnieje już student o takim numerze pesel";
+				$_SESSION['e_email'] = "Istnieje już student o takim emailu";
 			}
+			
+			
+			
 			
 			//końcowa walidacja
 			if($successfulValidation){
-				//wszystkie testy zaliczone, student dodany do bazy
 				
-				if($connection->query("INSERT INTO students VALUES ('$num','$name','$surname','$pesel','$email','$mobile')")){
+				//wszystkie testy zaliczone, student dodany do bazy
+				if($connection->query("INSERT INTO students VALUES ('$num','$name','$surname','$email','$mobile')")){
 					$_SESSION['studentAdded'] = true;
 					$_SESSION['confirmation'] = '<span style="color:green">Dodano studenta:<br/>'.$name. " ".$surname.'</span>';
 					header('Location: addstudent.php');
@@ -84,14 +93,20 @@ if(isset($_POST['name'])){
 </head>
 <body>
 
-<h2>Dodaj studenta</h2><br />
-<form method="post">
+Dodaj studenta<br /><br />
+
+<?php 
+if(isset($_SESSION['e_email'])){
+	echo '<br/><div class="error">Jest już student o takim adresie email!</div><br /><br />';
+	unset($_SESSION['e_email']);
+}
+
+?>
+<form method="post">																				
 Imię
 <br /><input type="text" name="name"/><br />
 Nazwisko
 <br /><input type="text" name="surname"/><br />
-Pesel
-<br /><input type="text" name="pesel"/><br />
 Email
 <br /><input type="text" name="email" /><br />
 Telefon

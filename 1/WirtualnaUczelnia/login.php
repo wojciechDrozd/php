@@ -18,16 +18,28 @@ try {
 	}	
 	// połączenie udane
 	else {
-		$userType = $_POST ['userType'];
+		$userType = $_POST ['userType'];																				
+		$login = $_POST['login'];
+		$password = $_POST['password'];
 		
 		switch ($userType) {
 			case 'admin' :
 				header ( 'Location: admin_panel.php' );
 				break;
 			
-			case 'student' :
-				header ( 'Location: student_panel.php' );
-				break;
+			case 'student' :{
+				
+				if($result = $connection->sprintf("SELECT * FROM '%s' WHERE login='%s'",$userType,$login)){
+					$userNum = $result->num_rows;
+					
+					if($userNum>0){
+						$row = $result->fetch_assoc();
+						
+					}
+				}
+				
+				
+			}
 			
 			case 'teacher' :
 				header ( 'Location: teacher_panel.php' );
