@@ -67,31 +67,31 @@ if(isset($_POST['name'])){
 <html lang="pl">
 <head>
 	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-	<title>Rejestracja dydaktyka</title>
 	
 </head>
 <body>
 
-<h3>Dodaj profesora</h3>
 
 <form method="post" >
-
-Imię:
-<br/>
-<input type="text" name="name"/><br/>
-Nazwisko:
-<br/>
-<input type="text" name="surname"/><br/>
-Email:
-<br/>
-<input type="text" name="email"/><br/>
-Katedra:
-<br/>
-<input type="text" name="faculty"/><br/>
-<br/>
-<input type="submit" value="zarejestruj"/>
-
+	Imię:
+	<br/>
+	<input type="text" name="name"/><br/>
+	Nazwisko:
+	<br/>
+	<input type="text" name="surname"/><br/>
+	Email:
+	<br/>
+	<input type="text" name="email"/><br/>
+	Katedra:
+	<br/>
+	<input type="text" name="faculty"/><br/>
+	<br/>
+	<input type="submit" value="zarejestruj"/>
 </form>
+
+<form action="admin_panel.php">
+	<br/><input type="submit" value="Wróć do głównej"/>
+</form>
+
 </body>
 </html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Mailing</title>
+</head>
+<body>
+	<form action="mailing.php" method="post" id="mailingform">
+		<input type="text" name="mailbody"> <input type="submit" name="send">
+	</form>
+	
+	<textarea name="mail" form="mailingform">Write something...</textarea>
+	
+</body>
+</html>

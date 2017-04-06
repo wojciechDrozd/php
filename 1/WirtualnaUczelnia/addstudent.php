@@ -33,7 +33,7 @@ if(isset($_POST['name'])){
 		
 		//nieudane połączenie
 		if($connection->connect_errno!=0){
-			throw new Exception(mysqlii_connect_errno());
+			throw new Exception(mysqli_connect_errno());
 		}
 		
 		//sukces połączenia
@@ -58,7 +58,7 @@ if(isset($_POST['name'])){
 				//wszystkie testy zaliczone, student dodany do bazy
 				if($connection->query("INSERT INTO students VALUES ('$num','$name','$surname','$email','$mobile')")){
 					$_SESSION['studentAdded'] = true;
-					$_SESSION['confirmation'] = '<span style="color:green">Dodano studenta:<br/>'.$name. " ".$surname.'</span>';
+					$_SESSION['confirmation'] = '<span style="color:green">Dodano studenta:'.$name. " ".$surname.'</span><br/>';
 					header('Location: addstudent.php');
 				} else{
 					echo " inserting fault";
@@ -114,6 +114,14 @@ Telefon
 
 <input type="submit" value="Zarejestruj" /><br />
 
+</form>
+<br/>
+<form action="admin_panel.php">
+	<input type="submit" value="Wróć do głównej"/>
+</form>
+
+<form action="displayresults.php"/>
+	<input type="submit" value="baza studentów"/>
 </form>
 </body>
 </html>

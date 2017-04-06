@@ -15,7 +15,6 @@ if((isset($_SESSION['signed'])) && ($_SESSION['signed'] == true)){
 <html lang="pl">
 <head>
 <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <title>Osadnicy - graj online</title>
 </head>
 <body>

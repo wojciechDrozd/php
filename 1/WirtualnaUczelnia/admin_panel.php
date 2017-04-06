@@ -1,3 +1,14 @@
+<?php 
+
+session_start();
+if(!isset($_SESSION['loggedin'])){
+	header('Location: index.php');
+	exit();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,15 +17,23 @@
 	<title>Admin panel</title>
 </head>
 <body>
-	<h1>Panel administratora</h1>
-	<h2>Awesome tools</h2>
-	
+	Admin account
 	<form action="addstudent.php" >
 	<input type="submit" value="add student">
 </form>
 <br/>
 <form action="addteacher.php">
 	<input type="submit" value="add teacher"/>
+</form>
+
+<br/>
+<form action="logout.php">
+	<input type="submit" value="wyloguj się"/>
+</form>
+
+<br/>
+<form action="displayresults.php">
+	<input type="submit" value="baza studentów"/>
 </form>
 
 

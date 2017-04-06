@@ -1,0 +1,11 @@
+<?php
+
+$host = "szejzer.xyz";
+$db_user="u465013593";
+$db_password="fDwy5gGcKPKg";
+$db_name ="u465013593_users";
+
+/* $host = "localhost";
+$db_user="root";
+$db_password="";
+$db_name ="WirtualnaUczelnia"; */

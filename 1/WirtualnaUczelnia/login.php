@@ -24,6 +24,7 @@ try {
 		
 		switch ($userType) {
 			case 'admin' :
+				$_SESSION['loggedin']=true;
 				header ( 'Location: admin_panel.php' );
 				break;
 			
@@ -41,9 +42,11 @@ try {
 				
 			}
 			
-			case 'teacher' :
+			case 'teacher' :{
+				$_SESSION['loggedin']=true;
 				header ( 'Location: teacher_panel.php' );
 				break;
+			}
 		}
 	}
 } catch ( Exception $e ) {

@@ -9,7 +9,11 @@
 
 <form action="login.php" method="post">
 	
-	Typ użytkownika:
+	Login: 
+	<input type="text" name="login" /><br /><br />
+	Hasło: 
+	<input type="password" name="password" /> <br /><br />
+	
 	<br />
 	<label>
 	<input type="radio" name="userType" value="student" checked>Student 
@@ -24,11 +28,6 @@
 	</label>
 	<br />
 	<br />
-	Login: 
-	<input type="text" name="login" /><br /><br />
-	Hasło: 
-	<input type="password" name="password" /> <br /><br />
-	
 	<input type="submit" value="Zaloguj"/><br />
 
 </form>

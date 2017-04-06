@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Wirtualna Uczelnia</title>
+</head>
+<body>
+
+<form action="login.php" method="post">
+	
+	Login: 
+	<input type="text" name="login" /><br /><br />
+	Hasło: 
+	<input type="password" name="password" /> <br /><br />
+	
+	<input type="submit" value="Zaloguj"/><br />
+	
+	Typ użytkownika:
+	<br />
+	<label>
+	<input type="radio" name="userType" value="student" checked>Student 
+	</label>
+	
+	<label>
+	<input type="radio" name="userType" value="teacher">Dydaktyk 
+	</label>
+	
+	<label>
+	<input type="radio" name="userType" value="admin" >Administrator 
+	</label>
+	<br />
+	<br />
+
+</form>
+
+
+
+</body>
+</html>
