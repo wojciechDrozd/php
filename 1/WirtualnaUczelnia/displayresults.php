@@ -16,7 +16,6 @@ try{
 	//udane połączenie
 	else{
 		
-		echo "Connection established<br/>";
 		$result = $connection->query("SELECT * FROM students ORDER BY 'Id' ASC");
 		
 		if($result->num_rows > 0){

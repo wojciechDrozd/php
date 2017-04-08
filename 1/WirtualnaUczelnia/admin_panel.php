@@ -17,24 +17,28 @@ if(!isset($_SESSION['loggedin'])){
 	<title>Admin panel</title>
 </head>
 <body>
-	Admin account
 	<form action="addstudent.php" >
-	<input type="submit" value="add student">
-</form>
-<br/>
-<form action="addteacher.php">
-	<input type="submit" value="add teacher"/>
-</form>
-
-<br/>
-<form action="logout.php">
-	<input type="submit" value="wyloguj się"/>
-</form>
-
-<br/>
-<form action="displayresults.php">
-	<input type="submit" value="baza studentów"/>
-</form>
+		<input type="submit" value="Dodaj studenta">
+	</form>
+	<br/>
+	<form action="addteacher.php">
+		<input type="submit" value="Dodaj pracownika"/>
+	</form>
+	
+	<br/>
+	<form action="displayresults.php">
+		<input type="submit" value="Baza studentów"/>
+	</form>
+	
+	<br/>
+	<form action="pdftest.php">
+		<input type="submit" value="pdf test"/>
+	</form>
+	
+	<br/>
+	<form action="logout.php">
+		<input type="submit" value="Wyloguj się"/>
+	</form>
 
 
 </body>

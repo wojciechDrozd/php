@@ -1,0 +1,78 @@
+<?php 
+
+function print_table(){
+	require_once 'connect.php';
+	$output = '';
+	
+	try{
+		
+		$connection = new mysqli($host, $db_user,$db_password, $db_name);
+		
+		//nieudane połączenie
+		if($connection->connect_errno!=0){
+			echo "error".$connection->connect_errno;
+		}
+		
+		//udane połączenie
+		else{
+			
+			echo "Connection established";
+			$result = $connection->query("SELECT * FROM students ORDER BY 'Id' ASC");
+			
+			/*
+			 * Alternative way to make query:
+			 * $sql = "SELECT * FROM tbl_employee ORDER BY id ASC";
+				$result = mysqli_query($connect, $sql);
+			 */
+			
+			var_dump($row = mysqli_fetch_array($result));
+			
+			foreach($row as $r){
+				echo $row['Id'];
+				echo $r;
+				
+			}
+			
+		/* 	while($row = mysqli_fetch_array($result)){
+				$output .= "<tr><td>{$row['Id']}</td>
+						<td>{$row['name']}</td>
+						<td>{$row['surname']}</td>
+						<td>{$row['email']}</td>
+						<td>{$row['phone']}</td>
+						</tr>";
+			} */
+			return $output;
+		}
+		
+	}catch(Excepion $e){
+		
+	}
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title> Pdf </title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Imię</th>
+			<th>Nazwisko</th>
+			<th>Email</th>
+			<th>Telefon</th>
+		</tr>
+	</table>
+	<?php print_table()?>
+	
+	<form method="post">
+		<input type="submit" name="create_pdf" value="Create PDF"/>
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title> Pdf </title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Imię</th>
+			<th>Nazwisko</th>
+			<th>Email</th>
+			<th>Telefon</th>>
+		</tr>
+	</table>
+	
+	<form method="post">
+		<input type="submit" name="create_pdf" value="Create PDF"/>
+	</form>
+	
+</body>
+</html>

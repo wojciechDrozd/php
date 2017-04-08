@@ -1,0 +1,56 @@
+<?php 
+
+function print_table(){
+	require_once 'connect.php';
+	$table = '';
+	
+	try{
+		
+		$connection = new mysqli($host, $db_user,$db_password, $db_name);
+		
+		//nieudane połączenie
+		if($connection->connect_errno!=0){
+			echo "error".$connection->connect_errno;
+		}
+		
+		//udane połączenie
+		else{
+			
+			echo "Connection established";
+			$result = $connection->query("SELECT * FROM students ORDER BY 'Id' ASC");
+			if($result->num_rows > 0){
+				
+			}
+		}
+		
+	}catch(Excepion $e){
+		
+	}
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title> Pdf </title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Imię</th>
+			<th>Nazwisko</th>
+			<th>Email</th>
+			<th>Telefon</th>
+		</tr>
+	</table>
+	
+	<form method="post">
+		<input type="submit" name="create_pdf" value="Create PDF"/>
+	</form>
+	
+</body>
+</html>

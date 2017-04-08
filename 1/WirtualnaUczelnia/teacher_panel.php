@@ -1,7 +1,3 @@
-<?php
-echo "pozdro teacher";
-?>
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
