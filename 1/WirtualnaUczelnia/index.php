@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Wirtualna Uczelnia</title>
+<meta charset="utf-8" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<form action="login.php" method="post">
-	
-	Login: 
-	<input type="text" name="login" /><br /><br />
-	Hasło: 
-	<input type="password" name="password" /> <br /><br />
-	
-	<br />
-	<label>
-	<input type="radio" name="userType" value="student" checked>Student 
-	</label>
-	
-	<label>
-	<input type="radio" name="userType" value="teacher">Dydaktyk 
-	</label>
-	
-	<label>
-	<input type="radio" name="userType" value="admin" >Administrator 
-	</label>
 	<br />
 	<br />
-	<input type="submit" value="Zaloguj"/><br />
+	<div class="container" style="width: 500px;">
 
-</form>
+		<h3 align="center">Dziekanat</h3>
+		<br />
+		<form action="login.php" method="post">
+			<label>Login</label> <input type="text" name="login" class="form-control" /> <br />
+			<label>Hasło</label> <input type="text" name="password" class="form-control" /> <br />
 
-
-
+			<div class="radio">
+				<label><input type="radio" name="userType" value="student" />Student</label>
+				<label><input type="radio" name="userType" value="teacher" />Dydaktyk</label>
+				<label><input type="radio" name="userType" value="admin"/>Administrator</label>
+			</div>
+			<br /> 
+			<input type="submit" value="Zaloguj" class="btn btn-info" /> <br />
+		</form>
+	</div>
 </body>
 </html>
+

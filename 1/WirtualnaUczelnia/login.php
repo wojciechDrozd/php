@@ -15,43 +15,52 @@ try {
 	// połączenie nieudane
 	if ($connection->errno != 0) {
 		throw new Exception ();
-	}	
-	// połączenie udane
+	}	// połączenie udane
 	else {
-		$userType = $_POST ['userType'];																				
-		$login = $_POST['login'];
-		$password = $_POST['password'];
+		$userType = $_POST ['userType'];
+		$login = $_POST ['login'];
+		$password = $_POST ['password'];
+		
+		echo $userType,$login,$password;
 		
 		switch ($userType) {
 			case 'admin' :
-				$_SESSION['loggedin']=true;
+				$_SESSION ['loggedin'] = true;
 				header ( 'Location: admin_panel.php' );
 				break;
 			
-			case 'student' :{
-				
-				if($result = $connection->sprintf("SELECT * FROM '%s' WHERE login='%s'",$userType,$login)){
-					$userNum = $result->num_rows;
+			case 'student' :
+					if ($result = $connection->query ( "SELECT * FROM students WHERE name='$login'" )) {
+						$userNum = $result->num_rows;
 					
-					if($userNum>0){
-						$row = $result->fetch_assoc();
-						
+						if ($userNum > 0) {
+							$row = $result->fetch_assoc ();
+							if ($password == $row ['password'] ) {
+								$_SESSION ['loggedin'] = true;
+								header ( 'Location: student_panel.php' );
+							}
+						}
+					}
+					break;
+					
+			case 'teacher' :
+				if ($result = $connection->query ( "SELECT * FROM profesores WHERE name='$login'" )) {
+					$userNum = $result->num_rows;
+				
+					if ($userNum > 0) {
+						$row = $result->fetch_assoc ();
+						if ($password == $row ['password'] ) {
+							$_SESSION ['loggedin'] = true;
+							header ( 'Location: teacher_panel.php' );
+						}
 					}
 				}
-				
-				
-			}
-			
-			case 'teacher' :{
-				$_SESSION['loggedin']=true;
-				header ( 'Location: teacher_panel.php' );
 				break;
-			}
 		}
 	}
 } catch ( Exception $e ) {
 	
-	echo $e->getMessage();
+	echo $e->getMessage ();
 }
 
 ?>
