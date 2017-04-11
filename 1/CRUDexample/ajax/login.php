@@ -4,7 +4,7 @@
 session_start(); 
 if($_SESSION['adminId'])
 {
-	header("location: adminPanel.php");
+	header("location: ../adminPanel.php");
 	exit;
 }
 
@@ -41,8 +41,9 @@ if(isset($_POST['email']) && isset($_POST['password']))
 				echo $_SESSION['email'];
 			
 			// redirect to the secure page ex. user profile
-			header("Location: adminPanel.php");
+			header("Location:  ../adminPanel.php");
 			exit;
+			
 		}
 		else
 		{
