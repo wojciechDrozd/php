@@ -1,0 +1,26 @@
+<?php
+
+if(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['major']) 
+		&& isset($_POST['year']) && isset($_POST['email']) && isset($_POST['pesel']))
+{
+	//dane do połączenia z bazą
+	include("db_connection.php");
+
+	//pobranie wartości z formularza
+	$first_name = $_POST['first_name'];
+	$last_name = $_POST['last_name'];
+	$major = $_POST['major'];
+	$year = $_POST['year'];
+	$email = $_POST['email'];
+	$pesel = $_POST['pesel'];
+
+	$query = "INSERT INTO users('imie','nazwisko','kierunek studiow','semestr','email','pesel') 
+				VALUES('$first_name', '$last_name','$major','$year','$email', '$pesel')";
+	
+	if (!$result = mysqli_query($con, $query)) {
+		echo "fail";
+		exit(mysqli_error($con));
+	}
+	echo "Student dodany!";
+}
+?>

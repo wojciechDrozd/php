@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_24Rl8B22Eee6NOxIi6B2tA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_24Rl8R22Eee6NOxIi6B2tA" bindingContexts="_24S1BB22Eee6NOxIi6B2tA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;admin_panel.php&quot; tooltip=&quot;WirtualnaUczelnia/admin_panel.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/admin_panel.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;student_panel.php&quot; tooltip=&quot;WirtualnaUczelnia/student_panel.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/student_panel.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;login.php&quot; tooltip=&quot;Osadnicy/login.php&quot;>&#xA;&lt;persistable path=&quot;/Osadnicy/login.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;login.php&quot; tooltip=&quot;WirtualnaUczelnia/login.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/login.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; tooltip=&quot;WirtualnaUczelnia/index.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/index.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;stylesheet.css&quot; tooltip=&quot;Weblesson/stylesheet.css&quot;>&#xA;&lt;persistable path=&quot;/Weblesson/stylesheet.css&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; tooltip=&quot;Weblesson/index.php&quot;>&#xA;&lt;persistable path=&quot;/Weblesson/index.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;connect.php&quot; tooltip=&quot;Weblesson/connect.php&quot;>&#xA;&lt;persistable path=&quot;/Weblesson/connect.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;newfile.php&quot; tooltip=&quot;EditableGrid/newfile.php&quot;>&#xA;&lt;persistable path=&quot;/EditableGrid/newfile.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;EditableGrid.php&quot; tooltip=&quot;EditableGrid/php/EditableGrid.php&quot;>&#xA;&lt;persistable path=&quot;/EditableGrid/php/EditableGrid.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;teacher_panel.php&quot; tooltip=&quot;WirtualnaUczelnia/teacher_panel.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/teacher_panel.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;example.php&quot; tooltip=&quot;WirtualnaUczelnia/example.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/example.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;pdftest.php&quot; tooltip=&quot;WirtualnaUczelnia/pdftest.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/pdftest.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;displayresults.php&quot; tooltip=&quot;WirtualnaUczelnia/displayresults.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/displayresults.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;logout.php&quot; tooltip=&quot;WirtualnaUczelnia/logout.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/logout.php&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;db_connection.php&quot; tooltip=&quot;CRUDexample/ajax/db_connection.php&quot;>&#xA;&lt;persistable path=&quot;/CRUDexample/ajax/db_connection.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;updateUserDetails.php&quot; tooltip=&quot;CRUDexample/ajax/updateUserDetails.php&quot;>&#xA;&lt;persistable path=&quot;/CRUDexample/ajax/updateUserDetails.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;deleteUser.php&quot; tooltip=&quot;CRUDexample/ajax/deleteUser.php&quot;>&#xA;&lt;persistable path=&quot;/CRUDexample/ajax/deleteUser.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;addRecord.php&quot; tooltip=&quot;CRUDexample/ajax/addRecord.php&quot;>&#xA;&lt;persistable path=&quot;/CRUDexample/ajax/addRecord.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;readUserDetails.php&quot; tooltip=&quot;CRUDexample/ajax/readUserDetails.php&quot;>&#xA;&lt;persistable path=&quot;/CRUDexample/ajax/readUserDetails.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;script.js&quot; tooltip=&quot;CRUDexample/js/script.js&quot;>&#xA;&lt;persistable path=&quot;/CRUDexample/js/script.js&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;addteacher.php&quot; tooltip=&quot;WirtualnaUczelnia/addteacher.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/addteacher.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;addstudent.php&quot; tooltip=&quot;WirtualnaUczelnia/addstudent.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/addstudent.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;signup.php&quot; tooltip=&quot;Osadnicy/signup.php&quot;>&#xA;&lt;persistable path=&quot;/Osadnicy/signup.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; tooltip=&quot;CRUDexample/index.php&quot;>&#xA;&lt;persistable path=&quot;/CRUDexample/index.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;readRecord.php&quot; tooltip=&quot;CRUDexample/ajax/readRecord.php&quot;>&#xA;&lt;persistable path=&quot;/CRUDexample/ajax/readRecord.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; tooltip=&quot;WirtualnaUczelnia/index.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/index.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;admin_panel.php&quot; tooltip=&quot;WirtualnaUczelnia/admin_panel.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/admin_panel.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;student_panel.php&quot; tooltip=&quot;WirtualnaUczelnia/student_panel.php&quot;>&#xA;&lt;persistable path=&quot;/WirtualnaUczelnia/student_panel.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;login.php&quot; tooltip=&quot;Osadnicy/login.php&quot;>&#xA;&lt;persistable path=&quot;/Osadnicy/login.php&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>ModelMigrationProcessor.001</tags>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_24Rl8R22Eee6NOxIi6B2tA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_24Rl8h22Eee6NOxIi6B2tA" label="%trimmedwindow.label.eclipseSDK" x="443" y="24" width="1477" height="1056">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_24Rl8R22Eee6NOxIi6B2tA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_24Rl8h22Eee6NOxIi6B2tA" label="%trimmedwindow.label.eclipseSDK" x="57" y="24" width="1085" height="1028">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -11,6 +11,7 @@
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workingSets/>"/>
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1488690599153"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_24Rl8h22Eee6NOxIi6B2tA" selectedElement="_24Rl8x22Eee6NOxIi6B2tA" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_24Rl8x22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_24Rl9B22Eee6NOxIi6B2tA">
         <children xsi:type="advanced:Perspective" xmi:id="_24Rl9B22Eee6NOxIi6B2tA" elementId="org.eclipse.php.perspective" selectedElement="_24Rl9R22Eee6NOxIi6B2tA" label="PHP" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/php_perspective.png">
@@ -62,9 +63,9 @@
           <tags>persp.showIn:org.eclipse.ui.navigator.ProjectExplorer</tags>
           <tags>persp.actionSet:org.eclipse.php.ui.text.php.actionSet.presentation</tags>
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_24Rl9R22Eee6NOxIi6B2tA" selectedElement="_24Rl9h22Eee6NOxIi6B2tA" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_24Rl9h22Eee6NOxIi6B2tA" elementId="topLeft" containerData="1000" selectedElement="_24Rl9x22Eee6NOxIi6B2tA">
-              <tags>active</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_24Rl9R22Eee6NOxIi6B2tA" selectedElement="_24Rl-B22Eee6NOxIi6B2tA" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_24Rl9h22Eee6NOxIi6B2tA" elementId="topLeft" visible="false" containerData="1000" selectedElement="_24Rl9x22Eee6NOxIi6B2tA">
+              <tags>Minimized</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_24Rl9x22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_24SNLB22Eee6NOxIi6B2tA"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_24Rl-B22Eee6NOxIi6B2tA" containerData="9000" selectedElement="_24Rl-R22Eee6NOxIi6B2tA">
@@ -120,389 +121,56 @@
       <tags>View</tags>
       <tags>categoryTag:Help</tags>
     </sharedElements>
-    <sharedElements xsi:type="advanced:Area" xmi:id="_24RnTR22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.editorss" selectedElement="_24RnTh22Eee6NOxIi6B2tA">
-      <children xsi:type="basic:PartSashContainer" xmi:id="_24RnTh22Eee6NOxIi6B2tA" selectedElement="_24RnTx22Eee6NOxIi6B2tA">
-        <children xsi:type="basic:PartStack" xmi:id="_24RnTx22Eee6NOxIi6B2tA" elementId="PartStack@643ef1c3" containerData="6063" selectedElement="_24RnYh22Eee6NOxIi6B2tA">
+    <sharedElements xsi:type="advanced:Area" xmi:id="_24RnTR22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.editorss" selectedElement="_JEc0UB4sEeeEWLbX40qFCw">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_JEc0UB4sEeeEWLbX40qFCw" selectedElement="_JEc0UR4sEeeEWLbX40qFCw" horizontal="true">
+        <children xsi:type="basic:PartStack" xmi:id="_JEc0UR4sEeeEWLbX40qFCw" elementId="PartStack@7fa786f6" containerData="9000" selectedElement="_XcF_YB4YEeeCi4N47WuQOA">
+          <tags>active</tags>
           <tags>noFocus</tags>
-          <children xsi:type="basic:Part" xmi:id="_24RnUB22Eee6NOxIi6B2tA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; partName=&quot;index.php&quot; title=&quot;index.php&quot; tooltip=&quot;WirtualnaUczelnia/index.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WirtualnaUczelnia/index.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;691&quot; selectionOffset=&quot;374&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <children xsi:type="basic:Part" xmi:id="_WEd6kB4XEeeCi4N47WuQOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; partName=&quot;index.php&quot; title=&quot;index.php&quot; tooltip=&quot;CRUDexample/index.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRUDexample/index.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;6&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1265&quot; selectionTopPixel=&quot;2875&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.php.editor</tags>
             <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnUR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnUh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnUx22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnVB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnVR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
           </children>
-          <children xsi:type="basic:Part" xmi:id="_24RnVh22Eee6NOxIi6B2tA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="login.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;login.php&quot; partName=&quot;login.php&quot; title=&quot;login.php&quot; tooltip=&quot;WirtualnaUczelnia/login.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WirtualnaUczelnia/login.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1441&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <children xsi:type="basic:Part" xmi:id="_agTSEB4qEeeEWLbX40qFCw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="deleteUser.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;deleteUser.php&quot; partName=&quot;deleteUser.php&quot; title=&quot;deleteUser.php&quot; tooltip=&quot;CRUDexample/ajax/deleteUser.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRUDexample/ajax/deleteUser.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;343&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.php.editor</tags>
             <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnVx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnWB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnWR22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnWh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnWx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
           </children>
-          <children xsi:type="basic:Part" xmi:id="_24RnXB22Eee6NOxIi6B2tA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="student_panel.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;student_panel.php&quot; partName=&quot;student_panel.php&quot; title=&quot;student_panel.php&quot; tooltip=&quot;WirtualnaUczelnia/student_panel.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WirtualnaUczelnia/student_panel.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;593&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <children xsi:type="basic:Part" xmi:id="_XcF_YB4YEeeCi4N47WuQOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="script.js" iconURI="platform:/plugin/org.eclipse.wst.jsdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;script.js&quot; partName=&quot;script.js&quot; title=&quot;script.js&quot; tooltip=&quot;CRUDexample/js/script.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRUDexample/js/script.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1804&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
-            <tags>org.eclipse.php.editor</tags>
+            <tags>org.eclipse.wst.jsdt.ui.CompilationUnitEditor</tags>
             <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnXR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnXh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnXx22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnYB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnYR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_24RnYh22Eee6NOxIi6B2tA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="admin_panel.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;admin_panel.php&quot; partName=&quot;admin_panel.php&quot; title=&quot;admin_panel.php&quot; tooltip=&quot;WirtualnaUczelnia/admin_panel.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WirtualnaUczelnia/admin_panel.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>org.eclipse.php.editor</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnYx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnZB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnZR22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnZh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24RnZx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNAB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNAR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNAh22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNAx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNBB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
+            <tags>active</tags>
+            <tags>activeOnClose</tags>
           </children>
         </children>
-        <children xsi:type="basic:PartStack" xmi:id="_24SNBR22Eee6NOxIi6B2tA" elementId="PartStack@524911cd" containerData="3937" selectedElement="_24SNIR22Eee6NOxIi6B2tA">
-          <children xsi:type="basic:Part" xmi:id="_24SNBh22Eee6NOxIi6B2tA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="example.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;example.php&quot; partName=&quot;example.php&quot; title=&quot;example.php&quot; tooltip=&quot;WirtualnaUczelnia/example.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WirtualnaUczelnia/example.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;662&quot; selectionOffset=&quot;759&quot; selectionTopPixel=&quot;417&quot;/>&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:PartStack" xmi:id="_24SNBR22Eee6NOxIi6B2tA" elementId="PartStack@524911cd" containerData="1000" selectedElement="_jktVAB4uEeeEWLbX40qFCw">
+          <children xsi:type="basic:Part" xmi:id="_GzCkcB4CEeeCi4N47WuQOA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="readRecords.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;readRecords.php&quot; partName=&quot;readRecords.php&quot; title=&quot;readRecords.php&quot; tooltip=&quot;CRUDexample/ajax/readRecords.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRUDexample/ajax/readRecords.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1345&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.php.editor</tags>
             <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNBx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNCB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNCR22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNCh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNCx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
           </children>
-          <children xsi:type="basic:Part" xmi:id="_24SNDB22Eee6NOxIi6B2tA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="displayresults.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;displayresults.php&quot; partName=&quot;displayresults.php&quot; title=&quot;displayresults.php&quot; tooltip=&quot;WirtualnaUczelnia/displayresults.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WirtualnaUczelnia/displayresults.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;247&quot; selectionTopPixel=&quot;150&quot;/>&#xA;&lt;/editor>"/>
+          <children xsi:type="basic:Part" xmi:id="_zpen4B4oEeeEWLbX40qFCw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="addRecord.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;addRecord.php&quot; partName=&quot;addRecord.php&quot; title=&quot;addRecord.php&quot; tooltip=&quot;CRUDexample/ajax/addRecord.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRUDexample/ajax/addRecord.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;383&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.php.editor</tags>
             <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNDR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNDh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNDx22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNEB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNER22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNEh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNEx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNFB22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNFR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNFh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNFx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNGB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNGR22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNGh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNGx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNHB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNHR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNHh22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNHx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNIB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
           </children>
-          <children xsi:type="basic:Part" xmi:id="_24SNIR22Eee6NOxIi6B2tA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="login.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;login.php&quot; partName=&quot;login.php&quot; title=&quot;login.php&quot; tooltip=&quot;Osadnicy/login.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Osadnicy/login.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;44&quot; selectionOffset=&quot;1879&quot; selectionTopPixel=&quot;808&quot;/>&#xA;&lt;/editor>"/>
+          <children xsi:type="basic:Part" xmi:id="_jktVAB4uEeeEWLbX40qFCw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="updateUserDetails.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;updateUserDetails.php&quot; partName=&quot;updateUserDetails.php&quot; title=&quot;updateUserDetails.php&quot; tooltip=&quot;CRUDexample/ajax/updateUserDetails.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRUDexample/ajax/updateUserDetails.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;160&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.php.editor</tags>
             <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNIh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNIx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNJB22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNJR22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNJh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNJx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNKB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNKR22Eee6NOxIi6B2tA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNKh22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_24SNKx22Eee6NOxIi6B2tA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-              <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-              <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-            </menus>
+          </children>
+          <children xsi:type="basic:Part" xmi:id="_fVrd4B4wEeeEWLbX40qFCw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="db_connection.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;db_connection.php&quot; partName=&quot;db_connection.php&quot; title=&quot;db_connection.php&quot; tooltip=&quot;CRUDexample/ajax/db_connection.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRUDexample/ajax/db_connection.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;4&quot; selectionOffset=&quot;364&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+            <tags>Editor</tags>
+            <tags>org.eclipse.php.editor</tags>
+            <tags>removeOnHide</tags>
           </children>
         </children>
       </children>
@@ -513,7 +181,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1488690599153&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;1&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
       <menus xmi:id="_24SNLR22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -799,40 +466,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SNhB22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNhR22Eee6NOxIi6B2tA" elementId="new.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNhh22Eee6NOxIi6B2tA" elementId="newWizardDropDown">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNhx22Eee6NOxIi6B2tA" elementId="new.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNiB22Eee6NOxIi6B2tA" elementId="save.group" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNiR22Eee6NOxIi6B2tA" elementId="save">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNih22Eee6NOxIi6B2tA" elementId="saveAll">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNix22Eee6NOxIi6B2tA" elementId="save.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_24SNjB22Eee6NOxIi6B2tA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_24UqxB22Eee6NOxIi6B2tA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNjR22Eee6NOxIi6B2tA" elementId="print.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNjh22Eee6NOxIi6B2tA" elementId="build.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNjx22Eee6NOxIi6B2tA" elementId="build.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNkB22Eee6NOxIi6B2tA" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_tlo6UB4hEeeEWLbX40qFCw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_24UqxB22Eee6NOxIi6B2tA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SNkR22Eee6NOxIi6B2tA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -840,207 +474,12 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SNvB22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNvR22Eee6NOxIi6B2tA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNvh22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNvx22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNwB22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNwR22Eee6NOxIi6B2tA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNwh22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNwx22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNxB22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNxR22Eee6NOxIi6B2tA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNxh22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNxx22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNyB22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNyR22Eee6NOxIi6B2tA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNyh22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNyx22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNzB22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNzR22Eee6NOxIi6B2tA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNzh22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SNzx22Eee6NOxIi6B2tA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN0B22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SN0R22Eee6NOxIi6B2tA" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN0h22Eee6NOxIi6B2tA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN0x22Eee6NOxIi6B2tA" elementId="org.eclipse.mylyn.tasks.ui.openTask">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN1B22Eee6NOxIi6B2tA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN1R22Eee6NOxIi6B2tA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN1h22Eee6NOxIi6B2tA" elementId="org.eclipse.mylyn.tasks.ui.openTask">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN1x22Eee6NOxIi6B2tA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN2B22Eee6NOxIi6B2tA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN2R22Eee6NOxIi6B2tA" elementId="org.eclipse.mylyn.tasks.ui.openTask">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN2h22Eee6NOxIi6B2tA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN2x22Eee6NOxIi6B2tA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN3B22Eee6NOxIi6B2tA" elementId="org.eclipse.mylyn.tasks.ui.openTask">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN3R22Eee6NOxIi6B2tA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN3h22Eee6NOxIi6B2tA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN3x22Eee6NOxIi6B2tA" elementId="org.eclipse.mylyn.tasks.ui.openTask">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN4B22Eee6NOxIi6B2tA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SN4R22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN4h22Eee6NOxIi6B2tA" elementId="Presentation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN4x22Eee6NOxIi6B2tA" elementId="org.eclipse.php.ui.edit.text.toggleMarkOccurrences">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN5B22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleWordWrap">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN5R22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN5h22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN5x22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN6B22Eee6NOxIi6B2tA" elementId="Presentation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN6R22Eee6NOxIi6B2tA" elementId="org.eclipse.php.ui.edit.text.toggleMarkOccurrences">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN6h22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleWordWrap">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN6x22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN7B22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN7R22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN7h22Eee6NOxIi6B2tA" elementId="Presentation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN7x22Eee6NOxIi6B2tA" elementId="org.eclipse.php.ui.edit.text.toggleMarkOccurrences">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN8B22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleWordWrap">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN8R22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN8h22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN8x22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN9B22Eee6NOxIi6B2tA" elementId="Presentation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN9R22Eee6NOxIi6B2tA" elementId="org.eclipse.php.ui.edit.text.toggleMarkOccurrences">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN9h22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleWordWrap">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN9x22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN-B22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN-R22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN-h22Eee6NOxIi6B2tA" elementId="Presentation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN-x22Eee6NOxIi6B2tA" elementId="org.eclipse.php.ui.edit.text.toggleMarkOccurrences">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN_B22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleWordWrap">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN_R22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN_h22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SN_x22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SOAB22Eee6NOxIi6B2tA" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1048,34 +487,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SOAh22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOAx22Eee6NOxIi6B2tA" elementId="history.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOBB22Eee6NOxIi6B2tA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOBR22Eee6NOxIi6B2tA" elementId="backardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOBh22Eee6NOxIi6B2tA" elementId="forwardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOBx22Eee6NOxIi6B2tA" elementId="pin.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_24SOCB22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_24UqbR22Eee6NOxIi6B2tA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOCR22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOCh22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOCx22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_24SODB22Eee6NOxIi6B2tA" elementId="org.eclipse.php.editor" visible="false">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_tlvA8B4hEeeEWLbX40qFCw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_24UqbR22Eee6NOxIi6B2tA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SODR22Eee6NOxIi6B2tA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1087,12 +499,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_24SOER22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOEh22Eee6NOxIi6B2tA" elementId="group.help">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_24SOEx22Eee6NOxIi6B2tA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_24SOFB22Eee6NOxIi6B2tA" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -1115,8 +521,8 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_24SOKh22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.trim.vertical1" toBeRendered="false" side="Left">
-      <children xsi:type="menu:ToolControl" xmi:id="_24SOKx22Eee6NOxIi6B2tA" elementId="topLeft(IDEWindow).(org.eclipse.php.perspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+    <trimBars xmi:id="_24SOKh22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.trim.vertical1" side="Left">
+      <children xsi:type="menu:ToolControl" xmi:id="_24SOKx22Eee6NOxIi6B2tA" elementId="topLeft(IDEWindow).(org.eclipse.php.perspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
@@ -2094,6 +1500,23 @@
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
   </descriptors>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_24UDhh22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform"/>
   <commands xmi:id="_24UDhx22Eee6NOxIi6B2tA" elementId="org.eclipse.dltk.ui.navigate.gototype" commandName="Go to Type" description="Go to Type" category="_24VRHh22Eee6NOxIi6B2tA"/>
   <commands xmi:id="_24UDiB22Eee6NOxIi6B2tA" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_24VRGR22Eee6NOxIi6B2tA"/>

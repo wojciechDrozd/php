@@ -1,0 +1,31 @@
+<?php
+// include Database connection file
+include("db_connection.php");
+
+// check request
+if(isset($_POST))
+{
+	// get values
+	$id = $_POST['id'];
+	$student_id = $_POST['student_id'];
+	$first_name = $_POST['first_name'];
+	$major = $_POST['major'];
+	$year = $_POST['year'];
+	$email = $_POST['email'];
+	$pesel = $_POST['pesel'];
+
+	// Updaste User details
+	$query = "UPDATE studenci 
+				SET 
+	first_name = '$first_name', 
+	last_name = '$last_name', 
+	major = '$major',
+	year = '$year',
+	email = '$email',
+	pesel = '$pese'
+	WHERE nr_albumu = '$student_id'";
+	if (!$result = mysqli_query($con, $query)) {
+		exit(mysqli_error($con));
+	}
+}
+?>

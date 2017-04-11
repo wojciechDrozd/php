@@ -56,7 +56,7 @@ if(isset($_POST['name'])){
 			if($successfulValidation){
 				
 				//wszystkie testy zaliczone, student dodany do bazy
-				if($connection->query("INSERT INTO students VALUES ('$num','$name','$surname','$email','$mobile')")){
+				if($connection->query("INSERT INTO students VALUES ('$name','$surname','$email','$mobile')")){
 					$_SESSION['studentAdded'] = true;
 					$_SESSION['confirmation'] = '<span style="color:green">Dodano studenta:'.$name. " ".$surname.'</span><br/>';
 					header('Location: addstudent.php');
