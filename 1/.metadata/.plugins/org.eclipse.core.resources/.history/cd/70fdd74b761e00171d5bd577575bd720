@@ -1,0 +1,52 @@
+<?php
+
+
+session_start(); 
+if($_SESSION['adminId'])
+{
+	header("location: adminPanel.php");
+	exit;
+}
+
+$error_message = "";
+
+// check for form submit action
+if(isset($_POST['email']) && isset($_POST['password']))
+{
+	// basic input validation
+	if($_POST['email'] == "" && $_POST['password'] == "")
+	{
+		$error_message = "Please enter your login details!";
+	}
+	else
+	{
+		// validate user ( if successfully validated, redirect to the profile page)
+		
+		require_once 'db_connection.php';
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+
+		$query = "SELECT * FROM admin WHERE email = '$email' AND password = '$password'";
+		$result = mysqli_query($con, $query);
+		
+		if(mysqli_num_rows($result) > 0)
+		{
+			$row = mysqli_fetch_assoc($result);
+			
+				// set sessions variable with the user details
+				$_SESSION['adminId'] =  $row['adminId'];
+				$_SESSION['adminEmail'] =  $row['email'];
+				$_SESSION['adminPassword'] =  $row['password'];
+
+			// redirect to the secure page ex. user profile
+			header("Location: adminPanel.php");
+			exit;
+		}
+		else
+		{
+			// show error message
+			$error_message = "Invalid login details, Please try again!";
+		}
+	}
+}
+?>
