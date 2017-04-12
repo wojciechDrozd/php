@@ -1,0 +1,66 @@
+<?php
+session_start ();
+
+if (! isset ( $_POST ['email'] ) && ! isset ( $_POST ['password'] ) && ! isset ( $_POST ['userType'] )) {
+	header ( 'Location: index.php' );
+	exit ();
+}
+
+require_once 'db_connection.php';
+try {
+
+	// nawiązanie połaczenia
+	$connection = new mysqli ( $host, $db_user, $db_password, $db_name );
+
+	// połączenie nieudane
+	if ($connection->errno != 0) {
+		throw new Exception ();
+	}	// połączenie udane
+	else {
+		$userType = $_POST ['userType'];
+		$login = $_POST ['login'];
+		$password = $_POST ['password'];
+
+		echo $userType,$login,$password;
+
+		switch ($userType) {
+			case 'admin' :
+				$_SESSION ['loggedin'] = true;
+				header ( 'Location: .../adminPanel.php' );
+				break;
+
+			case 'student' :
+				if ($result = $connection->query ( "SELECT * FROM students WHERE email='$email'" )) {
+					$userNum = $result->num_rows;
+
+					if ($userNum > 0) {
+						$row = $result->fetch_assoc ();
+						if ($password == $row ['password'] ) {
+							$_SESSION ['loggedin'] = true;
+							header ( 'Location: .../studentPanel.php' );
+						}
+					}
+				}
+				break;
+
+			case 'teacher' :
+				if ($result = $connection->query ( "SELECT * FROM profesores WHERE email='$email'" )) {
+					$userNum = $result->num_rows;
+
+					if ($userNum > 0) {
+						$row = $result->fetch_assoc ();
+						if ($password == $row ['password'] ) {
+							$_SESSION ['loggedin'] = true;
+							header ( 'Location: ../teacherPanel.php' );
+						}
+					}
+				}
+				break;
+		}
+	}
+} catch ( Exception $e ) {
+
+	echo $e->getMessage ();
+}
+
+?>

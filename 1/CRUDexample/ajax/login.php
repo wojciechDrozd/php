@@ -1,55 +1,56 @@
 <?php
+session_start ();
 
-
-session_start(); 
-if($_SESSION['adminId'])
-{
-	header("location: ../adminPanel.php");
-	exit;
+if (! isset ( $_POST ['email'] ) && ! isset ( $_POST ['password'] ) && ! isset ( $_POST ['userType'] )) {
+	header ( 'Location: index.php' );
+	exit ();
 }
 
-$error_message = "";
+require_once 'db_connection.php';
+try {
 
-// check for form submit action
-if(isset($_POST['email']) && isset($_POST['password']))
-{
-	// basic input validation
-	if($_POST['email'] == "" && $_POST['password'] == "")
-	{
-		$error_message = "Please enter your login details!";
-	}
-	else
-	{
-		// validate user ( if successfully validated, redirect to the profile page)
-		
-		require_once 'db_connection.php';
-		$email = $_POST['email'];
-		$password = $_POST['password'];
+		$userType = $_POST ['userType'];
+		$email = $_POST ['email'];
+		$password = $_POST ['password'];
 
-		$query = "SELECT * FROM admin WHERE email = '$email' AND password = '$password'";
-		$result = mysqli_query($con, $query);
-		
-		if(mysqli_num_rows($result) > 0)
-		{
-			$row = mysqli_fetch_assoc($result);
-			
-				// set sessions variable with the user details
-				$_SESSION['adminId'] =  $row['adminId'];
-				$_SESSION['adminEmail'] =  $row['email'];
-				$_SESSION['adminPassword'] =  $row['password'];
+		switch ($userType) {
+			case 'admin' :
+				$_SESSION ['loggedin'] = true;
+				header ( 'Location: ../adminPanel.php' );
+				break;
 
-				echo $_SESSION['email'];
-			
-			// redirect to the secure page ex. user profile
-			header("Location:  ../adminPanel.php");
-			exit;
-			
+			case 'student' :
+				if ($result = $con->query ( "SELECT * FROM studenci WHERE email='$email'" )) {
+					$userNum = $result->num_rows;
+
+					if ($userNum > 0) {
+						$row = $result->fetch_assoc ();
+						if ($password == $row ['pesel'] ) {
+							$_SESSION ['loggedin'] = true;
+							header ( 'Location: ../studentPanel.php' );
+						}
+					}
+				}
+				break;
+
+			case 'teacher' :
+				if ($result = $con->query ( "SELECT * FROM profesores WHERE email='$email'" )) {
+					$userNum = $result->num_rows;
+
+					if ($userNum > 0) {
+						$row = $result->fetch_assoc ();
+						if ($password == $row ['pesel'] ) {
+							$_SESSION ['loggedin'] = true;
+							header ( 'Location: ../teacherPanel.php' );
+						}
+					}
+				}
+				break;
 		}
-		else
-		{
-			// show error message
-			$error_message = "Invalid login details, Please try again!";
-		}
-	}
 }
+ catch ( Exception $e ) {
+
+	echo $e->getMessage ();
+}
+
 ?>
