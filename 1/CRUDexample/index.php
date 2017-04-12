@@ -20,10 +20,9 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<h1>Dziekanat</h1><br/>
+	<div class="container" style="width: 500px;">
+	<div class="row vertical-center-row">
+				<h1 align="center"><b>Dziekanat</b></h1><br/>
 
 				<form method="post" action="ajax/login.php">
 					<div class="form-group">
@@ -35,7 +34,7 @@
 						<input type="password" class="form-control" placeholder="Hasło" name="password">
 					</div>
 					<div class="radio">
-						<label><input type="radio" name="userType" value="student" />Student</label>
+						<label><input type="radio" name="userType" value="student" checked />Student</label>
 						<label><input type="radio" name="userType" value="teacher" />Pracownik</label>
 						<label><input type="radio" name="userType" value="admin" />Administrator</label>
 					</div>
@@ -44,10 +43,7 @@
 						<button type="submit" class="btn btn-primary">Zaloguj</button>
 					</div>
 				</form>
-			</div>
-			<div class="col-md-6"></div>
 		</div>
-	</div>
-
+</div>
 </body>
 </html>

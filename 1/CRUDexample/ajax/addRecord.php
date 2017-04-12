@@ -1,5 +1,6 @@
 <?php
 
+
 if(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['major']) 
 		&& isset($_POST['year']) && isset($_POST['email']) && isset($_POST['pesel'])){
 
@@ -14,7 +15,7 @@ if(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['ma
 	$email = $_POST['email'];
 	$pesel = $_POST['pesel'];
 	
-	$query = "INSERT INTO studenci (imie,nazwisko,kierunek,semestr,mail,pesel) 
+	$query = "INSERT INTO studenci (imie,nazwisko,kierunek,semestr,email,pesel) 
 				VALUES('$first_name','$last_name','$major','$year','$email', '$pesel')";
 	
 	$result = mysqli_query($con, $query);

@@ -21,7 +21,7 @@
 			<label>Hasło</label> <input type="text" name="password" class="form-control" /> <br />
 
 			<div class="radio">
-				<label><input type="radio" name="userType" value="student" />Student</label>
+				<label><input type="radio" name="userType" value="student" checked/>Student</label>
 				<label><input type="radio" name="userType" value="teacher" />Dydaktyk</label>
 				<label><input type="radio" name="userType" value="admin"/>Administrator</label>
 			</div>

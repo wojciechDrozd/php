@@ -34,7 +34,7 @@ if(mysqli_num_rows($result) > 0)
                 <td>'.$row['nazwisko'].'</td>
                 <td>'.$row['kierunek'].'</td>
                	<td>'.$row['semestr'].'</td>
-                <td>'.$row['mail'].'</td>
+                <td>'.$row['email'].'</td>
                 <td>'.$row['pesel'].'</td>
                 <td>
                 <button onclick="GetUserDetails('.$row['pesel'].')" class="btn btn-warning">Edytuj</button>
@@ -44,6 +44,7 @@ if(mysqli_num_rows($result) > 0)
                 </td>
             </tr>';
 	}
+	
 }
 else
 {

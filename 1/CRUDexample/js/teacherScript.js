@@ -2,23 +2,20 @@
 //skrypt Pracownicy
 
 //dodawanie pracownika
-function addRecord() {
+function addTeacherRecord() {
 	
-   //pobranie wartości z formularza
+   //pobranie wartości z formularza 
     var first_name = $("#first_name").val();
     var last_name = $("#last_name").val();
-    var major = $("#major").val();
-    var year = $("#year").val();
+    var faculty = $("#faculty").val();
     var email = $("#email").val();
     var pesel = $("#pesel").val();
     
-    //zapisanie studenta
-    $.post("ajax/addRecord.php", {
-        student_id: student_id,
+    //zapisanie danych pracownika
+    $.post("ajax/addTeacherRecord.php", {
     	first_name: first_name,
         last_name: last_name,
-        major: major,
-        year: year,
+        faculty: faculty,
         email: email,
         pesel: pesel
     }, function (data, status) {
@@ -27,46 +24,46 @@ function addRecord() {
         $("#add_new_record_modal").modal("hide");
  
         //przeładuj tabelę
-        readRecords();
+        readTeacherRecords();
  
         //wyczyść popup
-        $("#student_id").val("");
         $("#first_name").val("");
         $("#last_name").val("");
-        $("#major").val("");
-        $("#year").val("");
+        $("#mafaculty").val("");
         $("#email").val("");
         $("#pesel").val("");
     });
 }
  
 //wczytanie tabeli
-function readRecords() {
-    $.get("ajax/readRecords.php", {}, function (data, status) {
+function readTeacherRecords() {
+    $.get("ajax/readTeachersRecords.php", {}, function (data, status) {
         $(".records_content").html(data);
     });
 }
  
 
-//usuwanie studenta
-function DeleteUser(pesel) {
-    var conf = confirm("Are you sure, do you really want to delete User?");
+//usuwanie pracownika
+function DeleteTeacher(pesel) {
+    var conf = confirm("Czy na pewno chcesz usunąć pracownika?");
     if (conf == true) {
-        $.post("ajax/deleteUser.php", {
+        $.post("ajax/deleteTeacher.php", {
                 pesel: pesel
             },
             function (data, status) {
-                //przeładuj tabelę
-                readRecords();
+                
+            	//przeładuj tabelę pracowników
+                readTeacherRecords();
             }
         );
     }
 }
  
-function GetUserDetails(id) {
-    // Add User ID to the hidden field for furture usage
+function GetTeacherDetails(id) {
+    
+	// Add User ID to the hidden field for furture usage
     $("#hidden_user_id").val(id);
-    $.post("ajax/readUserDetails.php", {
+    $.post("ajax/readTeacherDetails.php", {
             id: id
         },
         function (data, status) {
@@ -87,8 +84,8 @@ function GetUserDetails(id) {
     $("#update_user_modal").modal("show");
 }
 
-//edytuj dane studenta
-function UpdateUserDetails() {
+//edytuj dane pracownika
+function UpdateTeacherDetails() {
 	
     // get values
 	var student_id = $("#update_student_id").val();
@@ -125,5 +122,5 @@ function UpdateUserDetails() {
  
 $(document).ready(function () {
     //załaduj tabelę przy starcie strony
-    readRecords(); 
+    readTeacherRecords(); 
 });

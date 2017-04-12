@@ -1,3 +1,7 @@
+
+
+//skrypt STUDENCI
+
 //dodawanie studenta
 function addRecord() {
 	
@@ -45,7 +49,7 @@ function readRecords() {
 
 //usuwanie studenta
 function DeleteUser(pesel) {
-    var conf = confirm("Are you sure, do you really want to delete User?");
+    var conf = confirm("Czy na pewno chcesz usunąć studenta?");
     if (conf == true) {
         $.post("ajax/deleteUser.php", {
                 pesel: pesel

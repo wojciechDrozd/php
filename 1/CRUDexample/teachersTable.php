@@ -1,5 +1,5 @@
 
- <!-- Tabela pracownicy -->
+<!-- Tabela pracownicy -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +13,11 @@
 <!-- Bootstrap JS file -->
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
-<!-- Custom JS file -->
+<!-- Teachers  JS file -->
 <script type="text/javascript" src="js/teacherScript.js"></script>
-    <!-- Bootstrap CSS File  -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+ <!-- Bootstrap CSS File  -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
     
@@ -71,7 +72,7 @@
                 </div>
                 
                  <div class="form-group">
-                    <label for="last_name">Katedra</label>
+                    <label for="faculty">Katedra</label>
                     <input type="text" id="faculty" placeholder="Katedra" class="form-control"/>
                 </div>
                 
@@ -88,7 +89,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" onclick="addRecord()">Zapisz</button>
+                <button type="button" class="btn btn-primary" onclick="addTeacherRecord()">Zapisz</button>
             </div>
         </div>
     </div>

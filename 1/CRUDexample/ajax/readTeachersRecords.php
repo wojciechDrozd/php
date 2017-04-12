@@ -1,9 +1,9 @@
 <?php
 
-// include Database connection file
+//połączenie z bazą
 require_once 'db_connection.php';
 
-// nagłówek tabeli studenci
+// nagłówek tabeli pracownicy
 $data = '<table class="table table-bordered table-striped">
                         <tr>
                             <th>Id</th>
@@ -11,7 +11,7 @@ $data = '<table class="table table-bordered table-striped">
                             <th>Nazwisko</th>
                             <th>Katedra</th>
 							<th>Email</th>
-							<th>Pesel</th>
+							<th>PESEL</th>
                             <th>Edytuj</th>
                             <th>Usuń</th>
                         </tr>';
@@ -22,7 +22,7 @@ if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));
 }
 
-// if query results contains rows then featch those rows
+//wynik zapytania
 if(mysqli_num_rows($result) > 0)
 {
 	while($row = mysqli_fetch_assoc($result))
@@ -32,7 +32,7 @@ if(mysqli_num_rows($result) > 0)
                 <td>'.$row['imie'].'</td>
                 <td>'.$row['nazwisko'].'</td>
                 <td>'.$row['katedra'].'</td>
-                <td>'.$row['mail'].'</td>
+                <td>'.$row['email'].'</td>
                 <td>'.$row['pesel'].'</td>
                 <td>
                 <button onclick="GetTeacherDetails('.$row['pesel'].')" class="btn btn-warning">Edytuj</button>
@@ -45,7 +45,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	// records now found
+	// brak rekordów
 	$data .= '<tr><td colspan="6">Records not found!</td></tr>';
 }
 
