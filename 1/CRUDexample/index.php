@@ -1,8 +1,10 @@
+
+<!-- Login pagee -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>PHP and MySQL CRUD Operations Demo</title>
+<title>Dziekanat</title>
 
 <!-- Jquery JS file -->
 <script type="text/javascript"
@@ -34,7 +36,7 @@
 					</div>
 					<div class="radio">
 						<label><input type="radio" name="userType" value="student" />Student</label>
-						<label><input type="radio" name="userType" value="teacher" />Dydaktyk</label>
+						<label><input type="radio" name="userType" value="teacher" />Pracownik</label>
 						<label><input type="radio" name="userType" value="admin" />Administrator</label>
 					</div>
 					<br />

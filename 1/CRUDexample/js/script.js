@@ -2,7 +2,6 @@
 function addRecord() {
 	
    //pobranie wartości z formularza
-	var student_id = $("#student_id").val();
     var first_name = $("#first_name").val();
     var last_name = $("#last_name").val();
     var major = $("#major").val();
@@ -12,7 +11,6 @@ function addRecord() {
     
     //zapisanie studenta
     $.post("ajax/addRecord.php", {
-        student_id: student_id,
     	first_name: first_name,
         last_name: last_name,
         major: major,
@@ -28,7 +26,6 @@ function addRecord() {
         readRecords();
  
         //wyczyść popup
-        $("#student_id").val("");
         $("#first_name").val("");
         $("#last_name").val("");
         $("#major").val("");

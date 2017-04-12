@@ -1,9 +1,8 @@
 <?php
-// check request
+
 if(isset($_POST['pesel']) && isset($_POST['pesel']) != "")
 {
-	// include Database connection file
-	include("db_connection.php");
+	require_once 'db_connection.php';
 
 	// get user id
 	$pesel= $_POST['pesel'];

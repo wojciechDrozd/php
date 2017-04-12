@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Dziekanat</h1>
+			<h2>Panel Administratora</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="container">
+			<a href="studentsTable.php" class="btn btn-info" role="button">Studenci</a>
+			<a href="teachersTable.php" class="btn btn-info" role="button">Dydaktycy</a>
+			<button type="button" class="btn btn-info">Button</button>
+			<input type="button" class="btn btn-info" value="Input Button"> <input
+				type="submit" class="btn btn-info" value="Submit Button">
+		</div>
+	</div>
+</div>
+
