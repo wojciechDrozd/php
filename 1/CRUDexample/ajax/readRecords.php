@@ -55,4 +55,6 @@ else
 $data .= '</table>';
 
 echo $data;
+
+echo "wtf";
 ?>

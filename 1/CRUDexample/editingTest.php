@@ -70,7 +70,7 @@
       $(document).on('blur', '.first_name', function(){  
            var id = $(this).data("id1");  
            var first_name = $(this).text();  
-           edit_data(id, first_name, "first_name");  
+           edit_data(id, first_name, "imi);  
       });  
       $(document).on('blur', '.last_name', function(){  
            var id = $(this).data("id2");  
