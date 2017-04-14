@@ -1,41 +1,29 @@
 
 
-//skrypt STUDENCI
+//skrypt PRZEDMIOTY
 
 //dodawanie studenta
 function addClassRecord() {
 	
    //pobranie wartości z formularza
-    var idprzedmiotu = $("#first_name").val();
-    var last_name = $("#last_name").val();
-    var major = $("#major").val();
-    var year = $("#year").val();
-    var email = $("#email").val();
-    var pesel = $("#pesel").val();
+    var class_name = $("#class_name").val();
+    var teacher_name = $("##class_name"").val();
     
     //zapisanie studenta
-    $.post("ajax/addRecord.php", {
-    	first_name: first_name,
-        last_name: last_name,
-        major: major,
-        year: year,
-        email: email,
-        pesel: pesel
+    $.post("ajax/addClassRecord.php", {
+    	class_name: first_name,
+    	teacher_name: last_name,
     }, function (data, status) {
     	
         //zamknięcie popup
         $("#add_new_record_modal").modal("hide");
  
         //przeładuj tabelę
-        readRecords();
+        readCLassesRecords();
  
         //wyczyść popup
-        $("#first_name").val("");
-        $("#last_name").val("");
-        $("#major").val("");
-        $("#year").val("");
-        $("#email").val("");
-        $("#pesel").val("");
+        $("##class_name").val("");
+        $("##class_name").val("");
     });
 }
  

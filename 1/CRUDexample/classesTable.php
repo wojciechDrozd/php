@@ -64,34 +64,18 @@
             <div class="modal-body">
                 
                 <div class="form-group">
-                    <label for="first_name">Imię</label>
-                    <input type="text" id="first_name" placeholder="Imię" class="form-control"/>
+                    <label for="class_name">Nazwa przedmiotu</label>
+                    <input type="text" id="class_name" placeholder="Imię" class="form-control"/>
                 </div>
  
                 <div class="form-group">
-                    <label for="last_name">Nazwisko</label>
-                    <input type="text" id="last_name" placeholder="Nazwisko" class="form-control"/>
-                </div>
-                
-                 <div class="form-group">
-                    <label for="faculty">Katedra</label>
-                    <input type="text" id="faculty" placeholder="Katedra" class="form-control"/>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Email" class="form-control"/>
-                </div>
-                
-                 <div class="form-group">
-                    <label for="last_name">Pesel</label>
-                    <input type="text" id="pesel" placeholder="Pesel" class="form-control"/>
+                    <?php include 'ajax/selectTeacher.php';?>
                 </div>
  
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" onclick="addTeacherRecord()">Zapisz</button>
+                <button type="button" class="btn btn-primary" onclick="addClassRecord()">Zapisz</button>
             </div>
         </div>
     </div>
