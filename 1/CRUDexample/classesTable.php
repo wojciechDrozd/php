@@ -29,59 +29,64 @@
 	<div w3-include-html="adminMenuBar.php"></div>
 	<script>w3IncludeHTML()</script>
 	<!-- /Admin Menu Section -->
-	
-	
-<!-- Content Section -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="pull-left">
-                <br/><button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Dodaj przedmiot</button>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <br/>
-             <div class="records_content">
-            
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /Content Section -->
- 
- 
-<!-- Bootstrap Modals -->
-<!-- Modal - Add New Record/User -->
-<div class="modal fade" id="add_new_record_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Dodaj przedmiot</h4>
-            </div>
-            <div class="modal-body">
-                
-                <div class="form-group">
-                    <label for="class_name">Nazwa przedmiotu</label>
-                    <input type="text" id="class_name" placeholder="Imię" class="form-control"/>
-                </div>
- 
-                <div class="form-group">
+
+
+	<!-- Content Section -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="pull-left">
+					<br />
+					<button class="btn btn-success" data-toggle="modal"
+						data-target="#add_new_record_modal">Dodaj przedmiot</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<br />
+				<div class="records_content"></div>
+			</div>
+		</div>
+	</div>
+	<!-- /Content Section -->
+
+
+	<!-- Bootstrap Modals -->
+	<!-- Modal - Add New Record/User -->
+	<div class="modal fade" id="add_new_record_modal" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Dodaj przedmiot</h4>
+				</div>
+				<div class="modal-body">
+
+					<div class="form-group">
+						<label for="class_name">Nazwa przedmiotu</label> <input
+							type="text" id="class_name" placeholder="Nazwa przedmiotu"
+							class="form-control" />
+					</div>
+
+					<div class="form-group">
                     <?php include 'ajax/selectTeacher.php';?>
                 </div>
- 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" onclick="addClassRecord()">Zapisz</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- // Modal -->
- 
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
+					<button type="button" class="btn btn-primary" onclick="addClassRecord()">Zapisz</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal -->
+
 
 
 </body>

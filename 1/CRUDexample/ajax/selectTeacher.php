@@ -15,7 +15,7 @@ if(mysqli_num_rows($result) > 0)
 {
 	
 echo <<<EOD
-	<label for="select_teacher">Prowadzący</label> <select class="form-control" id="select_teacher">
+	<label for="select_teacher">Prowadzący</label> <select class="form-control" id="teacher_full_name">
 EOD;
 	
 	while($row = mysqli_fetch_assoc($result))
@@ -23,6 +23,9 @@ EOD;
 		echo '<option>'.$row['imie'].' '.$row['nazwisko'].'</option>';
            
 	}
+	
+	echo '</select>';
+	
 }
 else
 {

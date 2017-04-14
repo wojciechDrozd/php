@@ -7,23 +7,27 @@ function addClassRecord() {
 	
    //pobranie wartości z formularza
     var class_name = $("#class_name").val();
-    var teacher_name = $("##class_name"").val();
+    var teacher_full_name = $("#teacher_full_name").val();
+    var spaceIndex = str.indexOf(" ");
+    var teacher_first_name = teacher_full_name.substr(0,spaceIndex);
+    var teacher_surname = teacher_full_name.substr(spaceIndex+1);
     
     //zapisanie studenta
     $.post("ajax/addClassRecord.php", {
-    	class_name: first_name,
-    	teacher_name: last_name,
+    	class_name: class_name,
+    	teacher_first_name: teacher_first_name,
+    	teacher_surname:teacher_surname
     }, function (data, status) {
     	
         //zamknięcie popup
         $("#add_new_record_modal").modal("hide");
  
         //przeładuj tabelę
-        readCLassesRecords();
+        readClassesRecords();
  
         //wyczyść popup
-        $("##class_name").val("");
-        $("##class_name").val("");
+        $("#class_name").val("");
+        $("#teacher_full_name").val("");
     });
 }
  
