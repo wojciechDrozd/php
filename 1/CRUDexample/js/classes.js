@@ -53,8 +53,8 @@ function deleteClass(class_id) {
 }
  
 function getClassDetails(class_id) {
-    // Add User ID to the hidden field for furture usage
-    //$("#hidden_user_id").val(id);
+	
+	$("#hidden_class_id").val(class_id);
    
 	$.post("ajax/readClassDetails.php", {
             class_id: class_id
@@ -64,7 +64,7 @@ function getClassDetails(class_id) {
         	// PARSE json data
         	var przedmiot = JSON.parse(data);
             
-            // dodaj aktualnie wartości do modala
+            // dodaj aktualne wartości do modala
             $("#update_class_name").val(przedmiot["nazwaPrzedmiotu"]);
             $("#update_teacher_full_name").val(przedmiot["wykladowca"]);
           
@@ -75,35 +75,26 @@ function getClassDetails(class_id) {
 }
 
 //edytuj dane przedmiotu
-function UpdateClassDetails() {
+function updateClassDetails() {
 	
-    // get values
-	var student_id = $("#update_student_id").val();
-    var first_name = $("#update_first_name").val();
-    var last_name = $("#update_last_name").val();
-  
+    // pobranie uaktualnionych wartości
+	var class_id =  $("#hidden_class_id").val();
+    var class_name = $("#update_class_name").val();
+    var teacher_full_name = $("#update_teacher_full_name").val();
  
-    // get hidden field value
-    var id = $("#hidden_user_id").val();
- 
-    // Update the details by requesting to the server using ajax
+    //aktualizacja danych w bazie
     $.post("ajax/updateClassDetails.php", {
-           
-    		id:id,
-    		student_id: student_id,
-            first_name: first_name,
-            last_name: last_name,
-            major: major,
-            year: year,
-            email: email,
-            pesel: pesel
+          
+    	class_id: class_id,
+    	class_name: class_name,
+    	teacher_full_name: teacher_full_name
         },
         function (data, status) {
             // hide modal popup
             $("#update_class_modal").modal("hide");
             
             // reload Users by using readRecords();
-            readRecords();
+            readClassesRecords();
         }
     );
 }

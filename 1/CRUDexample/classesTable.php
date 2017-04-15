@@ -115,8 +115,8 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" onclick="UpdateClassDetails()" >Zapisz</button>
-                <input type="hidden" id="hidden_user_id">
+                <button type="button" class="btn btn-primary" onclick="updateClassDetails()" >Zapisz</button>
+                <input type="hidden" id="hidden_class_id">
             </div>
         </div>
     </div>
