@@ -1,5 +1,5 @@
 
-//dodawanie przedmiotu
+//dodawanie przedmiotu - ok
 function addClass() {
 	
    //pobranie wartości z formularza
@@ -29,7 +29,7 @@ function addClass() {
     });
 }
  
-//wczytanie tabeli
+//wczytanie tabeli - ok
 function readClassesRecords() {
     $.get("ajax/readClassesRecords.php", {}, function (data, status) {
         $(".records_content").html(data);
@@ -37,7 +37,7 @@ function readClassesRecords() {
 }
  
 
-//usuwanie przedmiotu
+//usuwanie przedmiotu - ok
 function deleteClass(class_id) {
     var conf = confirm("Czy na pewno chcesz usunąć przedmiot?");
     if (conf == true) {
@@ -51,22 +51,22 @@ function deleteClass(class_id) {
         );
     }
 }
- 
+
+//pobranie aktualnych danych przedmiotu do modala edycji
 function getClassDetails(class_id) {
 	
 	$("#hidden_class_id").val(class_id);
-   
 	$.post("ajax/readClassDetails.php", {
             class_id: class_id
         },
-        function (data, status) {
+        function (data,status) {
                     	
         	// PARSE json data
         	var przedmiot = JSON.parse(data);
-            
-            // dodaj aktualne wartości do modala
-            $("#update_class_name").val(przedmiot["nazwaPrzedmiotu"]);
-            $("#update_teacher_full_name").val(przedmiot["wykladowca"]);
+        	
+        	// dodaj aktualne wartości do modala
+            $("#update_class_name").val(przedmiot.nazwaPrzedmiotu);
+            $("#update_teacher_full_name").val(przedmiot.wykladowca);
           
         }
     );
@@ -74,7 +74,7 @@ function getClassDetails(class_id) {
     $("#update_class_modal").modal("show");
 }
 
-//edytuj dane przedmiotu
+//edytuj dane przedmiotu - działą
 function updateClassDetails() {
 	
     // pobranie uaktualnionych wartości
@@ -90,10 +90,11 @@ function updateClassDetails() {
     	teacher_full_name: teacher_full_name
         },
         function (data, status) {
-            // hide modal popup
+            
+        	// ukryj modal
             $("#update_class_modal").modal("hide");
             
-            // reload Users by using readRecords();
+            //odśwież tabele
             readClassesRecords();
         }
     );

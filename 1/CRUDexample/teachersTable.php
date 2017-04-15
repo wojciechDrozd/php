@@ -119,13 +119,8 @@
                 </div>
                 
                  <div class="form-group">
-                    <label for="update_major">Kierunek</label>
-                    <input type="text" id="update_major" placeholder="Kierunek" class="form-control"/>
-                </div>
-                
-                 <div class="form-group">
-                    <label for="update_year">Semestr</label>
-                    <input type="text" id="update_year" placeholder="Semestr" class="form-control"/>
+                    <label for="update_faculty">Katedra</label>
+                    <input type="text" id="update_faculty" placeholder="Kierunek" class="form-control"/>
                 </div>
  
                 <div class="form-group">
@@ -142,7 +137,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
                 <button type="button" class="btn btn-primary" onclick="updateTeacherDetails()" >Zapisz</button>
-                <input type="hidden" id="hidden_user_id">
+                <input type="hidden" id="hidden_teacher_id">
             </div>
         </div>
     </div>

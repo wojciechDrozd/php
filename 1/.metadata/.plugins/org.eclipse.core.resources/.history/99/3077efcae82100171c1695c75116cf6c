@@ -1,0 +1,22 @@
+<?php
+// include Database connection file
+include("db_connection.php");
+
+// check request
+if(isset($_POST['pesel']) && isset($_POST['pesel']) != "")
+{
+	//pobierz id studenta
+	$pesel = $_POST['pesel'];
+
+	// Get User Details
+	$query = "SELECT * FROM profesores WHERE pesel= '$pesel'";
+	
+	$result = mysqli_query($con,$query);
+	$row = mysqli_fetch_assoc($result);
+	
+	$response = json_encode($row);
+	
+	echo $response;
+}
+
+?>

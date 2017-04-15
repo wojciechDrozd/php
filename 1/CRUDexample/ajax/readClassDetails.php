@@ -1,9 +1,9 @@
 <?php
 include("db_connection.php");
 
-if(isset($_POST['idprzedmiot']) && isset($_POST['idprzedmiot']) != "")
+if(isset($_POST['class_id']) && isset($_POST['class_id']) != "")
 {
-	$class_id = $_POST['idprzedmiot'];
+	$class_id = $_POST['class_id'];
 
 	$query = "SELECT nazwaPrzedmiotu,wykladowca 
 	FROM przedmioty 
@@ -12,7 +12,10 @@ if(isset($_POST['idprzedmiot']) && isset($_POST['idprzedmiot']) != "")
 	$result = mysqli_query($con, $query);
     $row = mysqli_fetch_assoc($result);
     
-	echo json_encode($row);
+	$response= json_encode($row);
+	
+	echo $response;
+	
 }
 
 ?>

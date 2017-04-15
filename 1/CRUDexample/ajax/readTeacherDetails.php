@@ -3,34 +3,20 @@
 include("db_connection.php");
 
 // check request
-if(isset($_POST['nr_albumu']) && isset($_POST['nr_albumu']) != "")
+if(isset($_POST['teacher_id']) && isset($_POST['teacher_id']) != "")
 {
 	//pobierz id studenta
-	$student_id = $_POST['id'];
+	$teacher_id = $_POST['teacher_id'];
 
 	// Get User Details
-	$query = "SELECT * FROM studenci WHERE nr_albumu= '$student_id'";
-	if (!$result = mysqli_query($con, $query)) {
-		exit(mysqli_error($con));
-	}
-	$response = array();
-	if(mysqli_num_rows($result) > 0) {
-		while ($row = mysqli_fetch_assoc($result)) {
-			$response = $row;
-		}
-	}
-	else
-	{
-		$response['status'] = 200;
-		$response['message'] = "Data not found!";
-	}
-	// display JSON data
-	echo json_encode($response);
-}
-else
-{
-	$response['status'] = 200;
-	$response['message'] = "Invalid Request!";
+	$query = "SELECT * FROM profesores WHERE idProfesores= '$teacher_id'";
+	
+	$result = mysqli_query($con,$query);
+	$row = mysqli_fetch_assoc($result);
+	
+	$response = json_encode($row);
+	
+	echo $response;
 }
 
 ?>

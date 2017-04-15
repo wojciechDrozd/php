@@ -6,7 +6,7 @@ include("db_connection.php");
 if(isset($_POST['nr_albumu']) && isset($_POST['nr_albumu']) != "")
 {
 	//pobierz id studenta
-	$student_id = $_POST['id'];
+	$student_id = $_POST[''];
 
 	// Get User Details
 	$query = "SELECT * FROM studenci WHERE nr_albumu= '$student_id'";

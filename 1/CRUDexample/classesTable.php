@@ -106,7 +106,7 @@
                     <input type="text" id="update_class_name" placeholder="Nazwa przedmiotu" class="form-control"/>
                 </div>
                 	<div class="form-group">
-					<label for="update_select_teacher">Prowadzący</label> 
+					<label for="update_teacher_full_name">Prowadzący</label> 
 					<select class="form-control" id="update_teacher_full_name">
                     <?php include 'ajax/selectTeacher.php';?>
                     </select>

@@ -55,26 +55,27 @@ function deleteTeacher(pesel) {
         );
     }
 }
- 
-function getTeacherDetails(id) {
+
+//pobranie aktualnych danych praciwnika do modala edycji
+function getTeacherDetails(teacher_id) {
     
-	// Add User ID to the hidden field for furture usage
-    $("#hidden_user_id").val(id);
+	
+    $("#hidden_teacher_id").val(teacher_id);
     $.post("ajax/readTeacherDetails.php", {
-            id: id
-        },
+            teacher_id: teacher_id
+    },
         function (data, status) {
             // PARSE json data
         	
-            var user = JSON.parse(data);
-            // Assing existing values to the modal popup fields
-            $("#update_student_id").val(user.first_name);
-            $("#update_first_name").val(user.first_name);
-            $("#update_last_name").val(user.last_name);
-            $("#update_major").val(user.major);
-            $("#update_year").val(user.year);
-            $("#update_email").val(user.email);
-            $("#update_pesel").val(user.pesel);
+            var teacher = JSON.parse(data);
+            
+            // odaj aktualne wartości do modala
+            $("#update_first_name").val(teacher.imie);
+            $("#update_last_name").val(teacher.nazwisko);
+            $("#update_faculty").val(teacher.katedra);
+            $("#update_email").val(teacher.email);
+            $("#update_pesel").val(teacher.pesel);
+         
         }
     );
     //otwórz popup
@@ -84,34 +85,31 @@ function getTeacherDetails(id) {
 //edytuj dane pracownika
 function updateTeacherDetails() {
 	
-    // get values
-	var student_id = $("#update_student_id").val();
-    var first_name = $("#update_first_name").val();
-    var last_name = $("#update_last_name").val();
-    var major = $("#update_major").val();
-    var year = $("#update_year").val();
-    var email = $("#update_email").val();
-    var pesel = $("#update_pesel").val();
+    // pobranie uaktyalnioncyh wartości
+	var teacher_id = $("#hidden_user_id").val();
+	var first_name =  $("#update_first_name");
+    var last_name =  $("#update_last_name");
+    var faculty =  $("#update_faculty");
+    var email = $("#update_email");
+    var pesel = $("#update_pesel");
+  
  
-    // get hidden field value
-    var id = $("#hidden_user_id").val();
- 
-    // Update the details by requesting to the server using ajax
-    $.post("ajax/updateUserDetails.php", {
+  //aktualizacja danych w bazie
+    $.post("ajax/updateTeacherDetails.php", {
            
-    		id:id,
-    		student_id: student_id,
-            first_name: first_name,
-            last_name: last_name,
-            major: major,
-            year: year,
-            email: email,
-            pesel: pesel
+    	  teacher_id: teacher_id,
+    	  first_name: first_name,
+          last_name: last_name,
+          faculty: faculty,
+          email: email,
+          pesel: pesel
         },
         function (data, status) {
-            // hide modal popup
-            $("#update_user_modal").modal("hide");
-            // reload Users by using readRecords();
+            
+        	//ukryj modal
+            $("#update_teacher_modal").modal("hide");
+            
+            //odśwież tabele
             readTeachersRecords();
         }
     );
