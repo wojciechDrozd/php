@@ -14,36 +14,16 @@
 <script type="text/javascript" src="js/script.js"></script>
     <!-- Bootstrap CSS File  -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
  
+ 
 <!-- Content Section -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Panel dydaktyka</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="pull-right">
-                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Dodaj studenta</button>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <br/>
-             <div class="records_content">
-            
-            </div>
-        </div>
-    </div>
-</div>
+<div w3-include-html="teacherMenuBar.php"></div> 
+<script>w3IncludeHTML()</script>
 <!-- /Content Section -->
- 
- 
-<!-- Bootstrap Modals -->
 
 
 </body>

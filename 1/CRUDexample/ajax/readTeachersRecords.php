@@ -6,7 +6,6 @@ require_once 'db_connection.php';
 // nagłówek tabeli pracownicy
 $data = '<table class="table table-bordered table-striped">
                         <tr>
-                            <th>Id</th>
                             <th>Imię</th>
                             <th>Nazwisko</th>
                             <th>Katedra</th>
@@ -28,18 +27,13 @@ if(mysqli_num_rows($result) > 0)
 	while($row = mysqli_fetch_assoc($result))
 	{
 		$data .= '<tr>
-                <td>'.$row['idProfesores'].'</td>
                 <td>'.$row['imie'].'</td>
                 <td>'.$row['nazwisko'].'</td>
                 <td>'.$row['katedra'].'</td>
                 <td>'.$row['email'].'</td>
                 <td>'.$row['pesel'].'</td>
-                <td>
-                <button onclick="GetTeacherDetails('.$row['pesel'].')" class="btn btn-warning">Edytuj</button>
-                </td>
-                <td>
-                <button onclick="DeleteTeacher('.$row['pesel'].')" class="btn btn-danger">Usuń</button>
-                </td>
+                <td><button onclick="getTeacherDetails('.$row['pesel'].')" class="btn btn-warning"><i class="material-icons">mode_edit</i></button></td>
+                <td><button onclick="deleteTeacher('.$row['pesel'].')" class="btn btn-danger"><i class="material-icons">delete</i></button></td>
             </tr>';
 	}
 }

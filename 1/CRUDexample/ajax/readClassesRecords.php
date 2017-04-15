@@ -6,10 +6,8 @@ require_once 'db_connection.php';
 // nagłówek tabeli przedmioty
 $data = '<table class="table table-bordered table-striped">
                         <tr>
-                            <th>Id </th>
-                            <th>Nazwa</th>
+                            <th>Przedmiot</th>
                             <th>Wykładowca</th>
-                            <th>Id wykładowcy</th>
                             <th>Edytuj</th>
                             <th>Usuń</th>
                         </tr>';
@@ -20,24 +18,24 @@ if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));
 }
 
-// if query results contains rows then featch those rows
+// zawartość tabeli przedmioty
 if(mysqli_num_rows($result) > 0)
 {
 	while($row = mysqli_fetch_assoc($result))
 	{
 		$data .= '<tr>
-                <td>'.$row['idprzedmiot'].'</td>
                 <td>'.$row['nazwaPrzedmiotu'].'</td>
                 <td>'.$row['wykladowca'].'</td>
-                <td>'.$row['Profesores_idProfesores'].'</td>
+                <td><button onclick="getClassDetails('.$row['idprzedmiot'].')" class="btn btn-warning"><i class="material-icons">mode_edit</i></button></td>
+                <td><button onclick="deleteClass('.$row['idprzedmiot'].')" class="btn btn-danger"><i class="material-icons">delete</i></button></td>
                 </tr>';
 	}
 	
 }
 else
 {
-	// records now found
-	$data .= '<tr><td colspan="6">Records not found!</td></tr>';
+	//brak rekordów
+	$data .= '<tr><td colspan="6">Brak przedmiotów w bazie.</td></tr>';
 }
 
 $data .= '</table>';

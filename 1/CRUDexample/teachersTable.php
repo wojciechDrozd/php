@@ -14,10 +14,11 @@
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
 <!-- Teachers  JS file -->
-<script type="text/javascript" src="js/teacherScript.js"></script>
+<script type="text/javascript" src="js/teachers.js"></script>
 
  <!-- Bootstrap CSS File  -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
     
@@ -89,7 +90,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" onclick="addTeacherRecord()">Zapisz</button>
+                <button type="button" class="btn btn-primary" onclick="addTeacher()">Zapisz</button>
             </div>
         </div>
     </div>
@@ -140,7 +141,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" onclick="UpdateUserDetails()" >Zapisz</button>
+                <button type="button" class="btn btn-primary" onclick="updateTeacherDetails()" >Zapisz</button>
                 <input type="hidden" id="hidden_user_id">
             </div>
         </div>

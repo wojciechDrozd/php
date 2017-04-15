@@ -5,3 +5,6 @@
 1491888484173	Move 'login.php' to 'CRUDexample'
 1491888510372	Move 'login.php' to 'ajax'
 1492147337142	Move 'selectTeacher.php' to 'ajax'
+1492247036980	Rename resource 'script.js'
+1492247095868	Rename resource 'classScript.js'
+1492247120756	Rename resource 'teacherScript.js'

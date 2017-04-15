@@ -13,10 +13,11 @@
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
 <!-- Custom JS file -->
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/students.js"></script>
     <!-- Bootstrap CSS File  -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
     
 </head>
@@ -73,13 +74,22 @@
                     <label for="last_name">Kierunek studiów</label>
                     <input type="text" id="major" placeholder="Kierunek studiów" class="form-control"/>
                 </div>
-                
-                 <div class="form-group">
-                    <label for="year">Semestr</label>
-                    <input type="text" id="year" placeholder="Semestr" class="form-control"/>
-                </div>
- 
-                <div class="form-group">
+
+					<div class="form-group">
+						<label for="year">Semestr</label> <select class="form-control"
+							id="year">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+						</select>
+
+					</div>
+
+					<div class="form-group">
                     <label for="email">Email</label>
                     <input type="text" id="email" placeholder="Email" class="form-control"/>
                 </div>
@@ -92,7 +102,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" onclick="addRecord()">Zapisz</button>
+                <button type="button" class="btn btn-primary" onclick="addStudent()">Zapisz</button>
             </div>
         </div>
     </div>
@@ -129,8 +139,23 @@
                     <label for="update_year">Semestr</label>
                     <input type="text" id="update_year" placeholder="Semestr" class="form-control"/>
                 </div>
- 
-                <div class="form-group">
+
+					<div class="form-group">
+						<label for="update_year">Semestr</label> <select
+							class="form-control" id="update_year">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+						</select>
+					</div>
+
+
+
+					<div class="form-group">
                     <label for="update_email">Email</label>
                     <input type="text" id="update_email" placeholder="Email" class="form-control"/>
                 </div>
@@ -143,7 +168,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-                <button type="button" class="btn btn-primary" onclick="UpdateUserDetails()" >Zapisz</button>
+                <button type="button" class="btn btn-primary" onclick="UpdateStudentDetails()" >Zapisz</button>
                 <input type="hidden" id="hidden_user_id">
             </div>
         </div>
