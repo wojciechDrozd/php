@@ -1,0 +1,16 @@
+<?php
+
+if(isset($_POST['student_id']) && isset($_POST['student_id']) != "")
+{
+	require_once 'db_connection.php';
+
+	// get user id
+	$student_id= $_POST['student_id'];
+
+	// delete User
+	$query = "DELETE FROM studenci WHERE nrAlbumu='$student_id'";
+	if (!$result = mysqli_query($con, $query)) {
+		exit(mysqli_error($con));
+	}
+}
+?>

@@ -1,0 +1,16 @@
+<?php
+
+//dane do połączenia z bazą
+$host = "localhost";  
+$user = "root";  
+$password = "";  
+$database = "dziekanat";  
+                         
+//połączenie z bazą
+try {
+	$con = new mysqli ( $host, $user, $password, $database );
+} catch ( Exception $e ) {
+	"Connection failed: " . $con->connect_error;
+}
+
+?>

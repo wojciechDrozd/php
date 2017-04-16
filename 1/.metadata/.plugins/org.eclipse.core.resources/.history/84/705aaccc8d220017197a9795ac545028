@@ -1,0 +1,21 @@
+<?php
+
+
+// połączenie z bazą
+require_once 'db_connection.php';
+
+if(isset($_POST['student_id']) && isset($_POST['student_id']) != "")
+{
+	$student_id = $_POST['student_id'];
+
+	//pobranie danych studenta
+	$query = "SELECT * FROM studenci WHERE nrAlbumu='$student_id'";
+	$result = mysqli_query($con,$query);
+	$row = mysqli_fetch_assoc($result);
+	
+	$response = json_encode($row);
+	
+	echo $response;
+}
+
+?>

@@ -1,0 +1,16 @@
+<?php
+
+if(isset($_POST['teacher_id']) && isset($_POST['teacher_id']) != "")
+{
+	require_once 'db_connection.php';
+
+	// get user id
+	$teacher_id= $_POST['teacher_id'];
+
+	// delete User
+	$query = "DELETE FROM profesores WHERE teacher_id='$teacher_id'";
+	if (!$result = mysqli_query($con, $query)) {
+		exit(mysqli_error($con));
+	}
+}
+?>
