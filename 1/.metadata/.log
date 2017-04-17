@@ -1647,3 +1647,18 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.wst.sse.ui 4 4 2017-04-17 13:36:44.547
 !MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-04-17 13:49:47.227
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-04-17 13:49:52.568
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-04-17 13:49:53.639
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-04-17 13:54:40.631
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-04-17 13:58:36.844
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
