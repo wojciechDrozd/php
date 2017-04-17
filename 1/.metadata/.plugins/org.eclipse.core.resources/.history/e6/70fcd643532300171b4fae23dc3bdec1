@@ -1,0 +1,29 @@
+<?php
+
+
+
+$subject = file_get_contents('http://www.onet.pl/');
+$pattern = '/(?<=href=")([^"]+)/';
+
+
+preg_match_all($pattern, $subject, $matches);
+//echo "<pre>",var_dump($matches),"</pre>";
+
+/* echo "<pre>",var_dump($matches[0][0]),"</pre>";
+
+echo "<pre>",var_dump($matches[0]),"</pre>";
+ */
+
+foreach ($matches[0] as $match){
+	if(substr($match,0,4) == "http"){
+		$subject1 = file_get_contents($match);
+		$pattern1 = '/(?<=href=")([^"]+)/';
+		preg_match_all($pattern1, $subject1, $matches1);
+		echo "<pre>",var_dump($matches1[0]),"</pre>";
+	}
+}
+
+
+
+
+?>

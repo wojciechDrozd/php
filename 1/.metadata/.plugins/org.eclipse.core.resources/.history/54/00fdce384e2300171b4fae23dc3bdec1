@@ -1,0 +1,12 @@
+<?php
+
+
+file_get_contents('http://www.onet.pl/');
+
+$subject = file_get_contents('http://www.onet.pl/');
+$pattern = '/href=".*?"/';
+preg_match_all($pattern, $subject, $matches, PREG_OFFSET_CAPTURE,3);
+//echo "<pre>",var_dump($matches),"</pre>";
+
+echo "<pre>",var_dump($matches[0]),"</pre>";
+?>

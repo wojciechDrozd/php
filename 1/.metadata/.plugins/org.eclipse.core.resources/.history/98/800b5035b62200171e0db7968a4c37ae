@@ -1,0 +1,26 @@
+function readProducts(){
+	
+	var url = $("#url").val();
+	
+	$.post("ajax/scanner.php", {
+		
+		url: url
+		
+	}, function (data, status) {
+        $(".results").html(data);
+    });
+	
+}
+
+function readProducts(){
+	
+	
+	$.get("ajax/scanner.php", {
+		
+		url: url
+		
+	}, function (data, status) {
+        $(".results").html(data);
+    });
+	
+}

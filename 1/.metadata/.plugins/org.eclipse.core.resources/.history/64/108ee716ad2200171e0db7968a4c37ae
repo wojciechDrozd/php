@@ -1,0 +1,12 @@
+.jumbotron{
+    background-color: #42c2f4;
+}
+.text-center{
+	color: white;
+}
+
+
+#mybut{
+	width:200px;
+	background-color: red;
+}

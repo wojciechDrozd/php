@@ -1,0 +1,31 @@
+<?php
+
+
+if(isset($_POST['url'])){
+	
+	require_once 'db_connection.php';
+	
+	$url = $_POST['url'];
+	$text_blob = $_POST['text_blob'];
+	$name_prefix = $_POST['name_prefix '];
+	$name_suffix = $_POST['name_suffix'];
+	$url_prefix = $_POST['url_prefix'];
+	$regex = $_POST['regex'];
+	$name_capture_group = $_POST['name_capture_group'];
+	$extra_capture_group = $_POST['extra_capture_group'];
+	$website_capture_group = $_POST['website_capture_group '];
+	
+	$query = "INSERT INTO products (name,extra,website)
+	VALUES('$name','$extra','$website')";
+	
+	$result = mysqli_query($con, $query);
+
+
+
+}else{
+	$query = "INSERT INTO products (name,extra,website)
+	VALUES('name','extra','website')";
+	
+	$result = mysqli_query($con, $query);
+}
+?>

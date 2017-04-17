@@ -1,0 +1,36 @@
+<?php
+
+
+/* file_get_contents('http://www.onet.pl/');
+
+$subject = file_get_contents('http://www.onet.pl/');
+$pattern = '/href="(.*?)"/';
+preg_match_all($pattern, $subject, $matches);
+//echo "<pre>",var_dump($matches),"</pre>";
+
+echo "<pre>",var_dump($matches[0][0]),"</pre>";
+
+echo "<pre>",var_dump($matches[0]),"</pre>"; */
+
+/* preg_match_all("/
+		
+		\(?  (\d{3})?  \)?  (?(1)  [\-\s] ) \d{3}-\d{4}
+		
+		/x",
+		
+		"Call 555-1212 or 1-800-555-1212", $phones);
+
+echo "<pre>",var_dump($phones),"</pre>"; */
+
+$html = "<b>bold text</b><a href=howdy.html>click me</a>";
+
+preg_match_all("/(<([\w]+)[^>]*>)(.*?)(<\/\\2>)/", $html, $matches, PREG_SET_ORDER);
+
+foreach ($matches as $val) {
+	echo "matched: " . $val[0] . "<br/>";
+	echo "part 1: " . $val[1] . "<br/>";
+	echo "part 2: " . $val[2] . "<br/>";
+	echo "part 3: " . $val[3] . "<br/>";
+	echo "part 4: " . $val[4] . "<br/>";
+}
+?>

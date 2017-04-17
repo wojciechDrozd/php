@@ -1,0 +1,13 @@
+<?php
+
+
+
+var_dump(parse_url('http://store.nike.com/us/en_us/pw/womens-running-shoes/7ptZ8yzZoi3?ipp=85'));
+
+file_get_contents('http://www.onet.pl/');
+
+$subject = file_get_contents('http://www.onet.pl/');
+$pattern = '/href=".*?"/';
+preg_match($pattern, $subject, $matches, PREG_OFFSET_CAPTURE, 3);
+print_r($matches);
+?>

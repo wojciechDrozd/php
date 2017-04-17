@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>Scanna</title>
+
 <!-- Jquery JS  -->
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,7 +19,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 
 <!-- Custom JS   -->
-<script type="text/javascript" src="js/scanner.js"></script>
+<script type="text/javascript" src="js/scanna.js"></script>
 
 <!-- google fonts -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" >
@@ -30,58 +31,59 @@
 			<p class="text-center" id="jumbotext">Scanna as fuck</p>
 		</div>
 	</div>
+	
 	<div class="container">
-		<form method="post">
+		
+	<form method="post">
 
 			<div class="form-group">
 				<label for="url">URL</label> 
-				<input type="text" class="form-control" name="url">
+				<input class="form-control" type="text" id="url">
 			</div>
-
+			
 			<div class="form-gropu">
 				<label for="text-blob">Text blob</label>
 				<textarea class="form-control" rows="5" id="text-blob"></textarea>
 			</div>
 			<div class="form-group">
 				<label for="name_prefix">Name prefix</label> 
-				<input type="text" class="form-control" name="name_prefix">
+				<input type="text" class="form-control" id="name_prefix">
 			</div>
 			<div class="form-group">
 				<label for="name_suffix">Name suffix</label> 
-				<input type="text" class="form-control" name="name_suffix">
+				<input type="text" class="form-control" id="name_suffix">
 			</div>
 			<div class="form-group">
 				<label for="url_prefix">URL prefix</label> 
-				<input type="text" class="form-control" name="url_prefix">
-			</div>
-			<div class="form-group">
-				<label for="regex">Regex</label>
-				<textarea class="form-control" rows="5" id="regex" ></textarea>
-
-			</div>
-
-			<div class="form-group">
-
-				<div class="row">
-					<div class="col-sm-4">
-						<label for="name_capture_group">Name</label> 
-						<input type="text" class="form-control" name="name_capture_group">
-					</div>
-					<div class="col-sm-4">
-						<label for="extra_capture_group">Extra</label> 
-						<input type="text" class="form-control" name="extra_capture_group">
-					</div>
-					<div class="col-sm-4">
-						<label for="website_capture_group">Website</label> 
-						<input type="text" class="form-control" name="website_capture_group">
-					</div>
-				</div>
-
+				<input type="text" class="form-control" id="url_prefix">
 			</div>
 			
 			<div class="form-group">
-				<button type="button" class="btn btn-info" id="mybut" onclick="scanProducts()">Scan the shit out of it!</button>
+				<label for="regex">Regex</label>
+				<textarea class="form-control" rows="5" id="regex" ></textarea>
 			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<div class="col-sm-4">
+						<label for="name_capture_group">Name</label> 
+						<input type="text" class="form-control" id="name_capture_group">
+					</div>
+					<div class="col-sm-4">
+						<label for="extra_capture_group">Extra</label> 
+						<input type="text" class="form-control" id="extra_capture_group">
+					</div>
+					<div class="col-sm-4">
+						<label for="website_capture_group">Website</label> 
+						<input type="text" class="form-control" id="website_capture_group">
+					</div>
+				</div>
+			</div>
+		
+			<div class="form-group">
+				<button type="button" class="btn btn-info" onclick="scanWebsite()" id="mybut">Scan the shit out of it!</button>
+			</div>
+			
 		</form>
 
 	</div>
@@ -96,6 +98,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 

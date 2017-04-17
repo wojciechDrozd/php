@@ -1,0 +1,13 @@
+function readProducts(){
+	
+	var url = ("#url").val();
+	
+	$.get("ajax/scanner.php", {
+		
+		
+		
+	}, function (data, status) {
+        $(".results").html(data);
+    });
+	
+}
