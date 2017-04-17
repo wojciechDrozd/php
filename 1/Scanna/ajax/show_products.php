@@ -7,12 +7,14 @@ require_once 'db_connection.php';
 // nagłówek tabeli przedmioty
 $data = '<table class="table table-bordered table-striped">
                         <tr>
+							<th>No.</th>
                             <th>Name</th>
                             <th>Extra</th>
                             <th>Website</th>
                         </tr>';
 
-$query = "SELECT * FROM products";
+$query = "SELECT * FROM fetchedproducts";
+$number=1;
 
 if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));
@@ -24,9 +26,10 @@ if(mysqli_num_rows($result) > 0)
 	while($row = mysqli_fetch_assoc($result))
 	{
 		$data .= '<tr>
+				<td>'.$number++.'</td>
                 <td>'.$row['name'].'</td>
                 <td>'.$row['extra'].'</td>
-                <td>'.$row['website'].'</td>
+                <td><a href="'.$row['url'].'">'.$row['url'].'</a></td>
                 </tr>';
 	}
 
@@ -40,4 +43,7 @@ else
 $data .= '</table>';
 
 echo $data;
+
+
+
 ?>
