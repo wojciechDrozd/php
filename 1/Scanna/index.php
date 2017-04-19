@@ -28,7 +28,7 @@
 <body>
 	<div class="container">
 		<div class="jumbotron vertical-center">
-			<p class="text-center" id="jumbotext">Scanna as fuck</p>
+			<p class="text-center" id="jumbotext">majestic scanna</p>
 		</div>
 	</div>
 	
