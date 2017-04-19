@@ -43,9 +43,25 @@ function showProducts(){
 	
 }
 
+function urlHandler() {
+	var len = $("#url").val().length;
+	if(len > 0 ){
+		document.getElementById("text_blob").disabled = true;
+	}else{
+		document.getElementById("text_blob").disabled = false;
+	}
 
+}
 
+function textBlobHandler() {
+	var len = $("#text_blob").val().length;
+	if(len > 0 ){
+		document.getElementById("url").disabled = true;
+	}else{
+		document.getElementById("url").disabled = false;
+	}
 
+}
 
 
 

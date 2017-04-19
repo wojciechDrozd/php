@@ -38,12 +38,12 @@
 
 			<div class="form-group">
 				<label for="url">URL</label> 
-				<input class="form-control" type="text" id="url">
+				<input class="form-control" type="text" id="url" onkeyup="urlHandler()" />
 			</div>
 			
 			<div class="form-gropu">
 				<label for="text-blob">Text blob</label>
-				<textarea class="form-control" rows="5" id="text-blob"></textarea>
+				<textarea class="form-control" rows="5" id="text_blob" onkeyup="textBlobHandler()"></textarea>
 			</div>
 			<div class="form-group">
 				<label for="name_prefix">Name prefix</label> 
