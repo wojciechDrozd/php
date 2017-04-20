@@ -7,6 +7,7 @@ require_once 'db_connection.php';
 // nagłówek tabeli przedmioty
 $data = '<table class="table table-bordered table-striped" id="mytab">
                         <tr>
+							<th><input type="checkbox" name="select_all" value="1" id="select-all"><t/h>
 							<th>No.</th>
                             <th>Name</th>
                             <th>Extra</th>
@@ -26,6 +27,7 @@ if(mysqli_num_rows($result) > 0)
 	while($row = mysqli_fetch_assoc($result))
 	{
 		$data .= '<tr>
+				<td><input type="checkbox"></td>
 				<td>'.$number++.'</td>
                 <td>'.$row['name'].'</td>
                 <td>'.$row['extra'].'</td>
