@@ -2,6 +2,8 @@
 //scan website
 function scanWebsite(){
 	
+	
+	
 	//pobranie wartości z fomrularza
 	var url = $("#url").val();
 	var regex = $("#regex").val();
@@ -29,18 +31,26 @@ function scanWebsite(){
 		
 	}, function (data, status) {
         showProducts();
+        
+        
     });
 	
 }
 
+$(".results").ready(
+		function(){
+			var body = document.body;
+			body.scrollTop += 1000;
+		    });
+
 //working
 function showProducts(){
-	
 	
 	$.get("ajax/show_products.php", {}, function (data, status) {
         $(".results").html(data);
     });
-	
+	$("html, body").animate({ scrollTop: 1300 }, "slow");
+	//$(document).height() 
 }
 
 function urlHandler() {
@@ -62,7 +72,6 @@ function textBlobHandler() {
 	}
 
 }
-
 
 
 

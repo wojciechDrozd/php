@@ -1,0 +1,77 @@
+
+//scan website
+function scanWebsite(){
+	
+	//pobranie wartości z fomrularza
+	var url = $("#url").val();
+	var regex = $("#regex").val();
+	var name_capture_group = $("#name_capture_group").val();
+	var text_blob = $("#text_blob").val();
+	var name_prefix = $("#name_prefix").val();
+	var name_suffix = $("#name_suffix").val();
+	var url_prefix = $("#url_prefix").val();
+	var extra_capture_group =$("#extra_capture_group").val();
+	var website_capture_group = $("#website_capture_group").val();
+	
+	
+	$.post("ajax/scanner.php", {
+		
+		url: url,
+		regex: regex,
+		name_capture_group: name_capture_group,
+		text_blob:text_blob,
+		name_prefix: name_prefix,
+		name_suffix: name_suffix,
+		url_prefix: url_prefix,
+		extra_capture_group: extra_capture_group,
+		website_capture_group: website_capture_group
+		
+		
+	}, function (data, status) {
+        showProducts();
+        scrollWin();
+        
+    });
+	
+}
+
+//working
+function showProducts(){
+	
+	
+	$.get("ajax/show_products.php", {}, function (data, status) {
+        $(".results").html(data);
+    });
+	
+}
+
+function urlHandler() {
+	var len = $("#url").val().length;
+	if(len > 0 ){
+		document.getElementById("text_blob").disabled = true;
+	}else{
+		document.getElementById("text_blob").disabled = false;
+	}
+
+}
+
+function textBlobHandler() {
+	var len = $("#text_blob").val().length;
+	if(len > 0 ){
+		document.getElementById("url").disabled = true;
+	}else{
+		document.getElementById("url").disabled = false;
+	}
+
+}
+
+function scrollWin() {
+    window.scrollTo(0, 500);
+}
+
+
+
+
+
+
+
