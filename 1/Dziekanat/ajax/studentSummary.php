@@ -10,7 +10,7 @@ if(isset($_SESSION['pesel']) && $_SESSION['pesel'] != ""){
 require_once 'db_connection.php';
 
 // nagłówek tabeli z danymi studenta
-$data = '<table class="table table-bordered table-striped">
+$data = '<h3><span class="label label-info">Moje dane</span></h3><br/><table class="table table-bordered table-striped">
                         <tr>
                             <th>Nr albumu</th>
                             <th>Imię</th>
@@ -35,47 +35,99 @@ $data .= '<tr>
                 <td>'.$row['email'].'</td>
                 <td>'.$row['pesel'].'</td>
             </tr>';
-		
-		
-	
 
 $data .= '</table>';
-
 echo $data;
                 		
-}
-
-
-
-$query2 = "SELECT * FROM studenci_has_przedmioty WHERE studenci_nr_albumu='$student_id'";
-$result2 = mysqli_query($con, $query2);
-$row2 = mysqli_fetch_assoc($result2);
-$class_id = $row2['przedmioty_idprzedmiot_1'];
-
-$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id'";
-$result3 = mysqli_query($con, $query3);
-$row3 = mysqli_fetch_assoc($result3);
-$class_name = $row3['nazwaPrzedmiotu'];
-$teacher_name = $row3['wykladowca'];
-
-
 
 // nagłówek tabeli z przedmiotami studenta
-$data2 = '<table class="table table-bordered table-striped">
+$data2 = '<h3><span class="label label-info">Moje przedmioty</span></h3><br/><table class="table table-bordered table-striped">
                         <tr>
                             <th>Przedmiot</th>
                             <th>Prowadzący</th>
-                        </tr>
-						<tr>
+                        </tr>';
+
+$query2 = "SELECT * FROM studenci_has_przedmioty WHERE studenci_nr_albumu='$student_id'";
+$result2 = mysqli_query($con, $query2);
+
+$classes_ids_array = array();
+while($row2 = mysqli_fetch_assoc($result2)){
+	
+	$classes_ids_array[] = $row2['przedmioty_idprzedmiot_1'];
+}
+
+//zawartość tabeli z przedmiotami studenta
+foreach ($classes_ids_array as $class_id){
+	
+	$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id'";
+	$result3 = mysqli_query($con, $query3);
+	$row3 = mysqli_fetch_assoc($result3);
+	$class_name = $row3['nazwaPrzedmiotu'];
+	$teacher_name = $row3['wykladowca'];
+	
+	$data2 .= '<tr>
 							<td>'.$class_name.'</td>
 							<td>'.$teacher_name.'</td>
-						</tr>
-		</table>';
-             
+						</tr>';
+
+}
+
+if(count($classes_ids_array) == 0){
+	$data2 .= '<tr><td colspan="2">Brak przedmiotów.</td></tr>';
+}
 
 
-
+		
+$data2 .= '</table>';
 echo $data2;
 
+// nagłówek tabeli z ocenami  studenta
+$data3 = '<h3><span class="label label-info">Moje oceny</span></h3><br/><table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Przedmiot</th>
+                            <th>Test 1</th>
+		 					<th>Test 2</th>
+							<th>Zaliczenie</th>
+							<th>Egzamin</th>
+                        </tr>';
+
+//zawartość tabeli z przedmiotami studenta
+foreach ($classes_ids_array as $class_id){
+
+	$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id'";
+	$result3 = mysqli_query($con, $query3);
+	$row3 = mysqli_fetch_assoc($result3);
+	$class_name = $row3['nazwaPrzedmiotu'];
+	$teacher_name = $row3['wykladowca'];
+
+	$data3 .= '<tr>
+							<td>'.$class_name.'</td>
+							<td>'.rand(2,5).".0".'</td>
+							<td>'.rand(2,5).".0".'</td>
+							<td>'.rand(2,5).".0".'</td>
+							<td>'.rand(2,5).".0".'</td>
+						</tr>';
+
+}
+
+if(count($classes_ids_array) == 0){
+	$data3 .= '<tr><td colspan="2">Brak przedmiotów.</td></tr>';
+}
+
+$data3 .= '</table>';
+echo $data3;
+}
+
+// nagłówek tabeli z obecnościami  studenta
+$data4 = '<h3><span class="label label-info">Moje obecności</span></h3><br/><table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Przedmiot</th>
+                            <th>Data 1</th>
+		 					<th>Data 2</th>
+							<th>Data 3</th>
+							<th>Data 4</th>
+                        </tr>';
+
+echo $data4;
 
 ?>
