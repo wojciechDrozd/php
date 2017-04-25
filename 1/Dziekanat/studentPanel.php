@@ -31,8 +31,7 @@
     <div class="row">
         <div class="col-md-12">
             <br/>
-             <div class="records_content">
-            gfweyfgue
+             <div class="student_summary">
             </div>
         </div>
     </div>
