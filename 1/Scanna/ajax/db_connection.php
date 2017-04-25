@@ -1,16 +1,16 @@
 <?php
 
 //dane do połączenia z bazą (localhost)
-$host = "localhost";
+/* $host = "localhost";
 $user = "root";
 $password = "";
-$database = "scanna";
+$database = "scanna"; */
 
 //dane do połączenia z bazą (hostinger)
-/*  $host = "mysql.hostinger.pl";
- $user = "u465013593_troll";
+ $host = "mysql.hostinger.pl";
+ $user = "u465013593_szej";
  $password = "password";
- $database = "u465013593_dziek";  */
+ $database = "u465013593_scan"; 
 
 
 //połączenie z bazą

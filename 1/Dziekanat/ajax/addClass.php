@@ -1,4 +1,5 @@
 <?php
+
 if (isset ( $_POST ['class_name'] ) && isset ( $_POST ['teacher_full_name'] )) {
 	
 	//połączenie z bazą

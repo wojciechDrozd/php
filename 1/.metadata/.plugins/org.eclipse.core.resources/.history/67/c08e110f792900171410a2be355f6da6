@@ -1,0 +1,54 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION['pesel']) && $_SESSION['pesel'] != ""){
+
+//połączenie z bazą
+require_once 'db_connection.php';
+
+// nagłówek tabeli studenci
+$data = '<table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Przedmiot</th>
+                        </tr>';
+
+$query = "SELECT * FROM studenci WHERE nrAlbumu='$student_id'";
+
+if (!$result = mysqli_query($con, $query)) {
+	exit(mysqli_error($con));
+}
+
+
+//zawartość tabeli studenci
+if(mysqli_num_rows($result) > 0)
+{
+	while($row = mysqli_fetch_assoc($result))
+	{
+		$data .= '<tr>
+                <td>'.$row['nrAlbumu'].'</td>
+                <td>'.$row['imie'].'</td>
+                <td>'.$row['nazwisko'].'</td>
+                <td>'.$row['kierunek'].'</td>
+               	<td>'.$row['semestr'].'</td>
+                <td>'.$row['email'].'</td>
+                <td>'.$row['pesel'].'</td>
+                <td><button onclick="getStudentDetails('.$row['nrAlbumu'].')" class="btn btn-warning"><i class="material-icons">mode_edit</i></button></td>
+                <td><button onclick="deleteStudent('.$row['nrAlbumu'].')" class="btn btn-danger"><i class="material-icons">delete</i></button></td>
+            </tr>';
+	}
+	
+}
+else
+{
+	// brak studentów w bazie
+	$data .= '<tr><td colspan="6">Brak studentów w bazie.</td></tr>';
+}
+
+$data .= '</table>';
+
+echo $data;
+                		
+}
+
+?>

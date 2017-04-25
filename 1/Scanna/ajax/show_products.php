@@ -7,7 +7,7 @@ require_once 'db_connection.php';
 // nagłówek tabeli przedmioty
 $data = '<table class="table table-bordered table-striped" id="mytab">
                         <tr>
-							<th><input type="checkbox" name="select_all" value="1" id="select-all"><t/h>
+							<th><input type="checkbox"><t/h>
 							<th>No.</th>
                             <th>Name</th>
                             <th>Extra</th>

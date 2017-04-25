@@ -1,36 +1,82 @@
-<?php
-$name_capture_group = 2;
-$website_capture_group = 1;
-$url = 'http://www.ray-ban.com/usa/sunglasses/view-all/plp';
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+function SelectAll(obj) {
 
-$ch = curl_init ( $url );
-curl_setopt ( $ch, CURLOPT_URL, $url );
-curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );
-$urlContent = curl_exec ( $ch );
+	  // find the index of column
+	  var table = $(obj).closest('table'); // find the current table
+	  var th_s = table.find('th'); // find/get all the <th> of current table
+	  var current_th = $(obj).closest('th'); // get current <th>
 
-$regex = '@href="([^"]+)"\s+class="D_PLP_Tiles"\s+data-description="([^"]+)">@';
+	  // the value of n is "1-indexed", meaning that the counting starts at 1
+	  var columnIndex = th_s.index(current_th) + 1; // find index of current <th> within list of <th>'s
 
-preg_match_all ( $regex, $urlContent, $matches );
+	  console.log('The Column is = ' + columnIndex); // print the index for testing
 
-// echo "<pre>",var_dump($matches),"</pre>";
-
-$linksArray = $matches [$website_capture_group];
-$productNamesArray = $matches [$name_capture_group];
-
-/*
- * foreach ($linksArray as $link){
- *
- * echo $link,"<br/>";
- *
- * }
- */
-
-for ($i =0;$i<sizeof($linksArray);$i++){
-	echo $linksArray[$i], "<br/>", $productNamesArray[$i], "<br/>";
-}
+	  // select all checkboxes from the same column index of the same table
+	  table.find('td:nth-child(' + (columnIndex) + ') input').prop("checked", obj.checked);
+	}
 
 
+</script>
 
-// echo ucwords(strtolower($match)),"<br/>";
 
-?>
+<table>
+  <tr>
+    <th>
+      <input type="checkbox" onclick="SelectAll(this)" />
+    </th>
+    <th>Name</th>
+    <th>
+      <input type="checkbox" onclick="SelectAll(this)" />Is Active</th>
+  </tr>
+  <tr>
+    <td>
+      <input type="checkbox" />
+    </td>
+    <td>John</td>
+    <td>
+      <input type="checkbox" name="isActive" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="checkbox" />
+    </td>
+    <td>Tim</td>
+    <td>
+      <input type="checkbox" name="isActive" />
+    </td>
+  </tr>
+</table>
+<br/>
+<h2>
+Another Table<hr/>
+</h2>
+<table>
+  <tr>
+    <th>
+      <input type="checkbox" onclick="SelectAll(this)" />
+    </th>
+    <th>Name</th>
+    <th>
+      <input type="checkbox" onclick="SelectAll(this)" />Is Active</th>
+  </tr>
+  <tr>
+    <td>
+      <input type="checkbox" />
+    </td>
+    <td>John</td>
+    <td>
+      <input type="checkbox" name="isActive" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="checkbox" />
+    </td>
+    <td>Tim</td>
+    <td>
+      <input type="checkbox" name="isActive" />
+    </td>
+  </tr>
+</table>

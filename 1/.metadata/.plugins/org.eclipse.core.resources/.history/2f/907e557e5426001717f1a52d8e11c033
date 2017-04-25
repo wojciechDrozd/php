@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="checkall.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				initSelectAll("#first-table",
+					onSomeChecked=function(item){
+						showCheckedValue();
+					},
+					onCancelCheck = function(item){
+						showCheckedValue();
+					},
+					onAllChecked=function(){
+						showCheckedValue();
+					},
+					onNoOneChecked=function(){
+						showCheckedValue();
+					});
+			});
+			function showCheckedValue(){
+				var html = "";
+				$("#first-table .select-box:checked").each(function(){
+					html += $(this).val()+",";
+				});
+				$("#result").html(html);
+			}
+			
+		</script>
+		<style type="text/css">
+			td{
+				border: 1px solid #000000;
+				margin:0px;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="first-table">
+			<thead>
+				<td><input type="checkbox" class="select-all" value="asd"/></td>
+				<td>name</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox" class="select-box" value="1"/><span class="select-index">1</span></td>
+					<td>name</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="select-box" value="2"/><span class="select-index">2</span></td>
+					<td>name</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="select-box" value="3"/><span class="select-index">3</span></td>
+					<td>name</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="select-box" value="4"/><span class="select-index">4</span></td>
+					<td>name</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="select-box" value="5"/><span class="select-index">5</span></td>
+					<td>name</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="select-box" value="6"/><span class="select-index">6</span></td>
+					<td>name</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="result"></div>
+		
+	</body>
+</html>
