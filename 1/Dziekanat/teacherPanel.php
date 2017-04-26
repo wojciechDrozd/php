@@ -13,6 +13,9 @@
 <!-- Bootstrap CSS   -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
+<!-- Custom JS   -->
+<script type="text/javascript" src="js/teacherPanel.js"></script>
+
 <!-- W3Data JS -->
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
@@ -23,6 +26,42 @@
 <div w3-include-html="teacherMenuBar.php"></div> 
 <script>w3IncludeHTML()</script>
  <!--  /Pasek nawigacji pracownika -->
+ 
+ <!-- Tabela przedmioty -->
+	<div class="container">
+	
+		<div class="row">
+		
+		<div class="col-md-12">
+				<div class="button-group">
+					<button type="button" class="btn btn-success" onclick="showMyClasses()">Wszystkie moje przedmioty</button>
+				</div>
+		</div>
+		</div>
+		
+		<br />
+		<div class="row">
+			<div class="col-md-4">
+				<div class="button-group">
+					<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectClass.php';?> </select>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="button-group">
+  					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<br />
+				<div class="records_content"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Tabela przedmioty  -->
 
 
 </body>

@@ -59,6 +59,7 @@ try {
 						$row = $result->fetch_assoc ();
 						if ($password == $row ['pesel'] ) {
 							$_SESSION ['teacherLoggedin'] = true;
+							$_SESSION ['pesel'] = $row ['pesel'];
 							header ( 'Location: ../teacherPanel.php' );
 						}
 					}

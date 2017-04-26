@@ -1763,3 +1763,13 @@ org.eclipse.dltk.core.ModelException: $class_id [in studentSummary.php [in ajax 
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 !SUBENTRY 1 org.eclipse.dltk.core 4 969 2017-04-26 00:30:17.038
 !MESSAGE $class_id [in studentSummary.php [in ajax [in <project root> [in Dziekanat]]]] does not exist
+!SESSION 2017-04-26 07:45:43.602 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170222-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-26 07:46:00.861
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
