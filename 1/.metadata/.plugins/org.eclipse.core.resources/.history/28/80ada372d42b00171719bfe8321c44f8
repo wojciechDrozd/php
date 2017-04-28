@@ -1,0 +1,17 @@
+body{
+	
+	background-color: black;
+}
+
+#mycontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mycode{
+ justify-content: center;
+    align-items: center;
+    width:100px;
+}
