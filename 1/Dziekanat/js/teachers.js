@@ -120,6 +120,7 @@ function updateTeacherDetails() {
         }
     );
 }
+
  
 $(document).ready(function () {
     //załaduj tabelę pracownicy przy starcie strony

@@ -1,0 +1,45 @@
+<!-- Panel administratora-->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrator</title>
+ 
+ <!-- Jquery JS  -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- Bootstrap JS  -->
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+<!-- Custom JS  -->
+<script type="text/javascript" src="js/students.js"></script>
+
+<!-- Bootstrap CSS   -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+<!-- W3Data -->
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+ 
+<!-- nawigacja admina -->
+<div w3-include-html="adminMenuBar.php"></div> 
+<script>w3IncludeHTML()</script>
+<!-- /nawigacja admina -->
+
+	<div class="row">
+
+			<div class="col-md-12">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="active"><a href="#">Home</a></li>
+					<li role="presentation"><a href="#">Profile</a></li>
+					<li role="presentation"><a href="#">Messages</a></li>
+				</ul>
+			</div>
+		</div>
+
+ 
+
+</body>
+</html>

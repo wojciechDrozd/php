@@ -23,6 +23,20 @@ if (isset($_POST['class_name']) && $_POST['class_name'] != ""){
 	$result1 = mysqli_query($con,$query1);
 	$row1 = mysqli_fetch_assoc($result1);
 	$class_id = $row1['idprzedmiot']; 
+	$teacher_name = $row1['wykladowca'];
+	
+	$teacher_table = <<<EOD
+	<table class="table table-bordered table-striped">
+		<tr>
+			<th>Przedmiot</th>
+			<th>Wykładowca</th>
+		</tr>
+		<tr>
+			<td>$class_name</td>
+			<td>$teacher_name</td>
+		</tr>
+	</table>
+EOD;
 	
 	$query2 = "SELECT * FROM studenci_has_przedmioty WHERE przedmioty_idprzedmiot_1='$class_id'";
 	$result2 = mysqli_query($con,$query2);
@@ -57,6 +71,7 @@ if (isset($_POST['class_name']) && $_POST['class_name'] != ""){
 	
 	$data .= '</table>';
 	
+	echo $teacher_table;
 	echo $data;
 	
 	

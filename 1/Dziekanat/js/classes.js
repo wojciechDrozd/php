@@ -152,13 +152,6 @@ function showStudentsInClass(){
 function showAllClasses(){
 	readClassesRecords();
 }
- 
-$(document).ready(function () {
-    //załaduj tabelę przedmioty przy starcie strony
-    readClassesRecords(); 
-});
-
-
 
 
 

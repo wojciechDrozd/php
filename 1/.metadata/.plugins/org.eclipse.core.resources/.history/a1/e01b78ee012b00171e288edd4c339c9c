@@ -1,0 +1,8 @@
+//SKRYPT PANEL PRACOWNIKA
+
+
+function showMyAllStudents(){
+	 $.get("ajax/readStudentsInTeacherClassRecords.php",{},function (data,status){
+		$(".records_content").html(data); 
+	 });
+}

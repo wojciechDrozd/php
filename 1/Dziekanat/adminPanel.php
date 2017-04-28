@@ -27,6 +27,9 @@
 <div w3-include-html="adminMenuBar.php"></div> 
 <script>w3IncludeHTML()</script>
 <!-- /nawigacja admina -->
+
+
+
  
 
 </body>
