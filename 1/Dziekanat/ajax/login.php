@@ -39,7 +39,7 @@ try {
 					$userNum = $result->num_rows;
 
 					if ($userNum > 0) {
-						$row = $result->fetch_assoc ();
+						$row = $result->fetch_assoc();
 						if ($password == $row ['pesel'] ) {
 							$_SESSION ['studentLoggedin'] = true;
 							$_SESSION ['pesel'] = $row ['pesel'];

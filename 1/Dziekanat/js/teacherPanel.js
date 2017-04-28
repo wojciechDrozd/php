@@ -1,8 +1,14 @@
 //SKRYPT PANEL PRACOWNIKA
 
 
-function showMyAllStudents(){
-	 $.get("ajax/readStudentsInTeacherClassRecords.php",{},function (data,status){
+function showAllStudents(){
+	 $.get("ajax/showAllStudents.php",{},function (data,status){
+		$(".records_content").html(data); 
+	 });
+}
+
+function showAllClasses(){
+	 $.get("ajax/showAllClasses.php",{},function (data,status){
 		$(".records_content").html(data); 
 	 });
 }

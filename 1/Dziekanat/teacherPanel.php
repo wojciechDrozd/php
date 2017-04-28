@@ -35,8 +35,8 @@
 		
 		<div class="col-md-12">
 				<div class="button-group">
-					<button type="button" class="btn btn-success" onclick="showMyClasses()">Wszystkie moje przedmioty</button>
-					<button type="button" class="btn btn-success" onclick="showMyAllStudents()">Wszyscy moi studenci</button>
+					<button type="button" class="btn btn-success" onclick="showAllClasses()">Wszystkie moje przedmioty</button>
+					<button type="button" class="btn btn-success" onclick="showAllStudents()">Wszyscy moi studenci</button>
 				</div>
 		</div>
 		</div>
@@ -47,7 +47,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="button-group">
-					<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectClass.php';?> </select>
+					<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectOneTeacherClass.php';?> </select>
 				</div>
 			</div>
 			<div class="col-md-3">

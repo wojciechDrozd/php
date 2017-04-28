@@ -1,0 +1,46 @@
+<?php
+
+if(isset($_SESSION['pesel']) && $_SESSION['pesel'] != ""){
+	
+	
+	
+// połączenie z bazą
+require_once 'db_connection.php';
+$teacher_id = $_SESSION['pesel'];
+
+$query1 = "SELECT * FROM profesores WHERE pesel='$teacher_pesel'";
+$result1 = mysqli_query($con,$query1);
+$row1 = mysqli_fetch_assoc($result1);
+$teacher_id = $row1['idProfesores'];
+
+$result1->free();
+
+$query2 = "SELECT * FROM przedmioty WHERE Profesores_idProfesores='$teacher_id'";
+$result2 = mysqli_query($con,$query2);
+
+// nagłówek tabeli przedmioty
+$data = '<table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Przedmiot</th>
+                            <th>Wykładowca</th>
+                            <th>Edytuj</th>
+                            <th>Usuń</th>
+                        </tr>';
+
+// zawartość tabeli przedmioty
+while($row2 = $result2->fetch_assoc()){
+		$data .= '<tr>
+                <td>'.$row['nazwaPrzedmiotu'].'</td>
+                <td>'.$row['wykladowca'].'</td>
+                <td><button onclick="getClassDetails('.$row['idprzedmiot'].')" class="btn btn-warning"><i class="material-icons">mode_edit</i></button></td>
+                <td><button onclick="deleteClass('.$row['idprzedmiot'].')" class="btn btn-danger"><i class="material-icons">delete</i></button></td>
+                </tr>';
+	}
+	
+
+$data .= '</table>';
+
+echo $data;
+
+}
+?>

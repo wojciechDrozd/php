@@ -153,6 +153,10 @@ function showAllClasses(){
 	readClassesRecords();
 }
 
+$(document).ready(function (){
+	readClassesRecords();
+})
+
 
 
 

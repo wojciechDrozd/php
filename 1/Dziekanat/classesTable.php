@@ -39,34 +39,42 @@
 
 	<!-- Tabela przedmioty -->
 	<div class="container">
-	
-	
+
+
 		<div class="row">
-		
-		<div class="col-md-12">
+
+			<div class="col-md-12">
 				<div class="button-group">
-					<button type="button" class="btn btn-success" onclick="showAllClasses()">Wszystkie przedmioty</button>
-					<button class="btn btn-success" data-toggle="modal" data-target="#add_class_modal">Dodaj przedmiot do bazy</button>
+					<button type="button" class="btn btn-success"
+						onclick="showAllClasses()">Wszystkie przedmioty</button>
+					<button class="btn btn-success" data-toggle="modal"
+						data-target="#add_class_modal">Dodaj przedmiot do bazy</button>
 					<button class="btn btn-success" data-toggle="modal" data-target="#add_student_to_class_modal">Zapisz studenta na przedmiot</button>
-				</div>
-		</div>
-		</div>
-		
-		<br />
-		<div class="row">
-			<div class="col-md-4">
-				<div class="button-group">
-					<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectClass.php';?> </select>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="button-group">
-  					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
+					<button class="btn btn-success" data-toggle="modal" data-target="#add_class_date_modal">Dodaj termin zajęć</button>
 				</div>
 			</div>
 		</div>
 
+		<br />
 		<div class="row">
+			<div class="col-md-6">
+				<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectClass.php';?> </select><br />
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="button-group">
+					<button type="button" class="btn btn-info"
+						onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
+					<button type="button" class="btn btn-info"
+						onclick="showStudentsInClass()">Pokaż grafik zajęć</button>
+					
+				</div>
+			</div>
+		</div>
+
+	<div class="row">
 			<div class="col-md-12">
 				<br />
 				<div class="records_content"></div>
@@ -93,9 +101,8 @@
 				<div class="modal-body">
 
 					<div class="form-group">
-						<label for="class_name">Nazwa przedmiotu</label> <input
-							type="text" id="class_name" placeholder="Nazwa przedmiotu"
-							class="form-control" />
+						<label for="class_name">Nazwa przedmiotu</label> 
+						<input type="text" id="class_name" placeholder="Nazwa przedmiotu" class="form-control" />
 					</div>
 
 					<div class="form-group">
@@ -168,8 +175,8 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label for="select_class">Przedmiot</label> <select
-							class="form-control" id="class_name2"><?php include 'ajax/selectClass.php';?></select>
+						<label for="select_class">Przedmiot</label> 
+						<select class="form-control" id="class_name2"><?php include 'ajax/selectClass.php';?></select>
 					</div>
 
 					<div class="form-group">
@@ -187,8 +194,67 @@
 		</div>
 	</div>
 	<!-- // Modal dodawanie przedmiotu-->
+	
+		<!-- Modal - Dodawanie terminu zajęć -->
+	<div class="modal fade" id="add_class_date_modal" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Dodaj termin zajęć</h4>
+				</div>
+				<div class="modal-body">
+
+					<div class="form-group">
+						<label for="class_name">Przedmiot</label> 
+						<select class="form-control" id="class_name2"><?php include 'ajax/selectClass.php';?></select>
+					</div>
+
+					<div class="form-group">
+						<label for="select_teacher">Rodzaj zajęć</label> <select
+							class="form-control" id="teacher_full_name"><?php include 'ajax/selectClassType.php';?></select>
+					</div>
+					
+					<div class="form-group">
+						<label for="select_teacher">Termin</label> 
+						<input type="text" id="date" placeholder="MM/DD/YY" class="form-control" />
+			
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
+					<button type="button" class="btn btn-primary" onclick="addClass()">Zapisz</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal dodawanie terminu zajęć-->
 
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<?php
+
+// Generowanie opcji do wyboru dla selecta w panelu pracownika
+// widoczne przedmioty tylko zalogowanego nauczyciela
+session_start ();
+
+if (isset ( $_SESSION ['pesel'] ) && $_SESSION ['pesel'] != "") {
+	
+	// połączenie z bazą
+	require_once 'db_connection.php';
+	
+	$teacher_pesel = $_SESSION ['pesel'];
+	$query1 = "SELECT * FROM profesores WHERE pesel='$teacher_pesel'";
+	$result1 = mysqli_query ( $con, $query1 );
+	$row1 = mysqli_fetch_assoc ( $result1 );
+	$teacher_id = $row1 ['idProfesores'];
+	
+	$query2 = "SELECT * FROM przedmioty WHERE Profesores_idProfesores='$teacher_id'";
+	$result2 = mysqli_query ( $con, $query2 );
+	while ( $row2 = mysqli_fetch_assoc ( $result2 ) ) {
+		echo '<option>' . $row2 ['nazwaPrzedmiotu'] . '</option>';
+	}
+else
+{
+		// brak rekordów
+		echo '<option>Brak przedmiotów w bazie.</option>';
+	}
+}
+
+?>
