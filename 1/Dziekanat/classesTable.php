@@ -16,13 +16,15 @@
 
 <!-- Custom JS   -->
 <script type="text/javascript" src="js/classes.js"></script>
+
 <!-- Bootstrap CSS    -->
-<link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- custom css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- Google Material Icons -->
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <!-- W3Data JS -->
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
@@ -41,8 +43,7 @@
 	<div class="container">
 
 
-		<div class="row">
-
+		<div class="row" id="myrow">
 			<div class="col-md-12">
 				<div class="button-group">
 					<button type="button" class="btn btn-success"
@@ -54,27 +55,24 @@
 				</div>
 			</div>
 		</div>
-
-		<br />
-		<div class="row">
+		<div class="row" id="myrow">
 			<div class="col-md-6">
-				<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectClass.php';?> </select><br />
+				<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectClass.php';?> </select>
 			</div>
 		</div>
-		
-		<div class="row">
+		<div class="row" id="myrow">
 			<div class="col-md-6">
 				<div class="button-group">
 					<button type="button" class="btn btn-info"
 						onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
 					<button type="button" class="btn btn-info"
-						onclick="showStudentsInClass()">Pokaż grafik zajęć</button>
-					
+						onclick="showClassSchedule()">Pokaż grafik zajęć</button>
+					<button type="button" class="btn btn-info" onclick="showClassLog()">Pokaż listę obecności</button>
 				</div>
 			</div>
 		</div>
 
-	<div class="row">
+	<div class="row" id="myrow">
 			<div class="col-md-12">
 				<br />
 				<div class="records_content"></div>
@@ -227,7 +225,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
-					<button type="button" class="btn btn-primary" onclick="addClass()">Zapisz</button>
+					<button type="button" class="btn btn-primary" onclick="addClassDate()">Zapisz</button>
 				</div>
 			</div>
 		</div>

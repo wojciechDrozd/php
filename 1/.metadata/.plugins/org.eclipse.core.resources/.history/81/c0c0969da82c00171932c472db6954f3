@@ -1,0 +1,16 @@
+<?php
+
+require_once 'db_connection';
+
+$data = <<<EOD
+<table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Data</th>
+                            <th>Przedmiot</th>
+                            <th>Rodzaj zajęć</th>
+                            <th>Prowadzący</th>
+                        </tr>';
+
+EOD;
+
+?>

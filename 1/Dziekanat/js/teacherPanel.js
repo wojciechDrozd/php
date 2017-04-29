@@ -27,3 +27,7 @@ function showStudentsInClass(){
 	
 	);
 }
+
+$(document).ready(function(){
+	showAllClasses();
+});

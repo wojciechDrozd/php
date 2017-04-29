@@ -149,6 +149,12 @@ function showStudentsInClass(){
 	);
 }
 
+function showClassSchedule(){
+	$.get("ajax/showClassSchedule.php",{},function(data,status){
+		$(".records_content").html(data);
+	});
+}
+
 function showAllClasses(){
 	readClassesRecords();
 }

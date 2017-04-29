@@ -32,7 +32,6 @@
 
 	
 		<div class="row">
-		
 		<div class="col-md-12">
 				<div class="button-group">
 					<button type="button" class="btn btn-success" onclick="showAllClasses()">Wszystkie moje przedmioty</button>
@@ -40,23 +39,17 @@
 				</div>
 		</div>
 		</div>
-		
-
-		
-		<br />
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<div class="button-group">
 					<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectOneTeacherClass.php';?> </select>
 				</div>
 			</div>
-			<div class="col-md-3">
+			</div>
+			<div class="row">
+			<div class="col-md-6">
 				<div class="button-group">
   					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="button-group">
   					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Lista obecności</button>
 				</div>
 			</div>

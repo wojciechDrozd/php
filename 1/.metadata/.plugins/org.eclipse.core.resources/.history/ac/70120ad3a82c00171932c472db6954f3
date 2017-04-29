@@ -1,0 +1,31 @@
+<?php
+
+require_once 'db_connection.php';
+
+$data = <<<EOD
+<table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Data</th>
+                            <th>Przedmiot</th>
+                            <th>Rodzaj zajęć</th>
+                            <th>Prowadzący</th>
+                        </tr>';
+
+EOD;
+
+$query1 = "SELECT * FROM grafik";
+$result1 = mysqli_query($con, $query1);
+while($row1=mysqli_fetch_assoc($result1)){
+	$data .= '<tr>
+				<td>'.$row1['data'].'</td>
+				<td>'.$row1['idprzedmiot'].'</td>
+				<td>'.$row1['idzajecia'].'</td>
+				<td>'.$row1['idProfesores'].'</td>
+			';
+}
+
+$data .= '</table>';
+
+echo $data;
+
+?>
