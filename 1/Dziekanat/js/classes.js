@@ -72,7 +72,31 @@ function getClassDetails(class_id) {
     $("#update_class_modal").modal("show");
 }
 
-//edytuj dane przedmiotu
+function getClassDateDetails(class_date_id) {
+
+	$("#hidden_class_date_id").val(class_date_id);
+
+	$.post("ajax/readClassDateDetails.php", {
+		class_date_id : class_date_id
+	},
+
+	function(data, status) {
+
+		// stwórz obiekt z jsona przesłanego ze skryptu
+		var class_date = JSON.parse(data);
+
+		// dodanie dotychczasowych wartości do formularza
+		
+		$("#update_class_name3").val(class_date.nazwaPrzedmiotu);
+		$("#update_class_type").val(class_date.nazwa);
+		$("#update_date").val(class_date.data);
+	});
+	
+	
+	$("#update_class_date_modal").modal("show");
+}
+
+// edytuj dane przedmiotu
 function updateClassDetails() {
 	
     //pobranie id przedmiotu z ukrytego pola
@@ -100,6 +124,7 @@ function updateClassDetails() {
     );
 }
 
+//zapisanie studenta na przedmiot
 function addStudentToClass(){
 	
 	//pobranie wartości z formularza
@@ -129,7 +154,6 @@ function addStudentToClass(){
 	
 	
 }
-
 function showStudentsInClass(){
 	
 	var class_name = $("#filter_class_name").val();
@@ -148,9 +172,60 @@ function showStudentsInClass(){
 	
 	);
 }
+function addClassDate(){
+	
+	var class_name = $("#class_name3").val();
+	var class_type = $("#class_type").val();
+	var date = $("#date").val();
+	
+	$.post("ajax/addClassDate.php",{
+		class_name: class_name,
+		class_type: class_type,
+		date: date
+	},
+	
+	function (data,status){
+		//zamknięcie formularza dodawania terminu zajęć
+		$("#add_class_date_modal").modal("hide");
+		
+	}
+	
+	);
+}
 
+function updateClassDate(){
+	
+	var class_date_id = $("#hidden_class_date_id");
+	var class_name = $("#update_class_name3").val();
+	var class_type = $("#update_class_type").val();
+	var date = $("#update_date").val();
+	
+	$.post("ajax/updateClassDateDetails()",{
+		class_date_id: class_date_id,
+		class_name: class_name,
+		class_type: class_type,
+		date: date
+	},
+	function (data,status){
+		
+		$("#update_class_date_modal").modal("hide");
+		showClassSchedule();
+	}
+	
+	);
+}
 function showClassSchedule(){
-	$.get("ajax/showClassSchedule.php",{},function(data,status){
+	
+	
+	var class_name = $("#filter_class_name").val();
+	
+	$.post("ajax/showClassSchedule.php",{
+		
+		class_name: class_name
+		
+	},
+			
+	function(data,status){
 		$(".records_content").html(data);
 	});
 }
@@ -162,6 +237,24 @@ function showAllClasses(){
 $(document).ready(function (){
 	readClassesRecords();
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

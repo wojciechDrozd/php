@@ -208,17 +208,17 @@
 
 					<div class="form-group">
 						<label for="class_name">Przedmiot</label> 
-						<select class="form-control" id="class_name2"><?php include 'ajax/selectClass.php';?></select>
+						<select class="form-control" id="class_name3"><?php include 'ajax/selectClass.php';?></select>
 					</div>
 
 					<div class="form-group">
 						<label for="select_teacher">Rodzaj zajęć</label> <select
-							class="form-control" id="teacher_full_name"><?php include 'ajax/selectClassType.php';?></select>
+							class="form-control" id="class_type"><?php include 'ajax/selectClassType.php';?></select>
 					</div>
 					
 					<div class="form-group">
 						<label for="select_teacher">Termin</label> 
-						<input type="text" id="date" placeholder="MM/DD/YY" class="form-control" />
+						<input type="text" id="date" placeholder="dd/mm/yyyy" class="form-control" />
 			
 					</div>
 
@@ -231,6 +231,49 @@
 		</div>
 	</div>
 	<!-- // Modal dodawanie terminu zajęć-->
+	
+	<!-- Modal edycja terminu zajęć -->
+	<div class="modal fade" id="update_class_date_modal" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Edytuj szczegóły zajęć</h4>
+				</div>
+				<div class="modal-body">
+
+
+						<div class="form-group">
+						<label for="class_name">Przedmiot</label> 
+						<select class="form-control" id="update_class_name3"><?php include 'ajax/selectClass.php';?></select>
+					</div>
+
+					<div class="form-group">
+						<label for="select_teacher">Rodzaj zajęć</label> <select
+							class="form-control" id="update_class_type"><?php include 'ajax/selectClassType.php';?></select>
+					</div>
+					
+					<div class="form-group">
+						<label for="select_teacher">Termin</label> 
+						<input type="text" id="update_date" placeholder="dd/mm/yyyy" class="form-control" />
+			
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Anuluj</button>
+					<button type="button" class="btn btn-primary"
+						onclick="updateClassDate()">Zapisz</button>
+					<input type="hidden" id="hidden_class_date_id">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal edycja terminu zajęć-->
 
 
 

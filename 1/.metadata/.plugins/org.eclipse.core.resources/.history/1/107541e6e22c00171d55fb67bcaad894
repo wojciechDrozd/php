@@ -1,0 +1,43 @@
+<?php
+
+require_once 'db_connection.php';
+
+$data = <<<EOD
+<table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Data</th>
+                            <th>Przedmiot</th>
+                            <th>Rodzaj zajęć</th>
+                            <th>Prowadzący</th>
+                        </tr>
+
+EOD;
+
+
+/*
+ * SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+FROM ((Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
+ */
+
+$query = "SELECT grafik.data, przedmioty.nazwaPrzedmiotu, zajecia.nazwa,profesores.imie,profesores.nazwisko 
+			FROM (((grafik INNER JOIN przedmioty ON grafik.idprzedmiot = przedmioty.idprzedmiot)		
+		   INNER JOIN zajecia ON grafik.idzajecia = zajecia.idzajecia)
+			INNER JOIN profesores ON grafik.idProfesores = profesores.idProfesores)";
+		
+$result = mysqli_query($con, $query);
+while($row1=mysqli_fetch_assoc($result)){
+	$data .= '<tr>
+				<td>'.$row['data'].'</td>
+				<td>'.$row['idprzedmiot'].'</td>
+				<td>'.$row['idzajecia'].'</td>
+				<td>'.$row['idProfesores'].'</td>
+			';
+}
+
+$data .= '</table>';
+
+echo $data;
+
+?>
