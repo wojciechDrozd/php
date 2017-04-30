@@ -19,6 +19,9 @@
 <!-- Custom JS   -->
 <script type="text/javascript" src="js/teacherPanel.js"></script>
 
+<!-- Google Material Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 <!-- W3Data JS -->
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
@@ -53,7 +56,7 @@
 			<div class="col-md-6">
 				<div class="button-group">
   					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
-  					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Rozkład zajęć</button>
+  					<button type="button" class="btn btn-info" onclick="showClassScheduleForTeacher()">Rozkład zajęć</button>
   					<button type="button" class="btn btn-info" onclick="showList()">Dziennik zajęć</button>
 				</div>
 			</div>
