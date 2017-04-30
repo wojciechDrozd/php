@@ -3,7 +3,7 @@
 //połączenie z bazą
 require_once 'db_connection.php';
 
-$query = "SELECT * FROM katedry";
+$query = "SELECT * FROM katedry ORDER BY nazwa";
 
 if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));

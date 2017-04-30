@@ -1,5 +1,6 @@
 <?php
 
+//wyświetlanie tabeli z grafikiem zajęć
 
 if(isset($_POST['class_name']) && $_POST['class_name'] != ""){
 	
@@ -24,7 +25,8 @@ $query = "SELECT grafik.idgrafik,grafik.data, przedmioty.nazwaPrzedmiotu, zajeci
 			FROM (((grafik INNER JOIN przedmioty ON grafik.idprzedmiot = przedmioty.idprzedmiot)		
 		   INNER JOIN zajecia ON grafik.idzajecia = zajecia.idzajecia)
 			INNER JOIN profesores ON grafik.idProfesores = profesores.idProfesores)
-		WHERE nazwaPrzedmiotu = '$class_name'";
+		WHERE nazwaPrzedmiotu = '$class_name'
+		ORDER BY grafik.data ASC";
 		
 $result = mysqli_query($con, $query);
 while($row=mysqli_fetch_assoc($result)){

@@ -14,11 +14,13 @@ if (isset ( $_POST )) {
 	
 	
 	
-	$query = "UPDATE grafik
+	$query = 
+	"UPDATE grafik
 	SET 
 	data ='$date',
-	grafik.idprzedmiot= (SELECT przedmiot.idprzedmiot FROM przedmioty WHERE przedmioty.nazwaPrzedmiotu='$class_name'),
-	grafik.idzajecia = (SELECT zajecia.idzajecia FROM zajecia WHERE zajecia.idzajecia='$class_type')";
+	idprzedmiot = (SELECT idprzedmiot FROM przedmioty WHERE przedmioty.nazwaPrzedmiotu='$class_name'),
+	idzajecia = (SELECT idzajecia FROM zajecia WHERE zajecia.nazwa='$class_type')
+	WHERE idgrafik = '$class_date_id'";
 	
 	
 	//aktualizacja szczegółów terminu przedmiotu

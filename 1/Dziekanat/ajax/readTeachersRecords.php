@@ -6,8 +6,8 @@ require_once 'db_connection.php';
 // nagłówek tabeli pracownicy
 $data = '<table class="table table-bordered table-striped">
                         <tr>
-                            <th>Imię</th>
                             <th>Nazwisko</th>
+                            <th>Imię</th>
                             <th>Katedra</th>
 							<th>Email</th>
 							<th>PESEL</th>
@@ -15,7 +15,7 @@ $data = '<table class="table table-bordered table-striped">
                             <th>Usuń</th>
                         </tr>';
 
-$query = "SELECT * FROM profesores";
+$query = "SELECT * FROM profesores ORDER BY nazwisko ASC";
 
 if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));
@@ -27,8 +27,8 @@ if(mysqli_num_rows($result) > 0)
 	while($row = mysqli_fetch_assoc($result))
 	{
 		$data .= '<tr>
-                <td>'.$row['imie'].'</td>
                 <td>'.$row['nazwisko'].'</td>
+                <td>'.$row['imie'].'</td>
                 <td>'.$row['katedra'].'</td>
                 <td>'.$row['email'].'</td>
                 <td>'.$row['pesel'].'</td>

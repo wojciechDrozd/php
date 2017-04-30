@@ -4,8 +4,7 @@
 // połączenie z bazą
 require_once 'db_connection.php';
 
-if(isset($_POST['student_id']) && isset($_POST['student_id']) != "")
-{
+if(isset($_POST['student_id']) && $_POST['student_id'] != ""){
 	$student_id = $_POST['student_id'];
 
 	//pobranie danych studenta

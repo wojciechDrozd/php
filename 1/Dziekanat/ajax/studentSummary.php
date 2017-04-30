@@ -10,7 +10,7 @@ if(isset($_SESSION['pesel']) && $_SESSION['pesel'] != ""){
 require_once 'db_connection.php';
 
 // nagłówek tabeli z danymi studenta
-$data = '<h3><span class="label label-info">Moje dane</span></h3><br/><table class="table table-bordered table-striped">
+$data = '<h3><span class="label label-info" id="mylabel">Moje dane</span></h3><br/><table class="table table-bordered table-striped" id="mytable">
                         <tr>
                             <th>Nr albumu</th>
                             <th>Imię</th>
@@ -81,6 +81,28 @@ if(count($classes_ids_array) == 0){
 $data2 .= '</table>';
 echo $data2;
 
+// nagłówek tabeli z obecnościami  studenta
+$data4 = '<h3><span class="label label-info" id="mylabel">Moje obecności</span></h3><br/>
+		<table class="table table-bordered table-striped">
+                        <tr>
+							<th>Przedmiot</th>
+                        </tr>
+		</table>
+	    <table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Data 1</th>
+		 					<th>Data 2</th>
+							<th>Data 3</th>
+							<th>Data 4</th>
+                        </tr></table>';
+
+echo $data4;
+
+
+
+
+
+
 // nagłówek tabeli z ocenami  studenta
 $data3 = '<h3><span class="label label-info">Moje oceny</span></h3><br/><table class="table table-bordered table-striped">
                         <tr>
@@ -118,16 +140,24 @@ $data3 .= '</table>';
 echo $data3;
 }
 
-// nagłówek tabeli z obecnościami  studenta
-$data4 = '<h3><span class="label label-info">Moje obecności</span></h3><br/><table class="table table-bordered table-striped">
-                        <tr>
-                            <th>Przedmiot</th>
-                            <th>Data 1</th>
-		 					<th>Data 2</th>
-							<th>Data 3</th>
-							<th>Data 4</th>
-                        </tr>';
 
-echo $data4;
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

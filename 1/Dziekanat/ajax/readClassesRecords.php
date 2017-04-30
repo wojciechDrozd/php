@@ -12,7 +12,7 @@ $data = '<table class="table table-bordered table-striped">
                             <th>Usuń</th>
                         </tr>';
 
-$query = "SELECT * FROM przedmioty";
+$query = "SELECT * FROM przedmioty ORDER BY nazwaPrzedmiotu ASC";
 
 if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));

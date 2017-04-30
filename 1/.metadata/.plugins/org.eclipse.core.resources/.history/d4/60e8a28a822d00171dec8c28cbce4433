@@ -1,0 +1,8 @@
+<?php
+
+if(isset($_POST['class_name']) && $_POST['class_name'] != ""){
+	
+	$class_name = $_POST['class_name'];
+	echo "i love yout $class_name";
+}
+?>

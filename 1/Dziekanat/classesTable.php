@@ -50,24 +50,25 @@
 						onclick="showAllClasses()">Wszystkie przedmioty</button>
 					<button class="btn btn-success" data-toggle="modal"
 						data-target="#add_class_modal">Dodaj przedmiot do bazy</button>
+					<button class="btn btn-success" data-toggle="modal" data-target="#add_class_date_modal">Dodaj zajęcia</button>
 					<button class="btn btn-success" data-toggle="modal" data-target="#add_student_to_class_modal">Zapisz studenta na przedmiot</button>
-					<button class="btn btn-success" data-toggle="modal" data-target="#add_class_date_modal">Dodaj termin zajęć</button>
 				</div>
 			</div>
 		</div>
 		<div class="row" id="myrow">
-			<div class="col-md-6">
+			<div class="col-md-5">
 				<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectClass.php';?> </select>
 			</div>
 		</div>
 		<div class="row" id="myrow">
-			<div class="col-md-6">
+			<div class="col-md-12">
 				<div class="button-group">
+				
 					<button type="button" class="btn btn-info"
 						onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
 					<button type="button" class="btn btn-info"
 						onclick="showClassSchedule()">Pokaż grafik zajęć</button>
-					<button type="button" class="btn btn-info" onclick="showClassLog()">Pokaż listę obecności</button>
+					<button type="button" class="btn btn-info" onclick="showClassLog()">Pokaż dziennik zajęć</button>
 				</div>
 			</div>
 		</div>
@@ -202,7 +203,7 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title" id="myModalLabel">Dodaj termin zajęć</h4>
+					<h4 class="modal-title" id="myModalLabel">Dodaj zajęcia</h4>
 				</div>
 				<div class="modal-body">
 
@@ -248,17 +249,17 @@
 
 
 						<div class="form-group">
-						<label for="class_name">Przedmiot</label> 
+						<label for="update_class_name3">Przedmiot</label> 
 						<select class="form-control" id="update_class_name3"><?php include 'ajax/selectClass.php';?></select>
 					</div>
 
 					<div class="form-group">
-						<label for="select_teacher">Rodzaj zajęć</label> <select
-							class="form-control" id="update_class_type"><?php include 'ajax/selectClassType.php';?></select>
+						<label for="update_class_type">Rodzaj zajęć</label> 
+						<select class="form-control" id="update_class_type"><?php include 'ajax/selectClassType.php';?></select>
 					</div>
 					
 					<div class="form-group">
-						<label for="select_teacher">Termin</label> 
+						<label for="update_date">Termin</label> 
 						<input type="text" id="update_date" placeholder="dd/mm/yyyy" class="form-control" />
 			
 					</div>

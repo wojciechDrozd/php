@@ -7,8 +7,8 @@ require_once 'db_connection.php';
 $data = '<table class="table table-bordered table-striped">
                         <tr>
                             <th>Nr albumu</th>
+		                    <th>Nazwisko</th>
                             <th>Imię</th>
-                            <th>Nazwisko</th>
                             <th>Kierunek studiów</th>
 							<th>Semestr</th>
 							<th>Email</th>
@@ -17,7 +17,7 @@ $data = '<table class="table table-bordered table-striped">
                             <th>Usuń</th>
                         </tr>';
 
-$query = "SELECT * FROM studenci";
+$query = "SELECT * FROM studenci ORDER BY nazwisko ASC";
 
 if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));
@@ -31,8 +31,8 @@ if(mysqli_num_rows($result) > 0)
 	{
 		$data .= '<tr>
                 <td>'.$row['nrAlbumu'].'</td>
-                <td>'.$row['imie'].'</td>
                 <td>'.$row['nazwisko'].'</td>
+                <td>'.$row['imie'].'</td>
                 <td>'.$row['kierunek'].'</td>
                	<td>'.$row['semestr'].'</td>
                 <td>'.$row['email'].'</td>

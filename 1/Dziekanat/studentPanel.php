@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <title>Panel Studenta</title>
  
- <!-- Jquery JS  -->
+ <!-- jquery js  -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  
-<!-- Bootstrap JS  -->
+<!-- bootstrap js  -->
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- Bootstrap CSS   -->
+<!-- bootstrap css   -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
-<!-- Custom JS   -->
+<!-- custom js   -->
 <script type="text/javascript" src="js/studentPanel.js"></script>
+
+<!-- custom css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- W3Data JS -->
 <script src="https://www.w3schools.com/lib/w3data.js"></script>

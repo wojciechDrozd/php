@@ -3,7 +3,7 @@
 //połączenie z bazą
 require_once 'db_connection.php';
 
-$query = "SELECT * FROM profesores";
+$query = "SELECT * FROM profesores ORDER BY nazwisko ASC";
 
 if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));

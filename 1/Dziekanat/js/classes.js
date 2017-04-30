@@ -23,7 +23,6 @@ function addClass() {
         $("#class_name").val("");
         $("#teacher_full_name").val("");
         
-        location.reload();
        
     });
 }
@@ -48,6 +47,21 @@ function deleteClass(class_id) {
             }
         );
     }
+}
+
+function deleteClassDate(class_date_id){
+	var conf =confirm("Czy na pewno chcesz usunąć zajęcia?");
+	if(conf == true){
+		$.post("ajax/deleteClassDate.php",{
+			class_date_id: class_date_id
+		},
+		function (data,status){
+			//przeładuj tabelę
+			showClassSchedule();
+		}
+		
+		);
+	}
 }
 
 //pobranie aktualnych danych przedmiotu do formularza edycji
@@ -101,23 +115,18 @@ function updateClassDetails() {
 	
     //pobranie id przedmiotu z ukrytego pola
 	var class_id =  $("#hidden_class_id").val();
-	
 	// pobranie uaktualnionych wartości
     var class_name = $("#update_class_name").val();
     var teacher_full_name = $("#update_teacher_full_name").val();
- 
     //aktualizacja danych w bazie
     $.post("ajax/updateClassDetails.php", {
-          
     	class_id: class_id,
     	class_name: class_name,
     	teacher_full_name: teacher_full_name
         },
         function (data, status) {
-            
         	// ukryj formularz
             $("#update_class_modal").modal("hide");
-            
             //odśwież tabele
             readClassesRecords();
         }
@@ -143,12 +152,7 @@ function addStudentToClass(){
 		//zamknięcie formularza
 		$("#add_student_to_class_modal").modal("hide");
 		
-		//przeładowanie tabeli przedmioty
-		readClassesRecords();
 		
-		//czyszczenie pól formularza
-		/*$("#class_name2").val("sssssss");
-		$("#student_full_name2").val("");*/
 
 	});
 	
@@ -187,6 +191,7 @@ function addClassDate(){
 	function (data,status){
 		//zamknięcie formularza dodawania terminu zajęć
 		$("#add_class_date_modal").modal("hide");
+		showClassSchedule();
 		
 	}
 	
@@ -195,12 +200,13 @@ function addClassDate(){
 
 function updateClassDate(){
 	
-	var class_date_id = $("#hidden_class_date_id");
+	var class_date_id = $("#hidden_class_date_id").val();
+	
 	var class_name = $("#update_class_name3").val();
 	var class_type = $("#update_class_type").val();
 	var date = $("#update_date").val();
 	
-	$.post("ajax/updateClassDateDetails()",{
+	$.post("ajax/updateClassDateDetails.php",{
 		class_date_id: class_date_id,
 		class_name: class_name,
 		class_type: class_type,
@@ -228,6 +234,18 @@ function showClassSchedule(){
 	function(data,status){
 		$(".records_content").html(data);
 	});
+}
+
+function showClassLog(){
+	
+	var class_name = $("#filter_class_name").val();
+	$.post("ajax/showClassLog.php",{
+		class_name: class_name
+	},
+	function (data,status){
+		$(".records_content").html(data);
+	}
+	);
 }
 
 function showAllClasses(){

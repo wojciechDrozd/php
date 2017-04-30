@@ -3,7 +3,7 @@
 //połączenie z bazą
 require_once 'db_connection.php';
 
-$query = "SELECT * FROM kierunki";
+$query = "SELECT * FROM kierunki ORDER BY nazwa ASC";
 
 if (!$result = mysqli_query($con, $query)) {
 	exit(mysqli_error($con));

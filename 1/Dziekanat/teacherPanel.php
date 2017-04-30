@@ -13,6 +13,9 @@
 <!-- Bootstrap CSS   -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
+<!-- custom css -->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
 <!-- Custom JS   -->
 <script type="text/javascript" src="js/teacherPanel.js"></script>
 
@@ -31,7 +34,7 @@
 	<div class="container">
 
 	
-		<div class="row">
+		<div class="row" id="myrow">
 		<div class="col-md-12">
 				<div class="button-group">
 					<button type="button" class="btn btn-success" onclick="showAllClasses()">Wszystkie moje przedmioty</button>
@@ -39,7 +42,7 @@
 				</div>
 		</div>
 		</div>
-		<div class="row">
+		<div class="row" id="myrow">
 			<div class="col-md-6">
 				<div class="button-group">
 					<select class="form-control" id="filter_class_name"> <?php include 'ajax/selectOneTeacherClass.php';?> </select>
@@ -50,7 +53,7 @@
 			<div class="col-md-6">
 				<div class="button-group">
   					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
-  					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Lista obecności</button>
+  					<button type="button" class="btn btn-info" onclick="showList()">Lista obecności</button>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,37 @@
+<?php
+
+if(isset($_POST['class_name']) && $_POST['class_name'] != ""){
+	
+	//połączenie z bazą
+	require_once 'db_connection.php';
+	$class_name = $_POST['class_name'];
+	
+	$query =
+	"SELECT * FROM grafik,studenci,przedmiot FROM grafik INNER JOIN (przedmioty INNER JOIN studenci ON przedmioty.)";
+			
+	$class_type = "ćwiczenia";
+	$date1 = "05/05/2017";
+	$date2 = "12/05/2017";
+	
+	//nagłówek tabeli lista obecności
+	
+	$data = <<<EOD
+	<table class="table table-bordered table-striped">
+			<tr>
+				<th colspan="5">$class_name</th>
+			</tr>
+			<tr>
+				<th>Nr albumu</th>
+				<th>Nazwisko</th>
+				<th>Imię</th>
+				<th>$date1  </th>
+				<th>$date2 </th>
+				<th>$date3 </th>
+				<th>$date4 </th>
+			</tr>
+	</table>
+EOD;
+	
+	echo $data;	
+}
+?>
