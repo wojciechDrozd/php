@@ -41,15 +41,22 @@ function showList(){
 	);
 }
 
-function saveList(){
-	
-	var boxes = document.getElementsByClassName("classlist");
-	
-	var box = boxes.length;
-	$.post("ajax/saveList.php",{
-		
-		box: box
-	},function (data, status){
+function saveList() {
+
+	var boxes = document.getElementsByClassName("classlistcheckbox");
+	var boxesString = '';
+	for (var i = 0; i < boxes.length; i++) {
+
+		if (document.getElementById(boxes[i].id).checked) {
+			boxesString += boxes[i].id + ":true"+"|";
+
+		}else{
+			boxesString += boxes[i].id + ":false"+"|";
+		}
+	}
+	$.post("ajax/saveList.php", {
+		boxesString : boxesString
+	}, function(data, status) {
 		$(".records_content").html(data);
 	});
 }

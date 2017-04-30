@@ -1,9 +1,28 @@
 <?php
 
-if(isset($_POST['box']) && !empty($_POST['box'])){
+if(isset($_POST['boxesString']) ){
 	
 	
-	$box =  $_POST['box'];
-	echo $box;
+	$boxesString =  $_POST['boxesString'];
+	$allEvents = explode("|",$boxesString);
+	$events =array();
+	
+	foreach($allEvents as $event){
+	$events[] = explode(":",$event);
+	}
+	
+/* 	foreach($events as $event){
+		foreach($event as $e){
+			echo $e," ";
+		}
+		
+		echo "<br/>";
+	} */
+	
+	print_r($events[0]);
+	
+	
+	
+	
 }
 ?>

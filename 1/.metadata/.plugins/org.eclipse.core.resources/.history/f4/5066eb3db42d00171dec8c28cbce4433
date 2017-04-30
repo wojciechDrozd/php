@@ -1,0 +1,13 @@
+<?php
+
+if(isset($_POST['boxesString']) ){
+	
+	
+	$boxesString =  $_POST['boxesString'];
+	$allEvents = explode("|",$boxesString);
+	
+	foreach($allEvents as $event){
+	echo $event,"<br/>";
+	}
+}
+?>

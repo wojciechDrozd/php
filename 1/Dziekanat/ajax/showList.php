@@ -49,7 +49,7 @@ EOD;
 				<td>' . $row ['nazwisko'] . '</td>
 				<td>' . $row ['imie'] . '</td>';
 		for($i = 0; $i < $dateColumnCounter; $i ++) {
-			$data .= '<td><input type="checkbox" class="classlist" value="' . $row ['nrAlbumu'] . '" id="' . $row ['nrAlbumu'].':'.$allDates[$i]. '"></td>';
+			$data .= '<td><input type="checkbox" class="classlistcheckbox" value="' . $row ['nrAlbumu'] . '" id="' . $row ['nrAlbumu'].':'.$allDates[$i]. '"></td>';
 		}
 	}
 	
@@ -57,7 +57,7 @@ EOD;
 	$data .= ' </tr></table>
 			
 			<div class="col-md-12 text-center"> 
-			<button type="button" class="btn btn-primary" id="listSubmitButton" onclick="saveList">Zapisz</button>
+			<button type="button" class="btn btn-primary" id="listSubmitButton" onclick="saveList()">Zapisz</button>
 			</div>
 			
 			';

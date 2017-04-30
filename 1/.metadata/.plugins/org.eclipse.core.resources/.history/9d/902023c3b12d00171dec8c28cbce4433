@@ -1,0 +1,11 @@
+<?php
+
+if(isset($_POST['box']) ){
+	
+	
+	$box =  $_POST['box'];
+	$size =  $_POST['size'];
+	echo $size,"<br/>";
+	echo $box;
+}
+?>
