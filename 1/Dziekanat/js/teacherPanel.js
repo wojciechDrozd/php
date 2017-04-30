@@ -43,6 +43,7 @@ function showList(){
 
 function saveList() {
 
+	var class_name = $("#filter_class_name").val();
 	var boxes = document.getElementsByClassName("classlistcheckbox");
 	var boxesString = '';
 	for (var i = 0; i < boxes.length; i++) {
@@ -55,6 +56,7 @@ function saveList() {
 		}
 	}
 	$.post("ajax/saveList.php", {
+		class_name: class_name,
 		boxesString : boxesString
 	}, function(data, status) {
 		$(".records_content").html(data);
@@ -65,3 +67,25 @@ function saveList() {
 $(document).ready(function(){
 	showAllClasses();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

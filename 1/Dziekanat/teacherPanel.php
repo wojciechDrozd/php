@@ -53,7 +53,8 @@
 			<div class="col-md-6">
 				<div class="button-group">
   					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
-  					<button type="button" class="btn btn-info" onclick="showList()">Lista obecności</button>
+  					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Rozkład zajęć</button>
+  					<button type="button" class="btn btn-info" onclick="showList()">Dziennik zajęć</button>
 				</div>
 			</div>
 		</div>

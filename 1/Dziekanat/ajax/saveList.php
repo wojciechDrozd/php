@@ -1,28 +1,23 @@
 <?php
-
-if(isset($_POST['boxesString']) ){
+if (isset ( $_POST ['boxesString'] ) && isset ( $_POST ['class_name'] )) {
 	
+	require_once 'db_connection.php';
+	$class_name = $_POST ['class_name'];
+	$boxesString = $_POST ['boxesString'];
+	$allEventsStrings = explode ( "|", $boxesString );
+	$events = array ();
 	
-	$boxesString =  $_POST['boxesString'];
-	$allEvents = explode("|",$boxesString);
-	$events =array();
-	
-	foreach($allEvents as $event){
-	$events[] = explode(":",$event);
+	foreach ( $allEventsStrings as $event ) {
+		$events [] = explode ( ":", $event );
 	}
 	
-/* 	foreach($events as $event){
-		foreach($event as $e){
-			echo $e," ";
+	for($i = 0; $i < count ( $events ); $i ++) {
+		echo "$class_name <br/>";
+		for($j = 0; $j < count ( $events [$i] ); $j ++) {
+			echo $events [$i] [$j], "<br/>";
 		}
 		
 		echo "<br/>";
-	} */
-	
-	print_r($events[0]);
-	
-	
-	
-	
+	}
 }
 ?>
