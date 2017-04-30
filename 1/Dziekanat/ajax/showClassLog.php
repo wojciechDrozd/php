@@ -5,7 +5,6 @@ if(isset($_POST['class_name']) && $_POST['class_name'] != ""){
 	//połączenie z bazą
 	require_once 'db_connection.php';
 	$class_name = $_POST['class_name'];
-	$class_type = "ćwiczenia";
 	
 	//nagłówek tabeli lista obecności
 	$data = <<<EOD

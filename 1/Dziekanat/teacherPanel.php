@@ -64,7 +64,7 @@
 				<div class="records_content"></div>
 			</div>
 		</div>
-	</div>
+	</div>	
 
 	<!-- /Tabela przedmioty  -->
 

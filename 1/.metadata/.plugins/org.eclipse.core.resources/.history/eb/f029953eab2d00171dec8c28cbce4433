@@ -1,0 +1,10 @@
+<?php
+
+if(isset($_POST['values']) && !empty($_POST['values'])){
+	
+	
+	$values = $_POST['values'];
+	echo $values;
+	
+}
+?>

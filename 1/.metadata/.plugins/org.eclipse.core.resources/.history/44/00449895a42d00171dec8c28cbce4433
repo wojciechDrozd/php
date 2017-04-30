@@ -1,0 +1,58 @@
+<?php
+
+
+//ładowanie wszystkich studentów danego pracownika
+
+session_start();
+
+if (isset($_SESSION['pesel']) && $_SESSION['pesel'] != "" ){
+	
+	$teacher_pesel = $_SESSION['pesel'];
+	
+	require_once 'db_connection.php';
+
+	// nagłówek tabeli studenci przypisani do danego pracownika
+	$data = '<table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Nr albumu</th>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                            <th>Kierunek studiów</th>
+							<th>Semestr</th>
+							<th>Email</th>
+							<th>PESEL</th>
+                        </tr>';
+	
+	
+	$query = "SELECT * FROM 
+	(((profesores INNER JOIN przedmioty ON profesores.idProfesores=przedmioty.Profesores_idProfesores)
+	INNER JOIN studenci_has_przedmioty ON studenci_has_przedmioty.przedmioty_idprzedmiot_1=przedmioty.idprzedmiot)
+	INNER JOIN studenci ON studenci_has_przedmioty.studenci_nr_albumu=studenci.nrAlbumu)
+	WHERE pesel='$teacher_pesel'";
+	
+	
+	$result = mysqli_query($con,$query);
+	while($row = mysqli_fetch_assoc($result)){
+	
+		$data .= '<tr>
+                <td>'.$row4['nrAlbumu'].'</td>
+                <td>'.$row4['imie'].'</td>
+                <td>'.$row4['nazwisko'].'</td>
+                <td>'.$row4['kierunek'].'</td>
+               	<td>'.$row4['semestr'].'</td>
+                <td>'.$row4['email'].'</td>
+                <td>'.$row4['pesel'].'</td>
+            </tr>';
+	}
+	
+	
+	$data .= '</table>';
+	
+	echo $data;
+	
+	
+}
+	
+	
+	
+?>

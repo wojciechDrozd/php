@@ -1,0 +1,84 @@
+<?php
+
+
+//ładowanie wszystkich studentów danego pracownika
+
+session_start();
+
+if (isset($_SESSION['pesel']) && $_SESSION['pesel'] != "" ){
+	
+	$teacher_pesel = $_SESSION['pesel'];
+	
+	require_once 'db_connection.php';
+
+	// nagłówek tabeli studenci przypisani do danego pracownika
+	$data = '<table class="table table-bordered table-striped">
+                        <tr>
+                            <th>Nr albumu</th>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                            <th>Kierunek studiów</th>
+							<th>Semestr</th>
+							<th>Email</th>
+							<th>PESEL</th>
+                        </tr>';
+	
+	
+	$query1 = "SELECT * FROM profesores WHERE pesel='$teacher_pesel'";
+	$result1 = mysqli_query($con,$query1);
+	$row1 = mysqli_fetch_assoc($result1);
+	$teacher_id = $row1['idProfesores'];
+	
+	
+	$query2 = "SELECT * FROM przedmioty WHERE Profesores_idProfesores='$teacher_id'";
+	$result2 = mysqli_query($con,$query2);
+	$classes_ids_array = array();
+	while($row2 = mysqli_fetch_assoc($result2)){
+	
+		$classes_ids_array[] = $row2['idprzedmiot'];
+	}
+	
+	$students_ids_array = array();
+	
+	foreach ($classes_ids_array as $class_id){
+		$query3 = "SELECT * FROM studenci_has_przedmioty WHERE przedmioty_idprzedmiot_1='$class_id'";
+		$result3 = mysqli_query($con,$query3);
+		$row3 = mysqli_fetch_assoc($result3);
+		
+		while($row3 = mysqli_fetch_assoc($result3)){
+		
+			$students_ids_array[] = $row3['studenci_nr_albumu'];
+		}
+	}
+	
+	foreach ($students_ids_array as $student_id){
+		$query4 = "SELECT * FROM studenci WHERE nrAlbumu='$student_id' ORDER BY nazwisko ASC";
+		$result4 = mysqli_query($con,$query4);
+	
+		$row4 = mysqli_fetch_assoc($result4);
+	
+		$data .= '<tr>
+                <td>'.$row4['nrAlbumu'].'</td>
+                <td>'.$row4['imie'].'</td>
+                <td>'.$row4['nazwisko'].'</td>
+                <td>'.$row4['kierunek'].'</td>
+               	<td>'.$row4['semestr'].'</td>
+                <td>'.$row4['email'].'</td>
+                <td>'.$row4['pesel'].'</td>
+            </tr>';
+	}
+	
+	if (count($students_ids_array) == 0){
+		$data .= '<tr><td colspan="7">Brak studentów zapisanych na przedmioty.</td></tr>';
+	}
+	
+	$data .= '</table>';
+	
+	echo $data;
+	
+	
+}
+	
+	
+	
+?>
