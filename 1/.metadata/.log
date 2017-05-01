@@ -1872,3 +1872,37 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.wst.sse.ui 4 4 2017-04-30 17:31:41.158
 !MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+!SESSION 2017-05-01 08:01:05.534 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170222-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-01 08:01:12.241
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-05-01 08:57:27.617
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-05-01 11:26:34.557
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-05-01 11:52:37.144
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-05-01 12:26:04.008
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-05-01 12:26:05.189
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-05-01 12:32:00.852
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-05-01 12:32:02.647
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2017-05-01 13:25:59.954
+!MESSAGE BlockCommentingStrategy#remove could not find the commenting region to remove

@@ -14,7 +14,7 @@ $data = <<<EOD
                             <th>Data</th>
                             <th>Przedmiot</th>
                             <th>Rodzaj zajęć</th>
-                            <th>Obecność</th>
+                            <th>Sprawdź obecność</th>
                         </tr>
 
 EOD;
@@ -32,10 +32,10 @@ while($row=mysqli_fetch_assoc($result)){
 	
 	$data .= <<<EOD
 	            <tr>
-				<td><h5 id="my_date{$counter}">{$row['data']}</h5></span></td>
+				<td><h5 id="my_date{$counter}">{$row['data']}</h5></td>
 				<td>{$row['nazwaPrzedmiotu']}</td>
-				<td>{$row['nazwa']}</td>
-				<td><button onclick="showListForDate({$counter})" class="btn btn-info"><i class="material-icons">mode_edit</i></button></td>
+				<td><h5 id="my_class_type{$counter}">{$row['nazwa']}</h5></td>
+				<td><button onclick="showListForDate({$counter})" class="btn btn-info"><i class="icon-edit"></i></button></td>
                 </tr>
 						
 EOD;

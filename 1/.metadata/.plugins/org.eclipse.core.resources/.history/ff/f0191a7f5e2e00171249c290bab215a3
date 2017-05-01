@@ -1,0 +1,83 @@
+<?php
+
+if(isset($_POST['class_name']) && $_POST['class_name'] != ""){
+	
+	//połączenie z bazą
+	require_once 'db_connection.php';
+	$class_name = $_POST['class_name'];
+	
+	$query = "SELECT idprzedmiot FROM przedmioty WHERE nazwaPrzedmiotu='$class_name'";
+	$result = mysqli_query($con, $query);
+	$row = mysqli_fetch_assoc($result);
+	$class_id = $row['idprzedmiot'];
+	
+	
+	
+	
+	
+	//nagłówek tabeli lista obecności
+	$data = <<<EOD
+	<table class="table table-bordered table-striped">
+			<tr>
+				<th colspan="7">$class_name</th>
+			</tr>
+			<tr>
+				<th>Nr albumu</th>
+				<th>Nazwisko</th>
+				<th>Imię</th>
+EOD;
+	
+	$query ="SELECT * FROM 
+	((grafik INNER JOIN przedmioty ON grafik.idprzedmiot=przedmioty.idprzedmiot)
+	INNER JOIN zajecia ON grafik.idzajecia=zajecia.idzajecia)
+			WHERE nazwaPrzedmiotu='$class_name' ORDER BY data ASC";
+	$result = mysqli_query($con, $query);
+	
+	$allDates = array();
+	while($row=mysqli_fetch_assoc($result)){
+		$data .= '<th>'.$row['data'].' ('.$row['nazwa'].') '.'</th>';
+		$allDates[] = $row['data'];
+	}
+	$data .= '</tr>';
+	mysqli_free_result($result);
+	
+	$query ="SELECT * FROM lista_obecnosci 
+	INNER JOIN studenci ON lista_obecnosci.nrAlbumu=studenci.nrAlbumu
+	WHERE przedmioty_idprzedmiot='$class_id'";
+	
+	$result = mysqli_query($con, $query);
+	
+	while($row = mysqli_fetch_assoc($result)){
+		
+		$data .= '<tr>
+				<td>'.$row['nrAlbumu'].'</td>
+				<td>'.$row['nazwisko'].'</td>
+				<td>'.$row['imie'].'</td>';
+			foreach ($allDates as $date){
+				$query2 = "SELECT obecny FROM lista_obecnosci 
+						WHERE nrAlbumu={$row['nrAlbumu']} AND przedmiot_data='$date'";
+				$result2 = mysqli_query($con, $query2);
+				while($row2=mysqli_fetch_assoc($result2)){
+					if($row2['obecny'] != ""){
+						$data .= '<td>'.$row2['obecny'].'</td>';
+					} else{
+						$data .= '<td>-</td>';
+					}
+				}
+			}
+				
+		
+				
+	    $data .= '</tr>';
+	}
+	
+	
+	
+	
+	$data .= '</table>';
+	
+	echo $data;
+	
+}
+	
+?>

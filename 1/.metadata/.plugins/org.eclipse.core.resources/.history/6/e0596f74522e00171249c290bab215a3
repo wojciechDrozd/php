@@ -1,0 +1,59 @@
+<?php
+
+if(isset($_POST['class_name']) && $_POST['class_name'] != ""){
+	
+	//połączenie z bazą
+	require_once 'db_connection.php';
+	$class_name = $_POST['class_name'];
+	
+	//nagłówek tabeli lista obecności
+	$data = <<<EOD
+	<table class="table table-bordered table-striped">
+			<tr>
+				<th colspan="7">$class_name</th>
+			</tr>
+			<tr>
+				<th>Nr albumu</th>
+				<th>Nazwisko</th>
+				<th>Imię</th>
+EOD;
+	
+	$query ="SELECT * FROM ((grafik INNER JOIN przedmioty ON grafik.idprzedmiot=przedmioty.idprzedmiot)
+	INNER JOIN zajecia ON grafik.idzajecia=zajecia.idzajecia)
+			WHERE nazwaPrzedmiotu='$class_name' ORDER BY data ASC";
+	$result = mysqli_query($con, $query);
+	
+	$allDates = array();
+	while($row=mysqli_fetch_assoc($result)){
+		$data .= '<th>'.$row['data'].' ('.$row['nazwa'].') '.'</th>';
+		$allDates[] = $row['data'];
+	}
+	mysqli_free_result($result);
+
+	$data .='</tr>';
+	
+	
+	foreach($allDates as $date){
+		$query ="SELECT * FROM
+				lista_obecnosci INNER JOIN studenci ON lista_obecnosci.nrAlbumu=studenci.nrAlbumu
+				WHERE przedmiot_data='$date'";
+		$result = mysqli_query($con, $query);
+		
+		while($row = mysqli_fetch_assoc($result)){
+		$data .= '<tr><td>'.$row['nrAlbumu'].'</td>
+				<td>'.$row['nazwisko'].'</td>
+				<td>'.$row['imie'].'</td>
+				<td>'.$row['obecny'].'</td></tr>
+				';
+		}
+	}
+	
+	
+	$data .= '</table>';
+	
+	echo $data;
+	
+
+	
+}
+?>

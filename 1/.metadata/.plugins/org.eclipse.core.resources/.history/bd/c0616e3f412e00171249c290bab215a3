@@ -1,0 +1,34 @@
+<?php
+if (isset ( $_POST ['boxesString'] ) && isset ( $_POST ['class_name'] )
+		&& isset ( $_POST ['class_date'] )) {
+	
+	require_once 'db_connection.php';
+	
+	
+	$class_name = $_POST ['class_name'];
+	$class_date = $_POST ['class_date'];
+	$boxesString = substr($_POST ['boxesString'],1);
+	
+	$query = "SELECT idprzedmiot FROM przedmioty WHERE nazwaPrzedmiotu='$class_name'";
+	$result = mysqli_query($con, $query);
+	$row = mysqli_fetch_assoc($result);
+	$class_id = $row['idprzedmiot'];
+	mysqli_free_result($result);
+	
+	
+	$checkResult= explode ( "|", $boxesString );
+	
+	foreach ($checkResult as $result){
+		$student_id = explode(":",$result)[0];
+		$student_status = explode(":",$result)[1];
+		$query = "INSERT INTO lista_obecnosci
+				VALUES ('$student_id','$class_id','$class_date','$checkResult')";
+		$result = mysqli_query($con, $query);
+		mysqli_free_result($result);
+	}
+	
+	
+	
+	
+}
+?>

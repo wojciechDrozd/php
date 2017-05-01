@@ -2,15 +2,27 @@
   margin-bottom: 15px;
 }
 
-#listSubmitButton{
-	width: 300px;
+#mybutton{
+	width: 310px;
 }
 
-#mytd{
+#mytd,#myth{
 	text-align: center; /* center checkbox horizontally */
     vertical-align: middle; /* center checkbox vertically */
 }
 
 input[type=checkbox] {
   transform: scale(1.5);
+}
+
+#myok{
+	color: green;
+}
+
+#mynotok{
+	color: red;
+}
+#table-fit {
+    white-space: nowrap;
+    width: 1%;
 }

@@ -66,6 +66,19 @@ EOD;
 	
 }
 
+
+/*
+ * $query = "DELETE FROM lista_obecnosci WHERE nrAlbumu='$student_id' AND
+		przedmiot_data = '$class_date' AND	przedmioty_idprzedmiot = '$class_id'";
+		$result = mysqli_query($con, $query);
+					
+		$query = "INSERT INTO lista_obecnosci
+		(nrAlbumu,przedmiot_data,przedmioty_idprzedmiot,obecny)
+		VALUES ('$student_id','$class_date','$class_id','$student_status')";
+		$result = mysqli_query ( $con, $query );
+		echo "done ";
+ */
+
 ?>
 
 

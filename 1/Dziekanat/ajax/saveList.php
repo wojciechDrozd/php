@@ -1,23 +1,50 @@
 <?php
-if (isset ( $_POST ['boxesString'] ) && isset ( $_POST ['class_name'] )) {
+if (isset ( $_POST ['boxesString'] ) && isset ( $_POST ['class_name'] )
+		&& isset ( $_POST ['class_date'] )) {
 	
 	require_once 'db_connection.php';
+	
+	
 	$class_name = $_POST ['class_name'];
-	$boxesString = $_POST ['boxesString'];
-	$allEventsStrings = explode ( "|", $boxesString );
-	$events = array ();
+	$class_date = $_POST ['class_date'];
+	$boxesString = substr($_POST ['boxesString'],1);
 	
-	foreach ( $allEventsStrings as $event ) {
-		$events [] = explode ( ":", $event );
-	}
+	$query = "SELECT idprzedmiot FROM przedmioty WHERE nazwaPrzedmiotu='$class_name'";
+	$result = mysqli_query($con, $query);
+	$row = mysqli_fetch_assoc($result);
+	$class_id = $row['idprzedmiot'];
 	
-	for($i = 0; $i < count ( $events ); $i ++) {
-		echo "$class_name <br/>";
-		for($j = 0; $j < count ( $events [$i] ); $j ++) {
-			echo $events [$i] [$j], "<br/>";
-		}
+	
+	$checkResult= explode ( "|", $boxesString );
+	foreach ( $checkResult as $result ) {
+		$student_id = (explode ( ":", $result )) [0];
+		$student_status = (explode ( ":", $result )) [1];
 		
-		echo "<br/>";
+		$query = "SELECT id_lista_obecnosci FROM lista_obecnosci WHERE nrAlbumu='$student_id' AND
+		przedmiot_data = '$class_date' AND	przedmioty_idprzedmiot = '$class_id'";
+		$result = mysqli_query ( $con, $query );
+		
+		if ($row = mysqli_fetch_assoc ( $result )) {
+			$list_id = $row ['id_lista_obecnosci'];
+			$query = "UPDATE lista_obecnosci
+					SET obecny='$student_status'
+					WHERE id_lista_obecnosci='$list_id'";
+			$result = mysqli_query ( $con, $query );
+			
+		} else {
+			
+			$query = "INSERT INTO lista_obecnosci
+			(nrAlbumu,przedmiot_data,przedmioty_idprzedmiot,obecny)
+			VALUES ('$student_id','$class_date','$class_id','$student_status')";
+			$result = mysqli_query ( $con, $query );
+			echo "done ";
+		}
 	}
+	
+
+	
+	
+	
+	
 }
 ?>

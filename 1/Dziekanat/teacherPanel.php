@@ -22,6 +22,9 @@
 <!-- Google Material Icons -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+<!--  fontello css -->
+<link rel="stylesheet" type="text/css" href="fontello-eebb1043/css/fontello.css"/>
+
 <!-- W3Data JS -->
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>
@@ -35,8 +38,6 @@
  
  <!-- Tabela przedmioty -->
 	<div class="container">
-
-	
 		<div class="row" id="myrow">
 		<div class="col-md-12">
 				<div class="button-group">
@@ -56,8 +57,8 @@
 			<div class="col-md-6">
 				<div class="button-group">
   					<button type="button" class="btn btn-info" onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
-  					<button type="button" class="btn btn-info" onclick="showClassScheduleForTeacher()">Rozkład zajęć</button>
-  					<button type="button" class="btn btn-info" onclick="showList()">Dziennik zajęć</button>
+  					<button type="button" class="btn btn-info" onclick="showClassScheduleForTeacher()">Plan zajęć</button>
+  					<button type="button" class="btn btn-info" onclick="showClassLog()">Dziennik zajęć</button>
 				</div>
 			</div>
 		</div>
@@ -69,12 +70,6 @@
 			</div>
 		</div>
 	</div>	
-
 	<!-- /Tabela przedmioty  -->
-
-
-
-
-
 </body>
 </html>

@@ -1,0 +1,86 @@
+<?php
+
+//skrypt do generowania listy obecności dla wybranego przedmiotu i wybranej daty w panelu nauczyciela
+
+if(isset($_POST['class_name']) && $_POST['class_name'] != "" 
+		&& isset($_POST['class_date']) && $_POST['class_date'] != ""){
+	
+	require_once 'db_connection.php';
+	$class_name = $_POST['class_name'];
+	$class_date = $_POST['class_date'];
+	
+
+	//nagłówek tabeli lista obecności
+	$data = <<<EOD
+	<table class="table table-bordered table-striped" >
+			<tr>
+				<th colspan="7">$class_name - lista obecności</th>
+			</tr>
+			<tr>
+				<th>Nr albumu</th>
+				<th>Nazwisko</th>
+				<th>Imię</th>
+				<th id="myth">$class_date</th>
+EOD;
+	
+	$query = "SELECT * FROM 
+	((studenci_has_przedmioty INNER JOIN przedmioty ON studenci_has_przedmioty.przedmioty_idprzedmiot_1 = przedmioty.idprzedmiot)
+	INNER JOIN studenci ON studenci_has_przedmioty.studenci_nr_albumu=studenci.nrAlbumu)
+	WHERE nazwaPrzedmiotu='$class_name'";
+	
+	
+	$result = mysqli_query($con, $query);
+	while ( $row = mysqli_fetch_assoc ( $result ) ) {
+		$data .= '<tr>
+				<td>' . $row ['nrAlbumu'] . '</td>
+				<td>' . $row ['nazwisko'] . '</td>
+				<td>' . $row ['imie'] . '</td>
+			    <td id="mytd"><input type="checkbox" class="classlistcheckbox" value="' . $row ['nrAlbumu'] . '" id="' . $row ['nrAlbumu'].'"></td>
+			    </tr>';
+		}
+	
+	
+		$data .= ' </table>
+		
+			<div class="col-md-12>
+				<div class="button-group">
+					<button type="button" class="btn btn-warning pull-right" id="mybutton" onclick="backToSchedule()">Wróć</button>
+					<button type="button" class="btn btn-primary pull right" id="mybutton" onclick="saveList()">Zapisz</button>
+				</div>
+			</div>
+		
+			';
+	
+	echo $data;
+	
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

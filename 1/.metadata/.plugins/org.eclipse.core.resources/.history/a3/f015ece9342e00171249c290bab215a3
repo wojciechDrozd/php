@@ -1,0 +1,16 @@
+#myrow {
+  margin-bottom: 15px;
+}
+
+#listSubmitButton,#backButton{
+	width: 300px;
+}
+
+#mytd{
+	text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}

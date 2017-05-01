@@ -81,30 +81,69 @@ if(count($classes_ids_array) == 0){
 $data2 .= '</table>';
 echo $data2;
 
-// nagłówek tabeli z obecnościami  studenta
-$data4 = '<h3><span class="label label-info" id="mylabel">Moje obecności</span></h3><br/>
-		<table class="table table-bordered table-striped">
+
+// etykieta częście  z obecnościami  studenta
+echo '<h3><span class="label label-info" id="mylabel">Moje obecności</span></h3><br/>';
+	
+
+//zawartość tabeli z przedmiotami studenta
+foreach ($classes_ids_array as $class_id){
+
+	$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id'";
+	$result3 = mysqli_query($con, $query3);
+	$row3 = mysqli_fetch_assoc($result3);
+	$class_name = $row3['nazwaPrzedmiotu'];
+
+	$data5 = '<table class="table table-bordered table-striped">
                         <tr>
-							<th>Przedmiot</th>
-                        </tr>
-		</table>
-	    <table class="table table-bordered table-striped">
-                        <tr>
-                            <th>Data 1</th>
-		 					<th>Data 2</th>
-							<th>Data 3</th>
-							<th>Data 4</th>
-                        </tr></table>';
+                            <th colspan="4">'.$class_name.'</th></tr>';
 
-echo $data4;
-
-
-
-
-
+	echo $data5;
+	
+	$query = "SELECT * FROM lista_obecnosci WHERE przedmioty_idprzedmiot=$class_id";
+	$result = mysqli_query($con, $query);
+	$dates = array();
+	while($row = mysqli_fetch_assoc($result)){
+		$dates[] = $row['przedmiot_data'];
+	}
+	
+	$dates = array_unique($dates);
+	$data7 = '<tr>';
+	
+	foreach($dates as $date){
+			$data7 .= '<th>'.$date.'</th>';
+	}
+	
+	if(count($dates) ==0){
+		$data7 .= '<th><h6>Brak wyznaczonych terminów zajęć.</h6></th>';
+	}
+	
+	$data7 .='</tr><tr>';
+	
+	foreach($dates as $date){
+	$query = "SELECT * FROM lista_obecnosci WHERE nrAlbumu='$student_id' AND przedmiot_data='$date'";
+	$result = mysqli_query($con, $query);
+	$row = mysqli_fetch_assoc($result);
+	
+	if($row['obecny'] == 1){
+		$data .='<td><i class=" icon-ok" id="myok"></td>';
+	} else {
+		$data .='<td><i class="icon-cancel" id="mynotok"></td>';
+	}
+	}
+	
+	
+	
+	$data7 .= '</tr></table>';
+	
+	echo $data7;
+	
+	
+}
 
 // nagłówek tabeli z ocenami  studenta
-$data3 = '<h3><span class="label label-info">Moje oceny</span></h3><br/><table class="table table-bordered table-striped">
+$data3 = '<h3><span class="label label-info">Moje oceny</span></h3><br/>
+		<table class="table table-bordered table-striped">
                         <tr>
                             <th>Przedmiot</th>
                             <th>Test 1</th>
@@ -113,7 +152,7 @@ $data3 = '<h3><span class="label label-info">Moje oceny</span></h3><br/><table c
 							<th>Egzamin</th>
                         </tr>';
 
-//zawartość tabeli z przedmiotami studenta
+//zawartość tabeli z ocenami studenta
 foreach ($classes_ids_array as $class_id){
 
 	$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id'";

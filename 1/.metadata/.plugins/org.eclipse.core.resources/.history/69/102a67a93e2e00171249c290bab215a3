@@ -1,0 +1,28 @@
+<?php
+if (isset ( $_POST ['boxesString'] ) && isset ( $_POST ['class_name'] )
+		&& isset ( $_POST ['class_date'] )) {
+	
+	require_once 'db_connection.php';
+	
+	
+	$class_name = $_POST ['class_name'];
+	$class_date = $_POST ['class_date'];
+	$boxesString = $_POST ['boxesString'];
+	
+	
+	echo "$class_name $class_date <br/>";
+	echo $boxesString,"<br/>";
+	echo substr($boxesString,1),"<br/>";
+	
+	$allEventsStrings = explode ( "|", $boxesString );
+	print_r($allEventsStrings);
+	echo "<br/>";
+	
+
+	$allEventsStrings = explode ( "|", substr($boxesString,1) );
+	print_r($allEventsStrings);
+	
+	
+	
+}
+?>
