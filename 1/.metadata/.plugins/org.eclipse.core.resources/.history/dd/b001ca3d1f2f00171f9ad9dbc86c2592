@@ -1,0 +1,53 @@
+#myrow {
+  margin-bottom: 15px;
+}
+
+#mybutton{
+	width: 310px;
+}
+
+#mycontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myinput{
+	width: 400px;
+	height:30;
+}
+
+#mytd,#myth{
+	text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+#myok{
+	color: green;
+}
+
+#mynotok{
+	color: red;
+}
+#table-fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+#myloginbutton{
+	justify-content: center;
+    align-items: center;
+    width:400px;
+    height: 50px;
+    font-size: 15px;
+    font-family: 'Bitter', serif;
+}
+
+#myjumbo{
+	font-family: 'Bitter', serif;
+	font-size: 50px;
+}

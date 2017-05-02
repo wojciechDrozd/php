@@ -1,0 +1,76 @@
+<?php 
+
+//sprawdzenie czy user nie jest już zalogowany
+session_start();
+if (isset($_SESSION['adminLoggedin']) && $_SESSION['adminLoggedin'] == true){
+	header ( 'Location: adminPanel.php' );
+	exit ();
+}
+
+if (isset($_SESSION['studentLoggedin']) && $_SESSION['studentLoggedin'] == true){
+	header ( 'Location: studentPanel.php' );
+	exit ();
+}
+
+if (isset($_SESSION['teacherLoggedin']) && $_SESSION['teacherLoggedin'] == true){
+	header ( 'Location: teacherPanel.php' );
+	exit ();
+}
+
+?>
+
+<!-- Strona logowania -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Dziekanat</title>
+
+<!-- Jquery JS  -->
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS  -->
+<script type="text/javascript"
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap CSS   -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Bitter:700" rel="stylesheet">
+
+<!-- custom css -->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<body>
+
+	<div class="jumbotron text-center" id="myjumbo" >
+		<h1>DZIEKANAT</h1>
+	</div>
+	<div class="container" id="mycontainer" >
+		<div class="row vertical-center-row">
+				<form method="post" action="ajax/login.php">
+					<div class="form-group">
+						<label for="email">Login</label> 
+						<input type="email" class="form-control" placeholder="Login" name="email" id="myinput">
+					</div>
+					<div class="form-group">
+						<label for="password">Hasło</label> 
+						<input type="password" class="form-control" placeholder="Hasło" name="password">
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="userType" value="admin" checked/>Administrator</label>
+						<label><input type="radio" name="userType" value="teacher" />Pracownik</label>
+						<label><input type="radio" name="userType" value="student"   />Student</label>
+					</div>
+					<br />
+					<div class="form-group text-center">
+						<button type="submit" class="btn btn-info align-center" id="myloginbutton">Zaloguj</button>
+					</div>
+				</form>
+		</div>
+	</div>
+</body>
+</html>

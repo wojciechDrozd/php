@@ -1,16 +1,16 @@
 <?php
 
 //dane do połączenia z bazą (localhost)
-$host = "localhost";  
+/* $host = "localhost";  
 $user = "root";  
 $password = "";  
-$database = "dziekanat";  
+$database = "dziekanat";   */
 
 //dane do połączenia z bazą (hostinger)
-/*  $host = "mysql.hostinger.pl";
- $user = "u465013593_troll";
+ $host = "mysql.hostinger.pl";
+ $user = "u939586845_troll";
  $password = "password";
- $database = "u465013593_dziek";  */
+ $database = "u939586845_dziek"; 
                
 
 //połączenie z bazą
