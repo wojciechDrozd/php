@@ -1,9 +1,0 @@
-<?php
-
-if(isset($_POST['boxes']) && !empty($_POST['boxes'])){
-	
-	
-	$boxes =  $_POST['boxes'];
-	echo count($boxes);
-}
-?>

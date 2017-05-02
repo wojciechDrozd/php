@@ -1,7 +1,0 @@
-#myrow {
-  margin-bottom: 15px;
-}
-
-#listSubmitButton{
-	width: 150px;
-}

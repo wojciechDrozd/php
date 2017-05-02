@@ -10,7 +10,7 @@ $database = "dziekanat";
 /*  $host = "mysql.hostinger.pl";
  $user = "u939586845_troll";
  $password = "password";
- $database = "u939586845_dziek";  */
+ $database = "u465013593_dziek";  */
                
 
 //połączenie z bazą

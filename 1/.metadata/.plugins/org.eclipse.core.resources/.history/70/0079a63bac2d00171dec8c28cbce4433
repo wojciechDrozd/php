@@ -1,8 +1,0 @@
-<?php
-
-if(isset($_POST['boxes']) && !empty($_POST['boxes'])){
-	
-	
-	echo $_POST['boxes'];
-}
-?>

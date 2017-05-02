@@ -1,9 +1,0 @@
-<?php
-
-if(isset($_POST['boxesString']) ){
-	
-	
-	$boxesString =  $_POST['boxesString'];
-	echo $boxesString;
-}
-?>
