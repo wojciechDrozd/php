@@ -37,7 +37,6 @@ if (isset ( $_POST ['boxesString'] ) && isset ( $_POST ['class_name'] )
 			(nrAlbumu,przedmiot_data,przedmioty_idprzedmiot,obecny)
 			VALUES ('$student_id','$class_date','$class_id','$student_status')";
 			$result = mysqli_query ( $con, $query );
-			echo "done ";
 		}
 	}
 	

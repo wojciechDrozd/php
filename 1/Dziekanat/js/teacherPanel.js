@@ -98,7 +98,7 @@ function saveList() {
 		class_date: class_date,
 		boxesString : boxesString,
 	}, function(data, status) {
-		$(".records_content").html(data);
+		showClassLog();
 	});
 }
 	

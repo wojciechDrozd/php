@@ -19,6 +19,9 @@
 <!-- custom css -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+<!--  fontello css -->
+<link rel="stylesheet" type="text/css" href="fontello-eebb1043/css/fontello.css"/>
+
 <!-- W3Data JS -->
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
 </head>

@@ -28,7 +28,7 @@ EOD;
 	$query = "SELECT * FROM 
 	((studenci_has_przedmioty INNER JOIN przedmioty ON studenci_has_przedmioty.przedmioty_idprzedmiot_1 = przedmioty.idprzedmiot)
 	INNER JOIN studenci ON studenci_has_przedmioty.studenci_nr_albumu=studenci.nrAlbumu)
-	WHERE nazwaPrzedmiotu='$class_name'";
+	WHERE nazwaPrzedmiotu='$class_name' ORDER BY nazwisko ASC";
 	
 	
 	$result = mysqli_query($con, $query);

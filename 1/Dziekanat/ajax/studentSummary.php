@@ -126,9 +126,9 @@ foreach ($classes_ids_array as $class_id){
 	$row = mysqli_fetch_assoc($result);
 	
 	if($row['obecny'] == 1){
-		$data .='<td><i class=" icon-ok" id="myok"></td>';
+		$data7 .='<td><i class=" icon-ok" id="myok"></td>';
 	} else {
-		$data .='<td><i class="icon-cancel" id="mynotok"></td>';
+		$data7 .='<td><i class="icon-cancel" id="mynotok"></td>';
 	}
 	}
 	

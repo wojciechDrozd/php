@@ -1,5 +1,7 @@
 <?php
 
+//dziennik wybranych zajęć
+
 if(isset($_POST['class_name']) && $_POST['class_name'] != ""){
 	
 	//połączenie z bazą
@@ -41,7 +43,7 @@ EOD;
 	
 	$query ="SELECT * FROM lista_obecnosci 
 	INNER JOIN studenci ON lista_obecnosci.nrAlbumu=studenci.nrAlbumu
-	WHERE przedmioty_idprzedmiot='$class_id' AND przedmiot_data='$date'";
+	WHERE przedmioty_idprzedmiot='$class_id' AND przedmiot_data='$date' ORDER BY nazwisko ASC";
 	
 	$result = mysqli_query($con, $query);
 	
