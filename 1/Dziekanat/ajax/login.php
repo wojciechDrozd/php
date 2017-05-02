@@ -42,6 +42,8 @@ try {
 						$row = $result->fetch_assoc();
 						if ($password == $row ['pesel'] ) {
 							$_SESSION ['studentLoggedin'] = true;
+							$_SESSION ['name'] = $row['imie'];
+							$_SESSION['surname'] = $row['nazwisko'];
 							$_SESSION ['pesel'] = $row ['pesel'];
 							header ( 'Location: ../studentPanel.php' );
 						}
@@ -59,6 +61,8 @@ try {
 						$row = $result->fetch_assoc ();
 						if ($password == $row ['pesel'] ) {
 							$_SESSION ['teacherLoggedin'] = true;
+							$_SESSION ['name'] = $row['imie'];
+							$_SESSION['surname'] = $row['nazwisko'];
 							$_SESSION ['pesel'] = $row ['pesel'];
 							header ( 'Location: ../teacherPanel.php' );
 						}

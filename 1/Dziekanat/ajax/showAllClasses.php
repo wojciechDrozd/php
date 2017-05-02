@@ -17,7 +17,10 @@ $teacher_id = $row1['idProfesores'];
 
 $result1->free();
 
-$query2 = "SELECT * FROM przedmioty WHERE Profesores_idProfesores='$teacher_id'";
+$query2 = "SELECT * FROM przedmioty 
+WHERE Profesores_idProfesores='$teacher_id' 
+ORDER BY nazwaPrzedmiotu ASC";
+
 $result2 = mysqli_query($con,$query2);
 
 // nagłówek tabeli przedmioty

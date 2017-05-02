@@ -47,7 +47,11 @@ $data2 = '<h3><span class="label label-info">Moje przedmioty</span></h3><br/><ta
                             <th>Prowadzący</th>
                         </tr>';
 
-$query2 = "SELECT * FROM studenci_has_przedmioty WHERE studenci_nr_albumu='$student_id'";
+$query2 = "SELECT * FROM studenci_has_przedmioty 
+		INNER JOIN przedmioty ON studenci_has_przedmioty.przedmioty_idprzedmiot_1=przedmioty.idprzedmiot
+		WHERE studenci_nr_albumu='$student_id' ORDER BY nazwaPrzedmiotu ASC";
+
+
 $result2 = mysqli_query($con, $query2);
 
 $classes_ids_array = array();
@@ -86,17 +90,17 @@ echo $data2;
 echo '<h3><span class="label label-info" id="mylabel">Moje obecności</span></h3><br/>';
 	
 
-//zawartość tabeli z przedmiotami studenta
+//zawartość tabeli z obecnościami studenta
 foreach ($classes_ids_array as $class_id){
 
-	$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id'";
+	$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id' ORDER BY nazwaPrzedmiotu ASC";
 	$result3 = mysqli_query($con, $query3);
 	$row3 = mysqli_fetch_assoc($result3);
 	$class_name = $row3['nazwaPrzedmiotu'];
 
 	$data5 = '<table class="table table-bordered table-striped">
                         <tr>
-                            <th colspan="4">'.$class_name.'</th></tr>';
+                            <th colspan="12">'.$class_name.'</th></tr>';
 
 	echo $data5;
 	
@@ -150,12 +154,13 @@ $data3 = '<h3><span class="label label-info">Moje oceny</span></h3><br/>
 		 					<th>Test 2</th>
 							<th>Zaliczenie</th>
 							<th>Egzamin</th>
+							<th>Ocena końcowa</th>
                         </tr>';
 
 //zawartość tabeli z ocenami studenta
 foreach ($classes_ids_array as $class_id){
 
-	$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id'";
+	$query3 = "SELECT * FROM przedmioty WHERE idprzedmiot='$class_id' ORDER BY nazwaPrzedmiotu ASC";
 	$result3 = mysqli_query($con, $query3);
 	$row3 = mysqli_fetch_assoc($result3);
 	$class_name = $row3['nazwaPrzedmiotu'];
@@ -163,6 +168,7 @@ foreach ($classes_ids_array as $class_id){
 
 	$data3 .= '<tr>
 							<td>'.$class_name.'</td>
+							<td>'.rand(2,5).".0".'</td>
 							<td>'.rand(2,5).".0".'</td>
 							<td>'.rand(2,5).".0".'</td>
 							<td>'.rand(2,5).".0".'</td>

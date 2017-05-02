@@ -23,6 +23,9 @@
 <!-- custom css -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+<!--  fontello css -->
+<link rel="stylesheet" type="text/css" href="fontello-eebb1043/css/fontello.css"/>
+
 <!-- Google Material Icons -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -67,7 +70,7 @@
 					<button type="button" class="btn btn-info"
 						onclick="showStudentsInClass()">Pokaż zapisanych studentów</button>
 					<button type="button" class="btn btn-info"
-						onclick="showClassSchedule()">Pokaż grafik zajęć</button>
+						onclick="showClassSchedule()">Pokaż plan zajęć</button>
 					<button type="button" class="btn btn-info" onclick="showClassLog()">Pokaż dziennik zajęć</button>
 				</div>
 			</div>

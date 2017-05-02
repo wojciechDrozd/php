@@ -1,0 +1,41 @@
+#myrow {
+  margin-bottom: 15px;
+}
+
+#mybutton{
+	width: 310px;
+}
+
+#mycontainer{
+    display: flex;
+    align-items: center;
+}
+
+#mytd,#myth{
+	text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+#myok{
+	color: green;
+}
+
+#mynotok{
+	color: red;
+}
+#table-fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+#myloginbutton{
+	justify-content: center;
+    align-items: center;
+    width:200px;
+    height: 50px;
+    font-size: 50px;
+}

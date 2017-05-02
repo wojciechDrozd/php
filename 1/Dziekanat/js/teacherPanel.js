@@ -1,12 +1,14 @@
 //SKRYPT PANEL PRACOWNIKA
 
 
+//pokaż wszystkich studentów zalogowanego pracownika
 function showAllStudents(){
 	 $.get("ajax/showAllStudents.php",{},function (data,status){
 		$(".records_content").html(data); 
 	 });
 }
 
+//pokaż wszystkie przedmioty przypisane do zalogowanego pracownika
 function showAllClasses(){
 	 $.get("ajax/showAllClasses.php",{},function (data,status){
 		$(".records_content").html(data); 
@@ -14,6 +16,7 @@ function showAllClasses(){
 }
 
 
+//pokaż studentów zapisanych na wybrany przedmiot
 function showStudentsInClass(){
 	
 	var class_name = $("#filter_class_name").val();

@@ -1,6 +1,6 @@
 <?php 
 
-//sprawdzenie czy jakiś user nie jest zalogowany
+//sprawdzenie czy user nie jest już zalogowany
 session_start();
 if (isset($_SESSION['adminLoggedin']) && $_SESSION['adminLoggedin'] == true){
 	header ( 'Location: adminPanel.php' );
@@ -38,15 +38,20 @@ if (isset($_SESSION['teacherLoggedin']) && $_SESSION['teacherLoggedin'] == true)
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 
-<body>
-	<div class="container" style="width: 500px;">
-	<div class="row vertical-center-row">
-				<h1 align="center"><b>Dziekanat</b></h1><br/>
+<!-- custom css -->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
+<body>
+
+	<div class="jumbotron text-center" >
+		<h1>Dziekanat</h1>
+	</div>
+	<div class="container" id="mycontainer" >
+		<div class="row vertical-center-row">
 				<form method="post" action="ajax/login.php">
 					<div class="form-group">
 						<label for="email">Login</label> 
-						<input type="email" class="form-control" placeholder="Login" name="email">
+						<input type="email" class="form-control" placeholder="Login" name="email" id="myinput">
 					</div>
 					<div class="form-group">
 						<label for="password">Hasło</label> 
@@ -58,11 +63,11 @@ if (isset($_SESSION['teacherLoggedin']) && $_SESSION['teacherLoggedin'] == true)
 						<label><input type="radio" name="userType" value="student"   />Student</label>
 					</div>
 					<br />
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary">Zaloguj</button>
+					<div class="form-group text-center">
+						<button type="submit" class="btn btn-info align-center" id="myloginbutton">Zaloguj</button>
 					</div>
 				</form>
 		</div>
-</div>
+	</div>
 </body>
 </html>

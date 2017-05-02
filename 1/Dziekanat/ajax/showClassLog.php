@@ -68,6 +68,31 @@ EOD;
 	echo $data;
 	
 }
+
+if(count($allDates) == 0){
+	
+	echo '<table class="table table-bordered table-striped">
+			<tr>
+				<th colspan="7">'.$class_name.'</th>
+			</tr>
+			<tr>
+				<td>Brak wyznaczonych terminów zajęć.</td>
+			</tr>';
+}
 }
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>

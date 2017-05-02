@@ -15,8 +15,8 @@ if (isset($_SESSION['pesel']) && $_SESSION['pesel'] != "" ){
 	$data = '<table class="table table-bordered table-striped">
                         <tr>
                             <th>Nr albumu</th>
+							<th>Nazwisko</th>
                             <th>Imię</th>
-                            <th>Nazwisko</th>
                             <th>Kierunek studiów</th>
 							<th>Semestr</th>
 							<th>Email</th>
@@ -24,19 +24,19 @@ if (isset($_SESSION['pesel']) && $_SESSION['pesel'] != "" ){
                         </tr>';
 	
 	
-	$query = "SELECT * FROM 
+	$query = "SELECT nrAlbumu,studenci.imie,studenci.nazwisko,kierunek,semestr,studenci.email,studenci.pesel FROM 
 	(((profesores INNER JOIN przedmioty ON profesores.idProfesores=przedmioty.Profesores_idProfesores)
 	INNER JOIN studenci_has_przedmioty ON studenci_has_przedmioty.przedmioty_idprzedmiot_1=przedmioty.idprzedmiot)
 	INNER JOIN studenci ON studenci_has_przedmioty.studenci_nr_albumu=studenci.nrAlbumu)
-	WHERE profesores.pesel='$teacher_pesel'";
+	WHERE profesores.pesel='$teacher_pesel' GROUP BY studenci.nazwisko ORDER BY studenci.nazwisko";
 	
 	$result = mysqli_query($con,$query);
 	while($row = mysqli_fetch_assoc($result)){
 	
 		$data .= '<tr>
                 <td>'.$row['nrAlbumu'].'</td>
-                <td>'.$row['imie'].'</td>
                 <td>'.$row['nazwisko'].'</td>
+                <td>'.$row['imie'].'</td>
                 <td>'.$row['kierunek'].'</td>
                	<td>'.$row['semestr'].'</td>
                 <td>'.$row['email'].'</td>

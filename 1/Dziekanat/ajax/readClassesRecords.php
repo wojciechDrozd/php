@@ -26,8 +26,8 @@ if(mysqli_num_rows($result) > 0)
 		$data .= '<tr>
                 <td>'.$row['nazwaPrzedmiotu'].'</td>
                 <td>'.$row['wykladowca'].'</td>
-                <td><button onclick="getClassDetails('.$row['idprzedmiot'].')" class="btn btn-warning"><i class="material-icons">mode_edit</i></button></td>
-                <td><button onclick="deleteClass('.$row['idprzedmiot'].')" class="btn btn-danger"><i class="material-icons">delete</i></button></td>
+                <td><button onclick="getClassDetails('.$row['idprzedmiot'].')" class="btn btn-warning btn-xs"><i class="material-icons">mode_edit</i></button></td>
+                <td><button onclick="deleteClass('.$row['idprzedmiot'].')" class="btn btn-danger btn-xs"><i class="material-icons">delete</i></button></td>
                 </tr>';
 	}
 	

@@ -34,7 +34,7 @@ function readClassesRecords() {
     });
 }
  
-//usuwanie przedmiotu 
+//usuwanie przedmiotu
 function deleteClass(class_id) {
     var conf = confirm("Czy na pewno chcesz usunąć przedmiot?");
     if (conf == true) {
@@ -49,6 +49,7 @@ function deleteClass(class_id) {
     }
 }
 
+//usuń termin zajęć z planu zajęć
 function deleteClassDate(class_date_id){
 	var conf =confirm("Czy na pewno chcesz usunąć zajęcia?");
 	if(conf == true){
@@ -86,6 +87,7 @@ function getClassDetails(class_id) {
     $("#update_class_modal").modal("show");
 }
 
+//pobierz dotychczasowe dane dotyczące terminu i typu zajęć do okna edycji
 function getClassDateDetails(class_date_id) {
 
 	$("#hidden_class_date_id").val(class_date_id);
@@ -158,6 +160,8 @@ function addStudentToClass(){
 	
 	
 }
+
+//pokaż studentów zapisanych na wybranych przedmiot
 function showStudentsInClass(){
 	
 	var class_name = $("#filter_class_name").val();
@@ -176,6 +180,8 @@ function showStudentsInClass(){
 	
 	);
 }
+
+//dodaj teermin i typ zajęć
 function addClassDate(){
 	
 	var class_name = $("#class_name3").val();
@@ -198,6 +204,7 @@ function addClassDate(){
 	);
 }
 
+//edytuj termin i typ zajęć
 function updateClassDate(){
 	
 	var class_date_id = $("#hidden_class_date_id").val();
@@ -220,6 +227,8 @@ function updateClassDate(){
 	
 	);
 }
+
+//pokaż plan zajęć dla wybranego przedmiotu
 function showClassSchedule(){
 	
 	
@@ -236,6 +245,7 @@ function showClassSchedule(){
 	});
 }
 
+//pokaż dziennik dla wybranego przedmiotu
 function showClassLog(){
 	
 	var class_name = $("#filter_class_name").val();
@@ -248,10 +258,12 @@ function showClassLog(){
 	);
 }
 
+//pokaż wszystkie przedmioty
 function showAllClasses(){
 	readClassesRecords();
 }
 
+//załaduj tabele ze wszystkimi przedmiotami na starcie strony
 $(document).ready(function (){
 	readClassesRecords();
 })

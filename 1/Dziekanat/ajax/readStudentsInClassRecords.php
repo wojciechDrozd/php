@@ -9,8 +9,8 @@ if (isset($_POST['class_name']) && $_POST['class_name'] != ""){
 	$data = '<table class="table table-bordered table-striped">
                         <tr>
                             <th>Nr albumu</th>
-                            <th>Imię</th>
                             <th>Nazwisko</th>
+							<th>Imię</th>
                             <th>Kierunek studiów</th>
 							<th>Semestr</th>
 							<th>Email</th>
@@ -38,7 +38,9 @@ if (isset($_POST['class_name']) && $_POST['class_name'] != ""){
 	</table>
 EOD;
 	
-	$query2 = "SELECT * FROM studenci_has_przedmioty WHERE przedmioty_idprzedmiot_1='$class_id'";
+	$query2 = "SELECT * FROM studenci_has_przedmioty 
+	INNER JOIN studenci ON studenci_has_przedmioty.studenci_nr_albumu=studenci.nrAlbumu
+	WHERE przedmioty_idprzedmiot_1='$class_id' ORDER BY nazwisko ASC";
 	$result2 = mysqli_query($con,$query2);
 	
 	$students_ids_array = array();
@@ -56,8 +58,8 @@ EOD;
 	
 	$data .= '<tr>
                 <td>'.$row3['nrAlbumu'].'</td>
-                <td>'.$row3['imie'].'</td>
                 <td>'.$row3['nazwisko'].'</td>
+                <td>'.$row3['imie'].'</td>
                 <td>'.$row3['kierunek'].'</td>
                	<td>'.$row3['semestr'].'</td>
                 <td>'.$row3['email'].'</td>

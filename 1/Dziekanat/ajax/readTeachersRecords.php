@@ -32,8 +32,8 @@ if(mysqli_num_rows($result) > 0)
                 <td>'.$row['katedra'].'</td>
                 <td>'.$row['email'].'</td>
                 <td>'.$row['pesel'].'</td>
-                <td><button onclick="getTeacherDetails('.$row['idProfesores'].')" class="btn btn-warning"><i class="material-icons">mode_edit</i></button></td>
-                <td><button onclick="deleteTeacher('.$row['idProfesores'].')" class="btn btn-danger"><i class="material-icons">delete</i></button></td>
+                <td><button onclick="getTeacherDetails('.$row['idProfesores'].')" class="btn btn-warning btn-xs"><i class="material-icons">mode_edit</i></button></td>
+                <td><button onclick="deleteTeacher('.$row['idProfesores'].')" class="btn btn-danger btn-xs"><i class="material-icons">delete</i></button></td>
             </tr>';
 	}
 }
