@@ -1,15 +1,15 @@
 <?php
 //dane do połączenia z bazą (localhost)
-/* $host = "localhost";  
+$host = "localhost";  
 $user = "root";  
 $password = "";  
-$database = "dziekanat";   */
+$database = "dziekanat";  
 
 //dane do połączenia z bazą (home.pl)
- $host = "serwer1736136.home.pl";
+/*  $host = "serwer1736136.home.pl";
  $user = "23999670_dziek";
  $password = "password1234";
- $database = "23999670_dziek"; 
+ $database = "23999670_dziek";  */
                
 
 //połączenie z bazą

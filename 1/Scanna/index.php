@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Scanna</title>
+<title>Skanna</title>
 
 <!-- Jquery JS  -->
 <script type="text/javascript"
@@ -28,7 +28,7 @@
 <body>
 	<div class="container">
 		<div class="jumbotron vertical-center">
-			<p class="text-center" id="jumbotext">majestic scanna</p>
+			<p class="text-center" id="jumbotext">majestik skanna</p>
 		</div>
 	</div>
 	

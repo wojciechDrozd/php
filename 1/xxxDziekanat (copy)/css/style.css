@@ -6,6 +6,12 @@
 	width: 310px;
 }
 
+#myspan{
+	font-weight: bold;
+	color: #2d73ad;
+	font-size: 75px;
+}
+
 #mycontainer{
     display: flex;
     justify-content: center;
