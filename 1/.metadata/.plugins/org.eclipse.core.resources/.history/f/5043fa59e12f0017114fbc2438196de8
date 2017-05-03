@@ -1,0 +1,10 @@
+<?php
+	
+	require_once 'db_connection.php';
+	
+		
+			$query = "INSERT INTO lista_obecnosci
+			(nrAlbumu,przedmiot_data,przedmioty_idprzedmiot,obecny)
+			VALUES ('100000','01/03/2015','140','1')";
+			$result = mysqli_query ( $con, $query );
+?>

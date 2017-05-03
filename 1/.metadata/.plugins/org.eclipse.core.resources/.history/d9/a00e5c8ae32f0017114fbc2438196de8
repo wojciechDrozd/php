@@ -1,0 +1,14 @@
+<?php
+
+
+	//połączenie z bazą
+	require_once 'db_connection.php';
+
+	// pobranie wartości z formularza
+
+	//dodanie przedmiotu do bazy
+	$query = "INSERT INTO przedmioty (nazwaPrzedmiotu,wykladowca,Profesores_idProfesores)
+	VALUES('teeeeeeeest','teest','6')";
+
+	$result = mysqli_query ( $con, $query );
+?>

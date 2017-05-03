@@ -1,0 +1,13 @@
+<?php
+	//połączenie z bazą
+	require_once 'db_connection.php';
+
+	//dodanie przedmiotu do bazy
+	//dodanie studenta do bazy
+	$query = "INSERT INTO studenci (imie,nazwisko,kierunek,semestr,email,pesel)
+	VALUES('a,'a','a','8','a','8')";
+	
+	$result = mysqli_query($con, $query);
+	
+	echo "done";
+?>

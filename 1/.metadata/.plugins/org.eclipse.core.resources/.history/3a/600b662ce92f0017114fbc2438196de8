@@ -1,0 +1,49 @@
+<?php
+
+	require_once 'db_connection.php';
+	$rand = rand(1,1000000);
+	$query = "INSERT INTO `23999670_dziek`.`obecnosc` 
+			(`idObecnosc`, `nrAlbumu`, `przedmioty_idprzedmiot`, `obecny`) 
+			VALUES ('$rand', '100001', '136', '0')";
+	
+	$result = mysqli_query($con, $query);
+	
+	echo "done";
+
+/* if (isset ( $_POST ['boxesString'] ) && isset ( $_POST ['class_name'] )
+		&& isset ( $_POST ['class_date'] )) {
+	
+	require_once 'db_connection.php';
+	
+	
+	$class_name = $_POST ['class_name'];
+	$class_date = $_POST ['class_date'];
+	$boxesString = substr($_POST ['boxesString'],1);
+	
+	$query = "SELECT idprzedmiot FROM przedmioty WHERE nazwaPrzedmiotu='$class_name'";
+	$result = mysqli_query($con, $query);
+	$row = mysqli_fetch_assoc($result);
+	$class_id = $row['idprzedmiot'];
+	
+	
+	$arr= explode ( "|", $boxesString );
+	
+	foreach ( $arr as $i ) {
+		$student_id = explode ( ":", $i )[0];
+		$student_status = explode ( ":", $i )[1];
+		
+	    $rand = rand(1,1000000);
+		$query = "INSERT INTO `23999670_dziek`.`obecnosc` 
+		('idObecnosc',`nrAlbumu`, `przedmioty_idprzedmiot`, `obecny`) 
+		VALUES ('$rand','$student_id','$class_id','$student_status')";
+		
+		$result5 = mysqli_query ( $con, $query );
+		}
+	} */
+	
+
+	
+	
+	
+	
+?>

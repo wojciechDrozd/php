@@ -1,0 +1,13 @@
+<?php
+	//połączenie z bazą
+	require_once 'db_connection.php';
+
+	//dodanie przedmiotu do bazy
+	//dodanie studenta do bazy
+	$query = "INSERT INTO obecnosc (idObecnosc,nrAlbumu,przedmioty_idprzedmiot,obecny)
+	VALUES('1',100000','8','1')";
+	
+	$result = mysqli_query($con, $query);
+	
+	echo "done";
+?>
