@@ -1,0 +1,10 @@
+function enter(){
+	
+	$.get("ajax/test.php",{},function(data,status){
+		$("#loadhere").html(data);
+	});
+}
+
+
+	
+

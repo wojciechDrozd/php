@@ -1,0 +1,25 @@
+<?php
+
+
+$dircontent = scandir('../files');
+//echo "<pre>",print_r($dircontent),"</pre>";
+
+$mp3list =array();
+
+$data ='<table class="table-bordered">
+		<th>Title</th>
+		<th>Play</th>';
+
+foreach ($dircontent as $item){
+	if(substr($item,-3,3) =="mp3"){
+		$mp3list[] = $item;
+	}
+}
+
+foreach($mp3list as  $item){
+	$data.='<td>'.$item.'</td>'
+}
+//echo "<pre>",print_r($mp3list),"</pre>";
+
+echo $data;
+?>

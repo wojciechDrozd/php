@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;test.php&apos; to &apos;ajax&apos;" description="Move &apos;test.php&apos; to &apos;ajax&apos;" destination="ajax" element1="test.php" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1493881157192" updateReferences="true"/>
+</session>

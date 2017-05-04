@@ -1,0 +1,15 @@
+function enter(){
+	
+	$.get("ajax/test.php",{},function(data,status){
+		$("#loadhere").html(data);
+	});
+}
+
+
+$(document).ready(function(){
+	audiojs.events.ready(function() {
+	    var as = audiojs.createAll();
+	  });
+	
+});
+
