@@ -50,7 +50,7 @@
 					<button type="button" class="btn btn-success"
 						onclick="showAllClasses()">Wszystkie przedmioty</button>
 					<button class="btn btn-success" data-toggle="modal"
-						data-target="#add_class_modal">Dodaj przedmiot</button>
+						data-target="#add_class_modal">Dodaj przedmiot do bazy</button>
 					<button class="btn btn-success" data-toggle="modal" data-target="#add_class_date_modal">Dodaj zajęcia</button>
 					<button class="btn btn-success" data-toggle="modal" data-target="#add_student_to_class_modal">Zapisz studenta na przedmiot</button>
 				</div>
