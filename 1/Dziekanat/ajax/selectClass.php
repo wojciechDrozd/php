@@ -10,19 +10,13 @@ if (!$result = mysqli_query($con, $query)) {
 }
 
 //generowanie opcji dla selecta (przedmiot) w formularzu
-if(mysqli_num_rows($result) > 0)
-{
+if(mysqli_num_rows($result) > 0){
 	
-	while($row = mysqli_fetch_assoc($result))
-	{
+	while($row = mysqli_fetch_assoc($result)){
 		echo '<option>'.$row['nazwaPrzedmiotu'].'</option>';
-           
 	}
-	
-	
 }
-else
-{
+else{
 	// brak rekordów
 	echo '<option>Brak przedmiotów w bazie.</option>';
 }

@@ -1,0 +1,22 @@
+<?php 
+
+
+
+echo "I'm a fucking bulldog, I will not fail I have to succeed <br/>
+		when I pursue something I do it doggedly";
+
+$url = "http://www.wiggle.co.uk/";
+$ch = curl_init($url);
+curl_setopt($ch,CURLOPT_URL,$url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, -1);
+$urlContent = curl_exec($ch);
+preg_match($regex, $urlContent,$matches);
+
+
+echo $urlContent;
+
+
+
+
+
+?>

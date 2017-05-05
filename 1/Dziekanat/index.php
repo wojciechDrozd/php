@@ -1,47 +1,25 @@
-<?php 
-
-//sprawdzenie czy user nie jest już zalogowany
-session_start();
-if (isset($_SESSION['adminLoggedin']) && $_SESSION['adminLoggedin'] == true){
-	header ( 'Location: adminPanel.php' );
-	exit ();
-}
-
-if (isset($_SESSION['studentLoggedin']) && $_SESSION['studentLoggedin'] == true){
-	header ( 'Location: studentPanel.php' );
-	exit ();
-}
-
-if (isset($_SESSION['teacherLoggedin']) && $_SESSION['teacherLoggedin'] == true){
-	header ( 'Location: teacherPanel.php' );
-	exit ();
-}
-
-?>
-
-<!-- Strona logowania -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>Dziekanat</title>
-
-<!-- Jquery JS  -->
-<script type="text/javascript"
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Bootstrap JS  -->
-<script type="text/javascript"
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!-- Bootstrap CSS   -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-</head>
-
-<!-- google fonts -->
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<!-- custom css -->
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<meta charset="UTF-8">
+	<title>Dziekanat</title>
+	
+	<!-- Jquery JS  -->
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- Bootstrap JS  -->
+	<script type="text/javascript"
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- Bootstrap CSS   -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	</head>
+	
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
 <body>
 
@@ -61,10 +39,10 @@ if (isset($_SESSION['teacherLoggedin']) && $_SESSION['teacherLoggedin'] == true)
 					</div>
 					<div class="radio">
 						<div class="myradio">
-							<label><input type="radio" name="userType" value="admin" checked />Administrator</label>
+							<label><input type="radio" name="userType" value="admin" checked />Pracownik dziekanatu</label>
 						</div>
 						<div class="myradio">
-							<label><input type="radio" name="userType" value="teacher" />Pracownik</label>
+							<label><input type="radio" name="userType" value="teacher" />Prowadzący</label>
 						</div>
 						<div class="myradio">
 							<label><input type="radio" name="userType" value="student"   />Student</label>

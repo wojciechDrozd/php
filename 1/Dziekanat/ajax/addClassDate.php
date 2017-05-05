@@ -1,5 +1,4 @@
 <?php
-
 if (isset ( $_POST ['class_name'] ) && isset ( $_POST ['class_type'] ) 
 		&& isset($_POST['date'])) {
 	

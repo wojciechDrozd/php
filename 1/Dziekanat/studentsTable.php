@@ -6,23 +6,23 @@
     <meta charset="UTF-8">
     <title>Studenci</title>
  
- <!-- Jquery JS   -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 
-<!-- Bootstrap JS   -->
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
-<!-- Custom JS   -->
-<script type="text/javascript" src="js/students.js"></script>
-
-<!-- Bootstrap CSS    -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-
-<!-- Google Material Icons -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<!--  W3Data JS -->
-<script src="https://www.w3schools.com/lib/w3data.js"></script>
+	<!-- Jquery JS   -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 
+	<!-- Bootstrap JS   -->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 
+	<!-- Custom JS   -->
+	<script type="text/javascript" src="js/students.js"></script>
+	
+	<!-- Bootstrap CSS    -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	
+	<!-- Google Material Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	<!--  W3Data JS -->
+	<script src="https://www.w3schools.com/lib/w3data.js"></script>
     
 </head>
 <body>
@@ -37,7 +37,7 @@
     <div class="row">
         <div class="col-md-2">
             <div class="pull-left">
-                <br/><button class="btn btn-success" data-toggle="modal" data-target="#add_student_modal">Dodaj studenta do bazy</button>
+                <br/><button class="btn btn-success" data-toggle="modal" data-target="#add_student_modal">Dodaj studenta</button>
             </div>
         </div>
        

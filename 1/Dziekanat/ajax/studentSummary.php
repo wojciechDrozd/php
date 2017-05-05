@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 if(isset($_SESSION['pesel']) && $_SESSION['pesel'] != ""){
@@ -104,11 +103,11 @@ foreach ($classes_ids_array as $class_id){
 
 	echo $data5;
 	
-	$query = "SELECT * FROM lista_obecnosci WHERE przedmioty_idprzedmiot=$class_id";
+	$query = "SELECT * FROM obecnosc WHERE przedmioty_idprzedmiot='$class_id' ORDER BY data ASC";
 	$result = mysqli_query($con, $query);
 	$dates = array();
 	while($row = mysqli_fetch_assoc($result)){
-		$dates[] = $row['przedmiot_data'];
+		$dates[] = $row['data'];
 	}
 	
 	$dates = array_unique($dates);
@@ -125,7 +124,7 @@ foreach ($classes_ids_array as $class_id){
 	$data7 .='</tr><tr>';
 	
 	foreach($dates as $date){
-	$query = "SELECT * FROM lista_obecnosci WHERE nrAlbumu='$student_id' AND przedmiot_data='$date'";
+	$query = "SELECT * FROM obecnosc WHERE nrAlbumu='$student_id' AND data='$date'";
 	$result = mysqli_query($con, $query);
 	$row = mysqli_fetch_assoc($result);
 	
@@ -188,21 +187,3 @@ echo $data3;
 
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

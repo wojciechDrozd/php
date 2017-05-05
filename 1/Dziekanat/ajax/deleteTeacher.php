@@ -1,5 +1,4 @@
 <?php
-
 if(isset($_POST['teacher_id']) && $_POST['teacher_id'] != ""){
 	//połączenie z bazą
 	require_once 'db_connection.php';

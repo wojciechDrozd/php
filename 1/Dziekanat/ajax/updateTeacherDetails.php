@@ -1,6 +1,4 @@
 <?php
-
-//połączenie z bazą
 require_once 'db_connection.php';
 
 

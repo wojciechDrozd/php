@@ -1,36 +1,34 @@
-<!-- Tabela przedmioty-->
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>Przedmioty</title>
-
-<!-- Jquery JS   -->
-<script type="text/javascript"
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Bootstrap JS   -->
-<script type="text/javascript"
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!-- Custom JS   -->
-<script type="text/javascript" src="js/classes.js"></script>
-
-<!-- Bootstrap CSS    -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
-<!-- custom css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-
-<!--  fontello css -->
-<link rel="stylesheet" type="text/css" href="fontello-eebb1043/css/fontello.css"/>
-
-<!-- Google Material Icons -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<!-- W3Data JS -->
-<script src="https://www.w3schools.com/lib/w3data.js"></script>
+	<meta charset="UTF-8">
+	<title>Przedmioty</title>
+	
+	<!-- Jquery JS   -->
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- Bootstrap JS   -->
+	<script type="text/javascript"
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS   -->
+	<script type="text/javascript" src="js/classes.js"></script>
+	
+	<!-- Bootstrap CSS    -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!--  fontello css -->
+	<link rel="stylesheet" type="text/css" href="fontello-eebb1043/css/fontello.css"/>
+	
+	<!-- Google Material Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	<!-- W3Data JS -->
+	<script src="https://www.w3schools.com/lib/w3data.js"></script>
 
 
 </head>
@@ -249,8 +247,6 @@
 					<h4 class="modal-title" id="myModalLabel">Edytuj szczegóły zajęć</h4>
 				</div>
 				<div class="modal-body">
-
-
 						<div class="form-group">
 						<label for="update_class_name3">Przedmiot</label> 
 						<select class="form-control" id="update_class_name3"><?php include 'ajax/selectClass.php';?></select>
@@ -283,23 +279,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

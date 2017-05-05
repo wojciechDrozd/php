@@ -31,6 +31,7 @@ function showStudentsInClass(){
 	);
 }
 
+//pokaż plan zajęć w panelu prowadzącego
 function showClassScheduleForTeacher(){
 	
 	var class_name = $("#filter_class_name").val();
@@ -69,7 +70,7 @@ function showListForDate(counter){
 	var class_type = document.getElementById(my_class_type_id).innerHTML;
 	
 	
-	$.post("ajax/showList2.php",{
+	$.post("ajax/showList.php",{
 		class_date: class_date,
 		class_name: class_name,
 		class_type: class_type
@@ -90,16 +91,17 @@ function saveList() {
 	for (var i = 0; i < boxes.length; i++) {
 
 		if (document.getElementById(boxes[i].id).checked) {
-			boxesString += "|"+boxes[i].id + ":1";
+			boxesString += "|" + boxes[i].id + ":1";
 
 		}else{
-			boxesString += "|"+boxes[i].id + ":0";
+			boxesString += "|" + boxes[i].id + ":0";
 		}
 	}
 	$.post("ajax/saveList.php", {
 		class_name: class_name,
 		class_date: class_date,
-		boxesString : boxesString,
+		boxesString: boxesString
+		
 	}, function(data, status) {
 		showClassLog();
 	});

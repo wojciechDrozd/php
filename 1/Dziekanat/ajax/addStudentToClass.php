@@ -31,3 +31,4 @@ if (isset ($_POST ['class_name']) && isset ($_POST ['student_full_name']) ) {
 	
 	$result = mysqli_query ( $con, $query );
 }
+?>

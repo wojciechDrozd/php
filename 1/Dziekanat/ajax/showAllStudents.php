@@ -1,10 +1,6 @@
 <?php
-
-
-//ładowanie wszystkich studentów danego pracownika
-
 session_start();
-
+//ładowanie wszystkich studentów danego pracownika
 if (isset($_SESSION['pesel']) && $_SESSION['pesel'] != "" ){
 	
 	$teacher_pesel = $_SESSION['pesel'];
@@ -51,7 +47,4 @@ if (isset($_SESSION['pesel']) && $_SESSION['pesel'] != "" ){
 	
 	
 }
-	
-	
-	
 ?>

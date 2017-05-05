@@ -1,11 +1,8 @@
 <?php
-
-
 //połączenie z bazą
 require_once 'db_connection.php';
 
-if(isset($_POST['class_date_id']) && isset($_POST['class_date_id']) != "")
-{
+if(isset($_POST['class_date_id']) && isset($_POST['class_date_id']) != ""){
 	$class_date_id = $_POST['class_date_id'];
 
 	//pobranie danych terminu zajęć
@@ -24,5 +21,4 @@ if(isset($_POST['class_date_id']) && isset($_POST['class_date_id']) != "")
 	echo $response;
 	
 }
-
 ?>

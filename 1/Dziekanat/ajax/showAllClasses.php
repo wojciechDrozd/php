@@ -1,12 +1,8 @@
 <?php
-
 session_start();
 
 if(isset($_SESSION['pesel']) && $_SESSION['pesel'] != ""){
-	
-	
-	
-// połączenie z bazą
+
 require_once 'db_connection.php';
 $teacher_id = $_SESSION['pesel'];
 

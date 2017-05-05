@@ -1,9 +1,8 @@
 <?php
 
+session_start ();
 // Generowanie opcji do wyboru dla selecta w panelu pracownika
 // widoczne przedmioty tylko zalogowanego nauczyciela
-session_start ();
-
 if (isset ( $_SESSION ['pesel'] ) && $_SESSION ['pesel'] != "") {
 	
 	$teacher_pesel = $_SESSION ['pesel'];

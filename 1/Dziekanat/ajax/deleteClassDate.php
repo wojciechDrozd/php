@@ -1,7 +1,5 @@
 <?php
-
-if(isset($_POST['class_date_id']) && isset($_POST['class_date_id']) != "")
-{
+if(isset($_POST['class_date_id']) && isset($_POST['class_date_id']) != ""){
 	//połączenie z bazą
 	require_once 'db_connection.php';
 

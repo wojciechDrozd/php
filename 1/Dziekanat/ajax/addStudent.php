@@ -1,6 +1,4 @@
 <?php
-
-
 if(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['major']) 
 		&& isset($_POST['year']) && isset($_POST['email']) && isset($_POST['pesel'])){
 

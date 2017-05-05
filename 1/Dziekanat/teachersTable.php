@@ -1,28 +1,26 @@
-<!-- Tabela pracownicy -->
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Pracownicy</title>
+    <title>Prowadzący</title>
  
- <!-- Jquery JS   -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 
-<!-- Bootstrap JS   -->
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
-<!-- Teachers  JS   -->
-<script type="text/javascript" src="js/teachers.js"></script>
-
- <!-- Bootstrap CSS    -->
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-
-<!-- Google Material Icons -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<!--  W3Data JS -->
-<script src="https://www.w3schools.com/lib/w3data.js"></script>
+	<!-- Jquery JS   -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 
+	<!-- Bootstrap JS   -->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 
+	<!-- Teachers  JS   -->
+	<script type="text/javascript" src="js/teachers.js"></script>
+	
+	 <!-- Bootstrap CSS    -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	
+	<!-- Google Material Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	<!--  W3Data JS -->
+	<script src="https://www.w3schools.com/lib/w3data.js"></script>
     
 </head>
 <body>
@@ -37,7 +35,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="pull-left">
-                <br/><button class="btn btn-success" data-toggle="modal" data-target="#add_teacher_modal">Dodaj pracownika do bazy</button>
+                <br/><button class="btn btn-success" data-toggle="modal" data-target="#add_teacher_modal">Dodaj prowadzącego</button>
             </div>
         </div>
     </div>
