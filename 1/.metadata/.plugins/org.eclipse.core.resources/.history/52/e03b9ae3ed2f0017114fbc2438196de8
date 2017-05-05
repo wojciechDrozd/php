@@ -1,9 +1,0 @@
-<?php
-	
-	require_once 'db_connection.php';
-	
-	
-	$query = "INSERT INTO przedmioty VALUES ('100',test','test','8')";
-	
-	$result = mysqli_query ( $con, $query ); 
-?>

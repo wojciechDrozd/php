@@ -46,6 +46,7 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/kasia/Downloads/Dziekanat"/>
 			<item value="/opt/lampp/htdocs/Pro"/>
 			<item value="/opt/lampp/htdocs/Shop"/>
 		</list>

@@ -45,12 +45,13 @@ ksort($a);
 $table = '<table class="table-bordered table-striped">
 		<tr>
 			<th>Category</th>
+			<th>Link</th>
 			<th>Show products</th>
 		</tr>';
 foreach($a as $key => $value){
 	$table .= '<tr>
-				 <td><a href="'.$value.'">'.$key.'</a></td>
-				 <td>'.$value.'</a></td>
+				 <td>'.$key.'</td>
+				 <td><a href="'.$value.'">'.$value.'</a></td>
 			   </tr>';
 }
 
