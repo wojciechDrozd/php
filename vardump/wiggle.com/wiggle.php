@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8"/>
-	<title>Wiggle scan</title>
-	<!-- Jquery JS  -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
-	<!-- Bootstrap JS  -->
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<!--  custom js -->
-	<script type="text/javascript" src="js/script.js"></script>
-	
-	<!-- Bootstrap CSS   -->
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-	
-</head>
-<body>
 <?php 
+
+require_once 'scanner.php';
+
+$scanner = new Scanner('http://www.wiggle.co.uk/');
+
+
 $url = "http://www.wiggle.co.uk/";
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, -1);
 $urlContent = curl_exec($ch);
 
+//categories regex
 $regex = '@href="(http://www.wiggle.co.uk/([^/]+)/)" class="bem-menu__item-link@';
 preg_match_all($regex,$urlContent,$matches);
 
@@ -63,24 +51,18 @@ $urls = array();
 $urls[] = $firstPage;
 
 //wersja uproszczona bez while
-$url = nextPage($url);
-$urls[] = $url;
-$url = nextPage($url);
-$urls[] = $url;
-$url = nextPage($url);
-$urls[] = $url;
-$url = nextPage($url);
-$urls[] = $url;
-$url = nextPage($url);
-$urls[] = $url;
-$url = nextPage($url);
-$urls[] = $url;
 
-//echo "<pre>",print_r($urls),"<pre/>";
+for ($i=0;$i <5;$i++){
+	$url = nextPage($url);
+	$urls[] = $url;
+	
+}
+
 
 /*
  * pobiera dynamicznie generowane linki do 
  * kolejnej strony w podkategorii dopóki nie zaczynają się powtarzać
+ * za duże na testowanie na localhost
  */
 /* while(nextPage($url)){
 	$url = nextPage($url);
@@ -90,9 +72,13 @@ $urls[] = $url;
 	$urls[] = $url;
 }
  */
+ 
+//fetching products from subcategory view
 $productRegex ='@bem-product-thumb__name--grid"\s+href="([^"]+?)"\s+data-ga-label="[^"]+"\s+
 		data-ga-action="Product\sTitle">([^<]+?)</a>\s+
 		<div\sclass="bem-product-price--grid">\s+<span\sclass="bem-product-price__unit--grid">€(\d+.\d+)</span>@sx';
+
+//populate array product name => price
 $prices = array();
 foreach ($urls as $item){
 	$ch = curl_init($item);
@@ -101,23 +87,52 @@ foreach ($urls as $item){
 	curl_close($ch);
 	preg_match_all($productRegex, $urlContent,$matches);
 	for ($i=0;$i<count($matches[0]);$i++){
-		echo $matches[2][$i]," : ",$matches[3][$i],"<br/>";
 		$prices["{$matches[2][$i]}"] = $matches[3][$i];
 	}
-	//echo "<pre>",print_r($matches),"<pre/>";
 			
 }
 
 ksort($prices);
 
 foreach ($prices as $key => $value){
-	echo $key," ",$value,"<br/>";
+	//echo $key," ",$value,"<br/>";
 }
 
-/*
- * return: link do kolejnej strony w podkategorii
- */
+//populate array of strings: link|product name|price
+$prices = array();
+foreach ($urls as $item){
+	$ch = curl_init($item);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER,-1);
+	$urlContent = curl_exec($ch);
+	curl_close($ch);
+	preg_match_all($productRegex, $urlContent,$matches);
+	for ($i=0;$i<count($matches[0]);$i++){
+		
+		$link = $matches[1][$i];
+		$productName = $matches[2][$i];
+		$price = $matches[3][$i];
+		$priceString = $link."|".$productName."|".$price;
+		array_push($prices,$priceString);
+	}
 
+}
+
+foreach($prices as $item){
+	//echo $item,"<br/>";
+}
+
+$exploded = explode("|",$prices[0]);
+echo "<pre>",print_r($exploded),"<pre/>";
+
+//header of the link-product-price table
+$data = '<table>
+		<tr>
+		<th>Link</th>
+		<th>Product name</th>
+		<th>Price</th>
+		</tr>';
+
+//get url to the next page
 function nextPage($url){
 	$ch = curl_init($url);
 	curl_setopt($ch,CURLOPT_RETURNTRANSFER,-1);
@@ -136,36 +151,3 @@ function nextPage($url){
 
 
 ?>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
