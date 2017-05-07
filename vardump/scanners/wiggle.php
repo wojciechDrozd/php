@@ -54,8 +54,6 @@ foreach($categoriesNamesLinks as $key => $value){
 
 $table .= '</table>';
 
-//echo $categoriesNamesLinks['Accessories'];
-
 
 //link do pierwszej strony z listą produktów w podkategorii
 $firstPage ='http://www.wiggle.com/accessories/?o=9';
@@ -64,31 +62,57 @@ $url = $firstPage;
 $urls = array();
 $urls[] = $firstPage;
 
+//wersja uproszczona bez while
+$url = nextPage($url);
+$urls[] = $url;
+$url = nextPage($url);
+$urls[] = $url;
+$url = nextPage($url);
+$urls[] = $url;
+$url = nextPage($url);
+$urls[] = $url;
+$url = nextPage($url);
+$urls[] = $url;
+$url = nextPage($url);
+$urls[] = $url;
+
+//echo "<pre>",print_r($urls),"<pre/>";
+
 /*
  * pobiera dynamicznie generowane linki do 
  * kolejnej strony w podkategorii dopóki nie zaczynają się powtarzać
  */
-while(nextPage($url)){
+/* while(nextPage($url)){
 	$url = nextPage($url);
 	if(in_array($url,$urls)){
 		break;
 	}
 	$urls[] = $url;
 }
-
-$productRegex ='@bem-product-thumb__image-link--grid"\shref="([^"]+)"\s
-		data-ga-label="[^"]+"\sdata-ga-action="Product\sImage"\s
-		title="([^"]+)">@sx';
-
-for ($i=5;$i<10;$i++){
-	$ch = curl_init($urls[$i]);
-	curl_setopt($ch,CURLOPT_RETURNTRANSFER,-1);
+ */
+$productRegex ='@bem-product-thumb__name--grid"\s+href="([^"]+?)"\s+data-ga-label="[^"]+"\s+
+		data-ga-action="Product\sTitle">([^<]+?)</a>\s+
+		<div\sclass="bem-product-price--grid">\s+<span\sclass="bem-product-price__unit--grid">€(\d+.\d+)</span>@sx';
+$prices = array();
+foreach ($urls as $item){
+	$ch = curl_init($item);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER,-1);
 	$urlContent = curl_exec($ch);
 	curl_close($ch);
 	preg_match_all($productRegex, $urlContent,$matches);
-	echo "<pre>",print_r($matches),"</pre>";
+	for ($i=0;$i<count($matches[0]);$i++){
+		echo $matches[2][$i]," : ",$matches[3][$i],"<br/>";
+		$prices["{$matches[2][$i]}"] = $matches[3][$i];
+	}
+	//echo "<pre>",print_r($matches),"<pre/>";
+			
 }
-	
+
+ksort($prices);
+
+foreach ($prices as $key => $value){
+	echo $key," ",$value,"<br/>";
+}
 
 /*
  * return: link do kolejnej strony w podkategorii
