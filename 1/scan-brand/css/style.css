@@ -1,5 +1,5 @@
 .jumbotron{
-    background-color: #42c2f4;
+    background-color: #4ab4db;
 }
 .text-center{
 	color: white;
@@ -8,11 +8,15 @@
 
 #mybut{
 	/* width:200px; */
-	background-color: #42c2f4;
+	background-color: #4ab4db;
 	font-family: 'Rubik Mono One', sans-serif;
 }
 
 #jumbotext{
 	font-family: 'Rubik Mono One', sans-serif;
 	font-size: 36px;
+}
+
+.container{
+	width: 650px;
 }

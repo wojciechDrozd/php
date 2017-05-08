@@ -26,11 +26,9 @@
 
 </head>
 <body>
-	<div class="container">
 		<div class="jumbotron vertical-center">
 			<p class="text-center" id="jumbotext">majestik skanna</p>
 		</div>
-	</div>
 	
 	<div class="container">
 		
