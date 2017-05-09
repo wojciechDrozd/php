@@ -8,9 +8,9 @@ $database = "scanna"; */
 
 //dane do połączenia z bazą (hostinger)
  $host = "mysql.hostinger.pl";
- $user = "u465013593_szej";
+ $user = "u732030831_scan";
  $password = "password";
- $database = "u465013593_scan"; 
+ $database = "u732030831_scan"; 
 
 
 //połączenie z bazą

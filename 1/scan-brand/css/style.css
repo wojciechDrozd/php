@@ -18,5 +18,9 @@
 }
 
 .container{
-	width: 650px;
+	width: 800px;
+}
+
+#mytab{
+	font-size: 12px;
 }
