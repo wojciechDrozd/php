@@ -1,4 +1,0 @@
-function enter(){
-	
-	$.get("ajax/test.php");
-}

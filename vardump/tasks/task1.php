@@ -1,45 +1,41 @@
 <?php
 
 
-$url = 'http://productdata.zanox.com/exportservice/v1/rest/42733809C453134639.xml?ticket=DD530ED5D40C653198A5DD105A0DC9C1&productIndustryId=1&gZipCompress=null';
+/* Scan images with best possible resolution.
+Output the result in a separate csv file.
+The file should contain two columns:
+ident [from original file] and url to image(s). */
 
-$subject = file_get_contents($url);
-$pattern ='%zupid="([^"]+)">.*<name>([^<]+)</name><number>(.*)</number>
-		<deepLink>http://ad\.zanox\.com/ppc/\?42733809C453134639&amp;
-		ULP=\[\[([^\]]+)]]</deepLink>.*<price>([^<]+)</price>.*
-		merchantCategoryPath>(.*)</merchantCategoryPath>.*<largeImage>(.*)
-		</largeImage>.*<stockAmount>(.*)</stockAmount>.*<ean>(.*)</ean>%Usix';
+$url ='https://pastebin.com/raw/ecmr3016';
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$subject = curl_exec($ch);
+curl_close($ch);
+
+$pattern = '%http://www.awin1.com/pclick.php\?p=(.*)&a=.*
+		(http://s1.static69.com/hifi/images/.*
+		(?:produits|bundles)/large/.*.jpg)%Usix';
+
 preg_match_all($pattern, $subject,$matches);
 
-$products = array();
-$baseUrl ='http://www.cellularline.com/';
 
 
-/* for($i = 1; $i < count ($matches[0]); $i ++) {
-	echo $matches[2][$i]."\n";
+$images = array();
 
-} */
-
-
-for($i = 1; $i < count ($matches[0]); $i ++) {
-	$product = array();
-	$product['name'] = $matches[2][$i];
-	$product['pris_unique_code'] = $matches[1][$i];
-	$product['category_name'] = $matches[5][$i];
-	$product['url'] = $baseUrl.$matches[4][$i];
-	$product['image'] = $matches[7][$i];
-	$product['price'] = $matches[5][$i];
-	$product['shipping'] = null;
-	$product['ean'] = $matches[9][$i];
-	$product['stock_status'] = $matches[8][$i];
-	$product['junk_typ'] = null;
-	$product['extra'] = $matches[3][$i];
-	$product['manufacturersku'] = null;
-	
-	
-	array_push($products,$product);
-	
+for ($i = 0; $i < count($matches[0]); $i++){
+	$image = array();
+	array_push($image,$matches[1][$i],$matches[2][$i]);
+	$images[] = $image;
 }
-foreach($matches[1] as $match){
-	print $match."\n";
+
+$list = $images;
+$fp = fopen('task1.csv','w');
+$counter = 0;
+
+foreach($list as $fields){
+	fputcsv($fp, $fields);
+	$counter ++;
 }
+fclose($fp);
+
+echo "$counter images saved to the task1.csv";

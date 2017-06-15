@@ -1,6 +1,0 @@
-<?php
-
-
-$dircontent = scandir('../files');
-print_r($dircontent);
-?>

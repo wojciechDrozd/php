@@ -18,8 +18,11 @@ for ($i = 0; $i< count($matches[0]); $i++){
 $list = $products;
 
 $fp = fopen('task3.csv','w');
+$counter = 0;
 foreach($list as $fields){
 	fputcsv($fp,$fields);
+	$counter ++;
 }
 
 fclose($fp);
+echo "\n$counter products saved to the task3.csv\n\n";
