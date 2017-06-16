@@ -2791,3 +2791,468 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.core.resources 2 10035 2017-06-16 06:23:15.722
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-06-16 22:09:52.945 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-06-16 22:09:59.872
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.wst.validation 4 0 2017-06-16 22:10:11.888
+!MESSAGE assertion failed: Marker property value is too long: Invalid character used in text string (array(2) {
+  [0]=>
+  array(397) {
+    [0]=>
+    string(25) "href="http://www.onet.pl""
+    [1]=>
+    string(23) "href="http://m.onet.pl""
+    [2]=>
+    string(22) "href="https://ocdn.eu""
+    [3]=>
+    string(26) "href="https://lib.onet.pl""
+    [4]=>
+    string(26) "href="https://csr.onet.pl""
+    [5]=>
+    string(29) "href="https://kropka.onet.pl""
+    [6]=>
+    string(35) "href="https://google-analytics.com""
+    [7]=>
+    string(46) "href="https://securepubads.g.doubleclick.net/""
+    [8]=>
+    string(96) "href="https://ocdn.eu/paas-static/template-engine/e3070980ffb31df1d4c65a95f2737f57/faviconn.ico""
+    [9]=>
+    string(25) "href="http://www.onet.pl""
+    [10]=>
+    string(74) "href="//ocdn.eu/files/mastt/ZmE7MDA_/462db16f872216014458184a85bd38e3.css""
+    [11]=>
+    string(26) "href="http://www.onet.pl/""
+    [12]=>
+    string(95) "href="http://sympatia.onet.pl/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [13]=>
+    string(86) "href="https://www.skapiec.pl/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [14]=>
+    string(90) "href="http://www.zumi.pl/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [15]=>
+    string(97) "href="http://gry.onet.pl/online/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [16]=>
+    string(86) "href="https://vod.pl/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [17]=>
+    string(82) "href="http://jakdojade.pl?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [18]=>
+    string(32) "href="http://programtv.onet.pl/""
+    [19]=>
+    string(29) "href="http://poczta.onet.pl/""
+    [20]=>
+    string(80) "href="http://muzyka.onet.pl/jazz/tomasz-stanko-zlo-bywa-konieczne-wywiad/x6ws4k""
+    [21]=>
+    string(111) "href="http://wiadomosci.onet.pl/kraj/mariusz-blaszczak-zwrocil-janowi-szyszce-list-od-corki-lesniczego/zgc9c3h""
+    [22]=>
+    string(82) "href="http://wbi.onet.pl/pozar-27-pietrowego-wiezowca-w-londynie-sa-ranni/590ddzj""
+    [23]=>
+    string(109) "href="http://kobieta.onet.pl/zdrowie/psychologia/sezon-na-holandie-czyli-gdzie-polak-szuka-szczescia/3ydcvg8""
+    [24]=>
+    string(95) "href="http://ksiazki.onet.pl/zoska-papuzanka-komplementy-trzymaja-nas-przy-zyciu-wywiad/2ky4dk""
+    [25]=>
+    string(107) "href="http://wiadomosci.onet.pl/kraj/owsiak-odniosl-sie-do-pensji-sadurskiej-ujawnil-swoje-zarobki/bsv0grv""
+    [26]=>
+    string(86) "href="http://kobieta.onet.pl/uroda/marko-przepros-i-nie-zwalaj-winy-na-innych/ynh6qxs""
+    [27]=>
+    string(219) "href="http://sympatia.onet.pl/tips/advice/katarzyna-miller-kobietom-wydaje-sie-ze-beda-mialy,5676352,advice-detail.html?utm_source=onet.pl&utm_medium=referral&utm_content=kmiller&utm_campaign=trescired_0614""
+    [28]=>
+    string(100) "href="http://ofsajd.onet.pl/dziewczyny/pierwsza-sesja-anny-lewandowskiej-po-dlugiej-przerwie/9wdwjd""
+    [29]=>
+    string(219) "href="http://sympatia.onet.pl/tips/advice/katarzyna-miller-kobietom-wydaje-sie-ze-beda-mialy,5676352,advice-detail.html?utm_source=onet.pl&utm_medium=referral&utm_content=kmiller&utm_campaign=trescired_0614""
+    [30]=>
+    string(74) "href="http://kobieta.onet.pl/jak-feministka-z-muzulmanka-felieton/k4nyqjl""
+    [31]=>
+    string(107) "href="http://biznes.onet.pl/wiadomosci/kraj/produkcja-butow-to-trudny-biznes-mowi-prezes-gino-rossi/b9g5mc""
+    [32]=>
+    string(106) "href="http://wiadomosci.onet.pl/tylko-w-onecie/wdowa-smolenska-pisze-mocny-list-do-macieja-stuhra/1yrwe6e""
+    [33]=>
+    string(86) "href="http://film.onet.pl/artykuly-i-wywiady/judy-garland-smutne-zycie-dorotki/lverh2""
+    [34]=>
+    string(104) "href="http://plejada.pl/newsy/mister-polski-2017-polfinalisci-bez-koszulki-zobacz-ich-gole-klaty/9gg4h8""
+    [35]=>
+    string(80) "href="http://muzyka.onet.pl/jazz/tomasz-stanko-zlo-bywa-konieczne-wywiad/x6ws4k""
+    [36]=>
+    string(109) "href="http://kobieta.onet.pl/zdrowie/psychologia/sezon-na-holandie-czyli-gdzie-polak-szuka-szczescia/3ydcvg8""
+    [37]=>
+    string(136) "href="http://eurosport.onet.pl/pilka-nozna/liga-hiszpanska/hiszpanska-prokuratura-oskarza-cristiano-ronaldo-o-ukrywania-dochodow/vphq12""
+    [38]=>
+    string(105) "href="http://wiadomosci.onet.pl/tylko-w-onecie/nowe-sledztwo-ws-jaroszewiczow-co-wiemy-o-zbrodni/ldk0y9w""
+    [39]=>
+    string(82) "href="http://wbi.onet.pl/pozar-27-pietrowego-wiezowca-w-londynie-sa-ranni/590ddzj""
+    [40]=>
+    string(105) "href="http://wiadomosci.onet.pl/tylko-w-onecie/nowe-sledztwo-ws-jaroszewiczow-co-wiemy-o-zbrodni/ldk0y9w""
+    [41]=>
+    string(111) "href="http://wiadomosci.onet.pl/kraj/mariusz-blaszczak-zwrocil-janowi-szyszce-list-od-corki-lesniczego/zgc9c3h""
+    [42]=>
+    string(107) "href="http://biznes.onet.pl/wiadomosci/kraj/produkcja-butow-to-trudny-biznes-mowi-prezes-gino-rossi/b9g5mc""
+    [43]=>
+    string(74) "href="http://kobieta.onet.pl/jak-feministka-z-muzulmanka-felieton/k4nyqjl""
+    [44]=>
+    string(106) "href="http://wiadomosci.onet.pl/tylko-w-onecie/wdowa-smolenska-pisze-mocny-list-do-macieja-stuhra/1yrwe6e""
+    [45]=>
+    string(111) "href="http://wiadomosci.onet.pl/kraj/mariusz-blaszczak-zwrocil-janowi-szyszce-list-od-corki-lesniczego/zgc9c3h""
+    [46]=>
+    string(107) "href="http://wiadomosci.onet.pl/kraj/owsiak-odniosl-sie-do-pensji-sadurskiej-ujawnil-swoje-zarobki/bsv0grv""
+    [47]=>
+    string(100) "href="http://ofsajd.onet.pl/dziewczyny/pierwsza-sesja-anny-lewandowskiej-po-dlugiej-przerwie/9wdwjd""
+    [48]=>
+    string(106) "href="http://wiadomosci.onet.pl/tylko-w-onecie/wdowa-smolenska-pisze-mocny-list-do-macieja-stuhra/1yrwe6e""
+    [49]=>
+    string(111) "href="http://wiadomosci.onet.pl/kraj/mariusz-blaszczak-zwrocil-janowi-szyszce-list-od-corki-lesniczego/zgc9c3h""
+    [50]=>
+    string(82) "href="http://wbi.onet.pl/pozar-27-pietrowego-wiezowca-w-londynie-sa-ranni/590ddzj""
+    [51]=>
+    string(107) "href="http://wiadomosci.onet.pl/kraj/owsiak-odniosl-sie-do-pensji-sadurskiej-ujawnil-swoje-zarobki/bsv0grv""
+    [52]=>
+    string(47) "href="http://wiadomosci.onet.pl/tylko-w-onecie""
+    [53]=>
+    string(38) "href="http://wiadomosci.onet.pl/kiosk""
+    [54]=>
+    string(90) "href="http://kobieta.onet.pl/dom-spokojnej-starosci-dla-emerytowanych-prostytutek/3dl9t0p""
+    [55]=>
+    string(90) "href="http://rzeszow.onet.pl/miastoonet-jaslo-dobry-klimat-nie-tylko-dla-winiarzy/6qqfmre""
+    [56]=>
+    string(96) "href="https://vod.pl/programy-onetu/newsweek-opinie-marta-lempart-henryk-wujec-13062017/k5ccnxh""
+    [57]=>
+    string(16) "href="#homePage""
+    [58]=>
+    string(29) "href="http://pogoda.onet.pl/""
+    [59]=>
+    string(37) "href="http://magia.onet.pl/horoskop/""
+    [60]=>
+    string(32) "href="http://programtv.onet.pl/""
+    [61]=>
+    string(32) "href="http://film.onet.pl/kino/""
+    [62]=>
+    string(81) "href="http://biznes.onet.pl/waluty/notowania/waluty-online/notowania-online.html""
+    [63]=>
+    string(29) "href="http://gielda.onet.pl/""
+    [64]=>
+    string(28) "href="http://lotto.onet.pl/""
+    [65]=>
+    string(57) "href="http://pogoda.onet.pl/szukaj-pogody/?term=Warszawa""
+    [66]=>
+    string(57) "href="http://pogoda.onet.pl/szukaj-pogody/?term=Warszawa""
+    [67]=>
+    string(29) "href="#pogoda_wybierz_region""
+    [68]=>
+    string(16) "href="#pogoda_0""
+    [69]=>
+    string(16) "href="#pogoda_1""
+    [70]=>
+    string(16) "href="#pogoda_2""
+    [71]=>
+    string(16) "href="#pogoda_3""
+    [72]=>
+    string(16) "href="#pogoda_4""
+    [73]=>
+    string(16) "href="#pogoda_5""
+    [74]=>
+    string(16) "href="#pogoda_6""
+    [75]=>
+    string(16) "href="#pogoda_7""
+    [76]=>
+    string(16) "href="#pogoda_8""
+    [77]=>
+    string(16) "href="#pogoda_9""
+    [78]=>
+    string(17) "href="#pogoda_10""
+    [79]=>
+    string(17) "href="#pogoda_11""
+    [80]=>
+    string(17) "href="#pogoda_12""
+    [81]=>
+    string(17) "href="#pogoda_13""
+    [82]=>
+    string(17) "href="#pogoda_14""
+    [83]=>
+    string(17) "href="#pogoda_15""
+    [84]=>
+    string(17) "href="#pogoda_16""
+    [85]=>
+    string(17) "href="#pogoda_17""
+    [86]=>
+    string(17) "href="#pogoda_18""
+    [87]=>
+    string(17) "href="#pogoda_19""
+    [88]=>
+    string(17) "href="#pogoda_20""
+    [89]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [90]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [91]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [92]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [93]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [94]=>
+    string(32) "href="http://wiadomosci.onet.pl""
+    [95]=>
+    string(67) "href="http://wbi.onet.pl/londyn-plonie-24-pietrowy-budynek/9xcbbxe""
+    [96]=>
+    string(130) "href="http://wiadomosci.onet.pl/kraj/gazeta-wyborcza-za-afera-podsluchowa-stoja-agenci-cba-zwiazani-z-mariuszem-kaminskim/ewcgxqq""
+    [97]=>
+    string(126) "href="http://wiadomosci.onet.pl/kraj/staniszkis-o-postawie-rzadu-to-wielki-blad-czuje-sie-upokorzona-cala-ta-sytuacja/y85l6zv""
+    [98]=>
+    string(107) "href="http://wiadomosci.onet.pl/kraj/owsiak-odniosl-sie-do-pensji-sadurskiej-ujawnil-swoje-zarobki/bsv0grv""
+    [99]=>
+    string(113) "href="http://wbi.onet.pl/premier-may-oglasza-nazwiska-dwoch-wiceministrow-ds-brexitu-rozmowy-w-przyszlym/vskn2cl""
+    [100]=>
+    string(103) "href="http://wiadomosci.onet.pl/tylko-w-onecie/abp-henryk-hoser-czas-drastycznie-mi-sie-konczy/c0mzzl9""
+    [101]=>
+    string(74) "href="http://pogoda.onet.pl/wideo/prognoza-pogody-dla-polski-1406/2lh01ns""
+    [102]=>
+    string(90) "href="http://wbi.onet.pl/ksiezna-kate-i-ksiaze-william-odwiedza-warszawe-i-gdansk/mzdsjnt""
+    [103]=>
+    string(135) "href="http://wiadomosci.onet.pl/tylko-w-onecie/ekspert-przystanek-woodstock-to-najlepiej-zabezpieczona-impreza-masowa-w-polsce/f8c4q45""
+    [104]=>
+  
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: Marker property value is too long: Invalid character used in text string (array(2) {
+  [0]=>
+  array(397) {
+    [0]=>
+    string(25) "href="http://www.onet.pl""
+    [1]=>
+    string(23) "href="http://m.onet.pl""
+    [2]=>
+    string(22) "href="https://ocdn.eu""
+    [3]=>
+    string(26) "href="https://lib.onet.pl""
+    [4]=>
+    string(26) "href="https://csr.onet.pl""
+    [5]=>
+    string(29) "href="https://kropka.onet.pl""
+    [6]=>
+    string(35) "href="https://google-analytics.com""
+    [7]=>
+    string(46) "href="https://securepubads.g.doubleclick.net/""
+    [8]=>
+    string(96) "href="https://ocdn.eu/paas-static/template-engine/e3070980ffb31df1d4c65a95f2737f57/faviconn.ico""
+    [9]=>
+    string(25) "href="http://www.onet.pl""
+    [10]=>
+    string(74) "href="//ocdn.eu/files/mastt/ZmE7MDA_/462db16f872216014458184a85bd38e3.css""
+    [11]=>
+    string(26) "href="http://www.onet.pl/""
+    [12]=>
+    string(95) "href="http://sympatia.onet.pl/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [13]=>
+    string(86) "href="https://www.skapiec.pl/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [14]=>
+    string(90) "href="http://www.zumi.pl/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [15]=>
+    string(97) "href="http://gry.onet.pl/online/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [16]=>
+    string(86) "href="https://vod.pl/?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [17]=>
+    string(82) "href="http://jakdojade.pl?utm_source=onet.pl&utm_medium=banner&utm_campaign=ikona""
+    [18]=>
+    string(32) "href="http://programtv.onet.pl/""
+    [19]=>
+    string(29) "href="http://poczta.onet.pl/""
+    [20]=>
+    string(80) "href="http://muzyka.onet.pl/jazz/tomasz-stanko-zlo-bywa-konieczne-wywiad/x6ws4k""
+    [21]=>
+    string(111) "href="http://wiadomosci.onet.pl/kraj/mariusz-blaszczak-zwrocil-janowi-szyszce-list-od-corki-lesniczego/zgc9c3h""
+    [22]=>
+    string(82) "href="http://wbi.onet.pl/pozar-27-pietrowego-wiezowca-w-londynie-sa-ranni/590ddzj""
+    [23]=>
+    string(109) "href="http://kobieta.onet.pl/zdrowie/psychologia/sezon-na-holandie-czyli-gdzie-polak-szuka-szczescia/3ydcvg8""
+    [24]=>
+    string(95) "href="http://ksiazki.onet.pl/zoska-papuzanka-komplementy-trzymaja-nas-przy-zyciu-wywiad/2ky4dk""
+    [25]=>
+    string(107) "href="http://wiadomosci.onet.pl/kraj/owsiak-odniosl-sie-do-pensji-sadurskiej-ujawnil-swoje-zarobki/bsv0grv""
+    [26]=>
+    string(86) "href="http://kobieta.onet.pl/uroda/marko-przepros-i-nie-zwalaj-winy-na-innych/ynh6qxs""
+    [27]=>
+    string(219) "href="http://sympatia.onet.pl/tips/advice/katarzyna-miller-kobietom-wydaje-sie-ze-beda-mialy,5676352,advice-detail.html?utm_source=onet.pl&utm_medium=referral&utm_content=kmiller&utm_campaign=trescired_0614""
+    [28]=>
+    string(100) "href="http://ofsajd.onet.pl/dziewczyny/pierwsza-sesja-anny-lewandowskiej-po-dlugiej-przerwie/9wdwjd""
+    [29]=>
+    string(219) "href="http://sympatia.onet.pl/tips/advice/katarzyna-miller-kobietom-wydaje-sie-ze-beda-mialy,5676352,advice-detail.html?utm_source=onet.pl&utm_medium=referral&utm_content=kmiller&utm_campaign=trescired_0614""
+    [30]=>
+    string(74) "href="http://kobieta.onet.pl/jak-feministka-z-muzulmanka-felieton/k4nyqjl""
+    [31]=>
+    string(107) "href="http://biznes.onet.pl/wiadomosci/kraj/produkcja-butow-to-trudny-biznes-mowi-prezes-gino-rossi/b9g5mc""
+    [32]=>
+    string(106) "href="http://wiadomosci.onet.pl/tylko-w-onecie/wdowa-smolenska-pisze-mocny-list-do-macieja-stuhra/1yrwe6e""
+    [33]=>
+    string(86) "href="http://film.onet.pl/artykuly-i-wywiady/judy-garland-smutne-zycie-dorotki/lverh2""
+    [34]=>
+    string(104) "href="http://plejada.pl/newsy/mister-polski-2017-polfinalisci-bez-koszulki-zobacz-ich-gole-klaty/9gg4h8""
+    [35]=>
+    string(80) "href="http://muzyka.onet.pl/jazz/tomasz-stanko-zlo-bywa-konieczne-wywiad/x6ws4k""
+    [36]=>
+    string(109) "href="http://kobieta.onet.pl/zdrowie/psychologia/sezon-na-holandie-czyli-gdzie-polak-szuka-szczescia/3ydcvg8""
+    [37]=>
+    string(136) "href="http://eurosport.onet.pl/pilka-nozna/liga-hiszpanska/hiszpanska-prokuratura-oskarza-cristiano-ronaldo-o-ukrywania-dochodow/vphq12""
+    [38]=>
+    string(105) "href="http://wiadomosci.onet.pl/tylko-w-onecie/nowe-sledztwo-ws-jaroszewiczow-co-wiemy-o-zbrodni/ldk0y9w""
+    [39]=>
+    string(82) "href="http://wbi.onet.pl/pozar-27-pietrowego-wiezowca-w-londynie-sa-ranni/590ddzj""
+    [40]=>
+    string(105) "href="http://wiadomosci.onet.pl/tylko-w-onecie/nowe-sledztwo-ws-jaroszewiczow-co-wiemy-o-zbrodni/ldk0y9w""
+    [41]=>
+    string(111) "href="http://wiadomosci.onet.pl/kraj/mariusz-blaszczak-zwrocil-janowi-szyszce-list-od-corki-lesniczego/zgc9c3h""
+    [42]=>
+    string(107) "href="http://biznes.onet.pl/wiadomosci/kraj/produkcja-butow-to-trudny-biznes-mowi-prezes-gino-rossi/b9g5mc""
+    [43]=>
+    string(74) "href="http://kobieta.onet.pl/jak-feministka-z-muzulmanka-felieton/k4nyqjl""
+    [44]=>
+    string(106) "href="http://wiadomosci.onet.pl/tylko-w-onecie/wdowa-smolenska-pisze-mocny-list-do-macieja-stuhra/1yrwe6e""
+    [45]=>
+    string(111) "href="http://wiadomosci.onet.pl/kraj/mariusz-blaszczak-zwrocil-janowi-szyszce-list-od-corki-lesniczego/zgc9c3h""
+    [46]=>
+    string(107) "href="http://wiadomosci.onet.pl/kraj/owsiak-odniosl-sie-do-pensji-sadurskiej-ujawnil-swoje-zarobki/bsv0grv""
+    [47]=>
+    string(100) "href="http://ofsajd.onet.pl/dziewczyny/pierwsza-sesja-anny-lewandowskiej-po-dlugiej-przerwie/9wdwjd""
+    [48]=>
+    string(106) "href="http://wiadomosci.onet.pl/tylko-w-onecie/wdowa-smolenska-pisze-mocny-list-do-macieja-stuhra/1yrwe6e""
+    [49]=>
+    string(111) "href="http://wiadomosci.onet.pl/kraj/mariusz-blaszczak-zwrocil-janowi-szyszce-list-od-corki-lesniczego/zgc9c3h""
+    [50]=>
+    string(82) "href="http://wbi.onet.pl/pozar-27-pietrowego-wiezowca-w-londynie-sa-ranni/590ddzj""
+    [51]=>
+    string(107) "href="http://wiadomosci.onet.pl/kraj/owsiak-odniosl-sie-do-pensji-sadurskiej-ujawnil-swoje-zarobki/bsv0grv""
+    [52]=>
+    string(47) "href="http://wiadomosci.onet.pl/tylko-w-onecie""
+    [53]=>
+    string(38) "href="http://wiadomosci.onet.pl/kiosk""
+    [54]=>
+    string(90) "href="http://kobieta.onet.pl/dom-spokojnej-starosci-dla-emerytowanych-prostytutek/3dl9t0p""
+    [55]=>
+    string(90) "href="http://rzeszow.onet.pl/miastoonet-jaslo-dobry-klimat-nie-tylko-dla-winiarzy/6qqfmre""
+    [56]=>
+    string(96) "href="https://vod.pl/programy-onetu/newsweek-opinie-marta-lempart-henryk-wujec-13062017/k5ccnxh""
+    [57]=>
+    string(16) "href="#homePage""
+    [58]=>
+    string(29) "href="http://pogoda.onet.pl/""
+    [59]=>
+    string(37) "href="http://magia.onet.pl/horoskop/""
+    [60]=>
+    string(32) "href="http://programtv.onet.pl/""
+    [61]=>
+    string(32) "href="http://film.onet.pl/kino/""
+    [62]=>
+    string(81) "href="http://biznes.onet.pl/waluty/notowania/waluty-online/notowania-online.html""
+    [63]=>
+    string(29) "href="http://gielda.onet.pl/""
+    [64]=>
+    string(28) "href="http://lotto.onet.pl/""
+    [65]=>
+    string(57) "href="http://pogoda.onet.pl/szukaj-pogody/?term=Warszawa""
+    [66]=>
+    string(57) "href="http://pogoda.onet.pl/szukaj-pogody/?term=Warszawa""
+    [67]=>
+    string(29) "href="#pogoda_wybierz_region""
+    [68]=>
+    string(16) "href="#pogoda_0""
+    [69]=>
+    string(16) "href="#pogoda_1""
+    [70]=>
+    string(16) "href="#pogoda_2""
+    [71]=>
+    string(16) "href="#pogoda_3""
+    [72]=>
+    string(16) "href="#pogoda_4""
+    [73]=>
+    string(16) "href="#pogoda_5""
+    [74]=>
+    string(16) "href="#pogoda_6""
+    [75]=>
+    string(16) "href="#pogoda_7""
+    [76]=>
+    string(16) "href="#pogoda_8""
+    [77]=>
+    string(16) "href="#pogoda_9""
+    [78]=>
+    string(17) "href="#pogoda_10""
+    [79]=>
+    string(17) "href="#pogoda_11""
+    [80]=>
+    string(17) "href="#pogoda_12""
+    [81]=>
+    string(17) "href="#pogoda_13""
+    [82]=>
+    string(17) "href="#pogoda_14""
+    [83]=>
+    string(17) "href="#pogoda_15""
+    [84]=>
+    string(17) "href="#pogoda_16""
+    [85]=>
+    string(17) "href="#pogoda_17""
+    [86]=>
+    string(17) "href="#pogoda_18""
+    [87]=>
+    string(17) "href="#pogoda_19""
+    [88]=>
+    string(17) "href="#pogoda_20""
+    [89]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [90]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [91]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [92]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [93]=>
+    string(69) "href="http://onet.tv/i/news/onet24-procedura-przeciwko-polsce/shj5t7""
+    [94]=>
+    string(32) "href="http://wiadomosci.onet.pl""
+    [95]=>
+    string(67) "href="http://wbi.onet.pl/londyn-plonie-24-pietrowy-budynek/9xcbbxe""
+    [96]=>
+    string(130) "href="http://wiadomosci.onet.pl/kraj/gazeta-wyborcza-za-afera-podsluchowa-stoja-agenci-cba-zwiazani-z-mariuszem-kaminskim/ewcgxqq""
+    [97]=>
+    string(126) "href="http://wiadomosci.onet.pl/kraj/staniszkis-o-postawie-rzadu-to-wielki-blad-czuje-sie-upokorzona-cala-ta-sytuacja/y85l6zv""
+    [98]=>
+    string(107) "href="http://wiadomosci.onet.pl/kraj/owsiak-odniosl-sie-do-pensji-sadurskiej-ujawnil-swoje-zarobki/bsv0grv""
+    [99]=>
+    string(113) "href="http://wbi.onet.pl/premier-may-oglasza-nazwiska-dwoch-wiceministrow-ds-brexitu-rozmowy-w-przyszlym/vskn2cl""
+    [100]=>
+    string(103) "href="http://wiadomosci.onet.pl/tylko-w-onecie/abp-henryk-hoser-czas-drastycznie-mi-sie-konczy/c0mzzl9""
+    [101]=>
+    string(74) "href="http://pogoda.onet.pl/wideo/prognoza-pogody-dla-polski-1406/2lh01ns""
+    [102]=>
+    string(90) "href="http://wbi.onet.pl/ksiezna-kate-i-ksiaze-william-odwiedza-warszawe-i-gdansk/mzdsjnt""
+    [103]=>
+    string(135) "href="http://wiadomosci.onet.pl/tylko-w-onecie/ekspert-przystanek-woodstock-to-najlepiej-zabezpieczona-impreza-masowa-w-polsce/f8c4q45""
+    [104]=>
+  
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.internal.resources.MarkerInfo.checkValidAttribute(MarkerInfo.java:66)
+	at org.eclipse.core.internal.resources.MarkerInfo.setAttribute(MarkerInfo.java:152)
+	at org.eclipse.core.internal.resources.MarkerInfo.setAttributes(MarkerInfo.java:178)
+	at org.eclipse.core.internal.resources.Marker.setAttributes(Marker.java:329)
+	at org.eclipse.wst.validation.internal.MarkerManager.createMarker(MarkerManager.java:86)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1191)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:299)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:120)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.fullBuild(ValBuilderJob.java:219)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:178)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
