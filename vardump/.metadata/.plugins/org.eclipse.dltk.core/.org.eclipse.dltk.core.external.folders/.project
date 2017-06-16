@@ -14,5 +14,10 @@
 			<type>2</type>
 			<location>/opt/lampp/htdocs/vardump/.metadata/.plugins/org.eclipse.php.core/__language__/72e20c07</location>
 		</link>
+		<link>
+			<name>.link3</name>
+			<type>2</type>
+			<location>/opt/lampp/htdocs/vardump/.metadata/.plugins/org.eclipse.php.core/__language__/fd821403</location>
+		</link>
 	</linkedResources>
 </projectDescription>
